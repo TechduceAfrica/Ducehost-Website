@@ -11,7 +11,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={outfit.className}>{children}</body>
+      <head>
+        <link
+          rel="preload"
+          href="/fonts/Outfit-Medium.woff2"
+          as="font"
+          type="font/woff2"
+        />
+        <link
+          rel="preload"
+          href="/fonts/Outfit-Regular.woff2"
+          as="font"
+          type="font/woff2"
+        />
+      </head>
+      <body className={outfit.className}>
+        {children}
+      </body>
     </html>
   )
 }
