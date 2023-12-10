@@ -1,15 +1,14 @@
 "use client"
 import Image from 'next/image';
-import styles from './page.module.css';
 import { useEffect } from 'react';
 import SubText from '@/components/SubText';
 import HeadlineSmall from '@/components/HeadlineSmall';
 import SecBtn from '@/components/SecBtn';
 import PriBtn from '@/components/PriBtn';
 import PriBtnWine from '@/components/PriBtnWine';
-import DomainSearchBar from '@/components/DomainSearchBar';
+import ImgBGHeroSection from '@/components/ImgBGHeroSection';
 
-export default function Home() {
+export default function SamplePage() {
 
   useEffect( () => {
     (
@@ -21,7 +20,7 @@ export default function Home() {
   }, [])
 
   return (
-    <main className={styles.main}>
+    <main>
       <Image
         src="/ducehost-logo.webp"
         alt="Ducehost Logo"
@@ -29,9 +28,11 @@ export default function Home() {
         height={34}
         priority
       />
-      <div>
-        <DomainSearchBar/>
-      </div>
+      <ImgBGHeroSection
+        HeroSecBgImgLink="/images/Home%20Hero%20Section_Ducehost%20website%20hosting%20and%20domain%20name%20purchase.webp"
+        text= "Grow Your Dream Business Online"
+        title= "For a Reliable Hosting Service, We Are Yuor Trusted Partner."
+      />
       <div>
         <h1>H1 One</h1>
         <h2>H2 Two</h2>
