@@ -5,7 +5,7 @@ const outfit = Outfit({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Ducehost',
-  description: 'Helping businesses make their online dream come true',
+  description: 'Ducehost | Grow Your Dream Business Online',
 }
 
 export default function RootLayout({ children }) {
