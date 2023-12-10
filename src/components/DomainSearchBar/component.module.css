@@ -11,7 +11,7 @@
 
 .domain__name__search__bar input {
     width: 100%;
-    /* border: none; */
+    border: none;
     border-radius: 12.343px 0px 0px 12.343px;
     background: var(--white);
     padding: 10px 15px;
