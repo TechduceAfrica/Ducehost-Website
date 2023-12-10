@@ -10,7 +10,7 @@ export default function ImgBGHeroSection( { HeroSecBgImgLink, text, title }) {
 
     return (
         <main style={styles} className={style.hero__section}>
-            <p className={style.hero__section__intro__text} data-scroll data-scroll-speed="0.2">
+            <p className={style.hero__section__intro__text} data-scroll data-scroll-speed="0.15">
                 {text}
             </p>
             <h1 className={style.hero__section__title} data-scroll data-scroll-speed="0.1">
