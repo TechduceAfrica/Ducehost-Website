@@ -7,6 +7,7 @@ import SecBtn from '@/components/SecBtn';
 import PriBtn from '@/components/PriBtn';
 import PriBtnWine from '@/components/PriBtnWine';
 import ImgBGHeroSection from '@/components/ImgBGHeroSection';
+import Testimonial from '@/components/Testimonial';
 
 export default function SamplePage() {
 
@@ -68,6 +69,7 @@ export default function SamplePage() {
           PriBtnWineLink= '/'
         />
       </div>
+      <Testimonial/>
     </main>
   )
 }
