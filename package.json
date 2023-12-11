@@ -13,7 +13,8 @@
     "locomotive-scroll": "^5.0.0-beta.11",
     "next": "14.0.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "eslint": "^8",
