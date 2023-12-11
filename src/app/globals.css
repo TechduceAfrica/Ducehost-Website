@@ -51,6 +51,8 @@
   --green: #23A455;
   --wine: #936;
   --footer-text-colour: #EDEDED;
+  --swiper-navigation-size: 32px!important;
+  --swiper-theme-color: var(--green)!important;
 }
 
 
@@ -160,3 +162,23 @@ button {
   background-color: transparent;
   color: var(--wine);
 }
+
+.swiper-button-prev, 
+.swiper-button-next {
+  color: var(--dark-font)!important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--green)!important;
+}
+
+.swiper-slide {
+  display: grid!important;
+  justify-content: center;
+}
+
+/* @media screen and (max-width: 768px) {
+  .swiper-container {
+    width: 768px;
+  }
+} */
