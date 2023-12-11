@@ -108,52 +108,52 @@ export const Maintenance = [
         title: 'Website',
         mPrice: `97,200`,
         yPrice: `172,800`,
-        description: ``,
+        description: `Plan Description`,
         features: [
             {
-                feature: ``,
+                feature: `Feature`,
             },
             {
-                feature: ``,
+                feature: `Feature`,
             },
             {
-                feature: ``,
+                feature: `Feature`,
             },
             {
-                feature: ``,
+                feature: `Feature`,
             },
             {
-                feature: ``,
+                feature: `Feature`,
             },
             {
-                feature: ``,
+                feature: `Feature`,
             },
         ],
     },
     {
-        ribbon: ``,
+        ribbon: `Popular`,
         title: 'Website',
         mPrice: `162,000`,
         yPrice: `252,000`,
-        description: ``,
+        description: `Plan Description`,
         features: [
             {
-                feature: ``,
+                feature: `Feature`,
             },
             {
-                feature: ``,
+                feature: `Feature`,
             },
             {
-                feature: ``,
+                feature: `Feature`,
             },
             {
-                feature: ``,
+                feature: `Feature`,
             },
             {
-                feature: ``,
+                feature: `Feature`,
             },
             {
-                feature: ``,
+                feature: `Feature`,
             },
         ],
     },
@@ -162,25 +162,25 @@ export const Maintenance = [
         title: 'Website',
         mPrice: `189,000`,
         yPrice: `370,000`,
-        description: ``,
+        description: `Plan Description`,
         features: [
             {
-                feature: ``,
+                feature: `Feature`,
             },
             {
-                feature: ``,
+                feature: `Feature`,
             },
             {
-                feature: ``,
+                feature: `Feature`,
             },
             {
-                feature: ``,
+                feature: `Feature`,
             },
             {
-                feature: ``,
+                feature: `Feature`,
             },
             {
-                feature: ``,
+                feature: `Feature`,
             },
         ],
     },
