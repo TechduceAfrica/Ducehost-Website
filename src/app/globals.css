@@ -55,11 +55,13 @@
   --swiper-theme-color: var(--green)!important;
 }
 
+html {
+  overflow-x: hidden;
+}
 
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -74,6 +76,11 @@ body {
 
 h1, h2, h3, h4, h5, p {
   margin: 0px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -117,8 +124,19 @@ p.headlinesmall {
   line-height: 32px;
 }
 
-p .wine {
+.wine {
   color: var(--wine);
+}
+
+nav a.active {
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: var(--white);
+  background: var(--green);
+}
+
+nav a.active:hover {
+  color: var(--dark-font);
 }
 
 button {
@@ -177,8 +195,48 @@ button {
   justify-content: center;
 }
 
-/* @media screen and (max-width: 768px) {
-  .swiper-container {
-    width: 768px;
-  }
-} */
+.szh-accordion {
+  max-width: 1000px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+h3.szh-accordion__item-heading {
+  position: relative;
+  margin-block: 30px!important;
+}
+
+h3.szh-accordion__item-heading button {
+  padding: 10px 0px;
+  border: none;
+  background-color: transparent;
+  font-family: 'Outfit-Regular';
+  color: var(--dark-font);
+  font-size: 22px;
+  font-weight: 400;
+  width: 100%;
+  text-align: left;
+  z-index: 2;
+  position: relative;
+}
+
+h3.szh-accordion__item-heading::after {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none"> <path d="M27.1371 13.0615L17.1371 23.0615C16.9978 23.2013 16.8322 23.3123 16.6499 23.388C16.4675 23.4637 16.272 23.5027 16.0746 23.5027C15.8772 23.5027 15.6817 23.4637 15.4994 23.388C15.3171 23.3123 15.1515 23.2013 15.0121 23.0615L5.01212 13.0615C4.73033 12.7797 4.57202 12.3975 4.57202 11.999C4.57202 11.6005 4.73033 11.2183 5.01212 10.9365C5.29392 10.6547 5.67611 10.4964 6.07462 10.4964C6.47314 10.4964 6.85533 10.6547 7.13712 10.9365L16.0759 19.8752L25.0146 10.9352C25.2964 10.6534 25.6786 10.4951 26.0771 10.4951C26.4756 10.4951 26.8578 10.6534 27.1396 10.9352C27.4214 11.217 27.5797 11.5992 27.5797 11.9977C27.5797 12.3962 27.4214 12.7784 27.1396 13.0602L27.1371 13.0615Z" fill="black"/></svg>');
+  position: absolute;
+  right: 0px;
+  transition: all 300ms ease-in-out;
+}
+
+.szh-accordion__item--expanded 
+h3.szh-accordion__item-heading::after {
+  transform: rotate(0.5turn) translateY(10px);
+}
+
+.szh-accordion__item {
+  border-bottom: solid 1px var(--dark-bg);
+}
+
+.szh-accordion__item-content {
+  margin-block: 30px 20px;
+}
