@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@szhsin/react-accordion": "^1.2.3",
     "gsap": "^3.12.3",
     "locomotive-scroll": "^5.0.0-beta.11",
     "next": "14.0.3",

@@ -36,16 +36,25 @@ export const homeCopy = {
     ppSectionText: `If you have the vision for a website, blog, or online store, Ducehost has the perfect hosting package to turn your vision into reality. We cater to your every need.`,
     testimonySectionTitle: `Testimonials`,
     testimonySectionText: `Don’t just take our word for it, hear what our satisfied customers have to say`,
-    FAQs: {
-        questionOne: `What is Web hosting and why do i need it?`,
-        answerOne: ``,
-        questionTwo: `How can i register a domain name with Ducehost?`,
-        answerTwo: ``,
-        questionThree: `What kind of customer support do you offer?`,
-        answerThree: ``,
-        questionFour: `How do i migrate to Ducehost?`,
-        answerFour: ``,
-        questionFive: `Which hosting plan is marked as recommended for WordPress?`,
-        answerFive: ``,
-    }
+    
 };
+
+export const FAQsCopy= [
+    {
+        question: `What is Web hosting and why do i need it?`,
+        answer: `Answer One... 1... 2... 3... Dummy content needs update`,
+    },
+    {   question: `How can i register a domain name with Ducehost?`,
+        answer: `Answer two... 1... 2... 3... Dummy content needs update`,
+    },
+    {   question: `What kind of customer support do you offer?`,
+        answer: `Answer three... 1... 2... 3... Dummy content needs update`,
+    },
+    {   question: `How do i migrate to Ducehost?`,
+        answer: `Answer four... 1... 2... 3... Dummy content needs update`,
+    },
+    {   question: `Which hosting plan is marked as recommended for WordPress?`,
+        answer: `Answer five... 1... 2... 3... Dummy content needs update`,
+    },
+    
+]

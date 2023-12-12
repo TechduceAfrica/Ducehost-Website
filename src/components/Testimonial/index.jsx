@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 
 export default function Testimonial() {
   return (
-    <div className={style.testimonial__wrapper}>
+    <>
         <Swiper
             modules={[Navigation, Pagination]}
             navigation
@@ -52,6 +52,6 @@ export default function Testimonial() {
             )
         )}
         </Swiper>
-    </div>
+    </>
   )
 }
