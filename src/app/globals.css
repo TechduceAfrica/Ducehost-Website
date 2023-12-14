@@ -139,6 +139,11 @@ nav a.active:hover {
   color: var(--dark-font);
 }
 
+footer {
+  background-color: var(--dark-bg);
+  color: var(--white);
+}
+
 button {
   padding: 12px 30px;
   cursor: pointer;
@@ -179,6 +184,13 @@ button {
 .wine__btn__pri:hover {
   background-color: transparent;
   color: var(--wine);
+}
+
+.container-width {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-inline: 10px;
+  box-sizing: border-box;
 }
 
 .swiper-button-prev, 
@@ -239,4 +251,12 @@ h3.szh-accordion__item-heading::after {
 
 .szh-accordion__item-content {
   margin-block: 30px 20px;
+}
+
+@media (max-width:787px) {
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+  }
 }

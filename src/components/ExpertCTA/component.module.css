@@ -1,17 +1,12 @@
 .expert__cta__section {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 30px;
     justify-content: space-between;
     align-items: center;
 }
 
-.expert__cta__img {
-    flex: 0 1 695px;
-}
-
 .expert__cta__text {
-    flex: 1 0 500px;
     display: grid;
     gap: 1rem;
 }

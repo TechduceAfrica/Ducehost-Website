@@ -1,0 +1,94 @@
+.price__card__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+
+}
+
+.price__card, 
+.xprice__card {
+    border-radius: 10px;
+    background: var(--white);
+    box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.06);
+    padding: 40px;
+    max-width: 390px;
+    box-sizing: border-box;
+    flex: 1 1 385px;
+}
+
+.xprice__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 1px var(--wine);
+}
+
+.divider, 
+.xprice__card .divider {
+    width: 100%;
+    height: 2px;
+    margin-block: 30px;
+}
+
+.divider {
+    background-color: var(--green);
+}
+
+.xprice__card .divider {
+    background-color: var(--wine);
+}
+
+.top {
+    text-align: center;
+    min-height: 100px;
+}
+
+.top h4, 
+.feature p {
+    color: var(--green);
+    font-size: 32px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.top p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.feature {
+    display: grid;
+    row-gap: 16px;
+    place-content: center;
+}
+
+.feature p {
+    text-align: center;
+}
+
+.feature_list {
+    display: grid;
+    gap: 24px;
+}
+
+.feature_list > div {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.description {
+    text-align: center;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+}
+
+.xprice__card .cta {
+    justify-self: baseline;
+}
