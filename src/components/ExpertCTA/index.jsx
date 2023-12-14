@@ -3,7 +3,7 @@ import style from './component.module.css'
 
 export default function ExpertCTA() {
   return (
-    <section className={style.expert__cta__section}>
+    <section className={`${style.expert__cta__section} container-width`}>
         <div className={style.expert__cta__img}>
             <Image 
                 src='/images/Ducehost-Expert-Assistance.webp' 
