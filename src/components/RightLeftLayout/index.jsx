@@ -1,30 +1,34 @@
 import Image from 'next/image';
+import style from './component.module.css';
 
-export default function RightLeftLayout({ title, content, imgcontent }) {
-
-    const imgcontent= {
-        imgLink, imgAlt, width, height
-    }
+export default function RightLeftLayout({ rlLayout }) {
 
     return (
-        <section>
-            <div>
-                <Image
-                    src={imgLink}
-                    alt={imgAlt}
-                    width={width}
-                    height={height}
-                    className={style.logo}
-                />
-            </div>
-            <div>
-                <h4>
-                    {title}
-                </h4>
-                <p>
-                    {content}
-                </p>
-            </div>
-        </section>
+        <>
+            {rlLayout.map((rlLayoutCopy, index) => (
+                <div 
+                    key={index} 
+                    className={style.RightLeftLayout__wrapper}
+                >
+                    <div>
+                        <Image 
+                            src={rlLayoutCopy.Img} 
+                            alt={rlLayoutCopy.Title} 
+                            width={rlLayoutCopy.width} 
+                            height={rlLayoutCopy.height}
+                        />
+                    </div>
+                    <div>
+                        <h4 className='wine'>
+                            {rlLayoutCopy.Title}
+                        </h4>
+                        <p>
+                            {rlLayoutCopy.Text}
+                        </p>
+                    </div>
+                </div>
+                )
+            )}
+        </>
     )
 }

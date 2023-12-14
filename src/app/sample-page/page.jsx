@@ -9,9 +9,12 @@ import PriBtnWine from '@/components/PriBtnWine';
 import ImgBGHeroSection from '@/components/ImgBGHeroSection';
 import Testimonial from '@/components/Testimonial';
 import FAQs from '@/components/FAQs';
-import { FAQsCopy } from '@/copyContents/HomePage';
+import { FAQsCopy, homeCopy } from '@/copyContents/HomePage';
 import ExpertCTA from '@/components/ExpertCTA';
-// import NavBar from '@/components/NavBar';
+import RightLeftLayout from '@/components/RightLeftLayout';
+import HostingPriceCard from '@/components/HostingPriceCard';
+import { Hosting } from '@/copyContents/PricePlan';
+import Footer from '@/components/Footer';
 
 export default function SamplePage() {
 
@@ -67,9 +70,16 @@ export default function SamplePage() {
           PriBtnWineLink= '/'
         />
       </div>
+
+      <HostingPriceCard hostingPlans={Hosting.plans}/>
+
+      <RightLeftLayout 
+        rlLayout={homeCopy.wcuList}/>
       <Testimonial/>
       <FAQs faqsContent={FAQsCopy}/>
       <ExpertCTA/>
+
+      <Footer/>
     </main>
   )
 }
