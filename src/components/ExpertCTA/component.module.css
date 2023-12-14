@@ -1,0 +1,12 @@
+.expert__cta__section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expert__cta__text {
+    display: grid;
+    gap: 1rem;
+}

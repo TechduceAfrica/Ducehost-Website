@@ -1,5 +1,5 @@
 "use client"
-import Image from 'next/image';
+
 import { useEffect } from 'react';
 import SubText from '@/components/SubText';
 import HeadlineSmall from '@/components/HeadlineSmall';
@@ -7,6 +7,14 @@ import SecBtn from '@/components/SecBtn';
 import PriBtn from '@/components/PriBtn';
 import PriBtnWine from '@/components/PriBtnWine';
 import ImgBGHeroSection from '@/components/ImgBGHeroSection';
+import Testimonial from '@/components/Testimonial';
+import FAQs from '@/components/FAQs';
+import { FAQsCopy, homeCopy } from '@/copyContents/HomePage';
+import ExpertCTA from '@/components/ExpertCTA';
+import RightLeftLayout from '@/components/RightLeftLayout';
+import HostingPriceCard from '@/components/HostingPriceCard';
+import { Hosting } from '@/copyContents/PricePlan';
+import Footer from '@/components/Footer';
 
 export default function SamplePage() {
 
@@ -21,17 +29,11 @@ export default function SamplePage() {
 
   return (
     <main>
-      <Image
-        src="/ducehost-logo.webp"
-        alt="Ducehost Logo"
-        width={198}
-        height={34}
-        priority
-      />
+      {/* <NavBar/> */}
       <ImgBGHeroSection
         HeroSecBgImgLink="/images/Home%20Hero%20Section_Ducehost%20website%20hosting%20and%20domain%20name%20purchase.webp"
         text= "Grow Your Dream Business Online"
-        title= "For a Reliable Hosting Service, We Are Yuor Trusted Partner."
+        title= "For a Reliable Hosting Service, We Are Your Trusted Partner."
       />
       <div>
         <h1>H1 One</h1>
@@ -68,6 +70,16 @@ export default function SamplePage() {
           PriBtnWineLink= '/'
         />
       </div>
+
+      <HostingPriceCard hostingPlans={Hosting.plans}/>
+
+      <RightLeftLayout 
+        rlLayout={homeCopy.wcuList}/>
+      <Testimonial/>
+      <FAQs faqsContent={FAQsCopy}/>
+      <ExpertCTA/>
+
+      <Footer/>
     </main>
   )
 }

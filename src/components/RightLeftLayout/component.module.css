@@ -1,0 +1,22 @@
+.RightLeftLayout__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-block: 40px;
+}
+
+.RightLeftLayout__wrapper:nth-child(even) div:first-child {
+    order: 2;
+}
+
+.RightLeftLayout__wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.RightLeftLayout__wrapper div:nth-child(2) {
+    display: grid;
+    gap: 10px;
+}

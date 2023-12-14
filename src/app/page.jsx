@@ -22,13 +22,6 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <Image
-        src="/ducehost-logo.webp"
-        alt="Ducehost Logo"
-        width={198}
-        height={34}
-        priority
-      />
       <div>
         <DomainSearchBar/>
       </div>
