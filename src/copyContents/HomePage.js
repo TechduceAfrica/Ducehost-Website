@@ -9,27 +9,37 @@ export const homeCopy = {
             Title: `24/7 Customer Support`,
             Text: `At Ducehost, we offer a round-the-clock support through various channels like live 
             chat, Email and Phone. Our knowledgeable support staff ensures your hosting experience is smooth and hassle free`,
-            Img: `/images/247-Customer-Support_Ducehost%20website%20hosting%20and%20domain%20name%20purchase.webp`
+            Img: `/images/247-Customer-Support_Ducehost%20website%20hosting%20and%20domain%20name%20purchase.webp`,
+            width: `325`,
+            height: `325`,
         },
         {
             Title: `Security First Measure`,
             Text: `We employ robust security measures including firewalls, DDoS protection and regular malware scans. SSL Certificates come standard to safeguard your data and visitor trust.`,
-            Img: `/images/security-first-measure_Ducehost%20website%20hosting%20and%20domain%20name%20purchase.webp`
+            Img: `/images/security-first-measure_Ducehost%20website%20hosting%20and%20domain%20name%20purchase.webp`,
+            width: `388`,
+            height: `230`,
         },
         {
             Title: `Scalability and Flexibility`,
             Text: `You have the ability to upgrade or downgrade your hosting plans as your website grows or as your needs evolve. Our flexible plans ensures you are never overpaying or underserved`,
-            Img: `/images/scalabilty-and-flexibility_Ducehost%20website%20hosting%20and%20domain%20name%20purchase.webp`
+            Img: `/images/scalabilty-and-flexibility_Ducehost%20website%20hosting%20and%20domain%20name%20purchase.webp`,
+            width: `295`,
+            height: `295`,
         },
         {
             Title: `Free Domain Name`,
             Text: `At Ducehost, we provide a complimentary ‘.online’ domain with our hosting packages starting from the Plus Plan and above. This means that when you choose one of these plans, you’ll receive a free ‘.online’ domain included.`,
-            Img: `/images/free-domain-name_Ducehost%20website%20hosting%20and%20domain%20name%20purchase.webp`
+            Img: `/images/free-domain-name_Ducehost%20website%20hosting%20and%20domain%20name%20purchase.webp`,
+            width: `295`,
+            height: `295`,
         },
         {
             Title: `User-friendly Tutorials`,
             Text: `At Ducehost, we are dedicated to ensuring that you have the resources you need to succeed. Our user-friendly tutorials and self-help guides are here to empower you on your digital journey.`,
-            Img: `/images/User-friendly-tutorials_Ducehost%20website%20hosting%20and%20domain%20name%20purchase.webp`
+            Img: `/images/User-friendly-tutorials_Ducehost%20website%20hosting%20and%20domain%20name%20purchase.webp`,
+            width: `335`,
+            height: `335`,
         },
     ],
     ppSectionTitle: `Pricing Plans`,
