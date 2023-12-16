@@ -11,6 +11,10 @@
     order: 2;
 }
 
+.RightLeftLayout {
+    margin-block: 70px;
+}
+
 .RightLeftLayout__wrapper img {
     width: 100%;
     height: 100%;
@@ -19,4 +23,19 @@
 .RightLeftLayout__wrapper div:nth-child(2) {
     display: grid;
     gap: 10px;
+}
+
+@media (max-width:787px) {
+    .RightLeftLayout__wrapper {
+        grid-template-columns: auto;
+    }
+    .RightLeftLayout__wrapper:nth-child(even) div:first-child {
+        order: 0;
+    }
+    .RightLeftLayout__wrapper {
+        text-align: center;
+    }
+    .RightLeftLayout__wrapper img {
+        max-width: 85px;
+    }
 }

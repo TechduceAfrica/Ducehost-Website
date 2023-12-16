@@ -31,3 +31,10 @@
     line-height: 36px;
     margin-bottom: 12px;
 }
+
+@media (max-width:787px) {
+    .testimonial__card img {
+        max-width: 48px;
+        max-height: 48px;
+    }
+}

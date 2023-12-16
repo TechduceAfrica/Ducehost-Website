@@ -4,9 +4,26 @@
     gap: 30px;
     justify-content: space-between;
     align-items: center;
+    padding-block: 64px 100px;
 }
 
 .expert__cta__text {
     display: grid;
     gap: 1rem;
+}
+
+.expert__cta__img img {
+    aspect-ratio: 693 / 390;
+    max-width: 693px;
+    max-height: 390px;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:787px) {
+    .expert__cta__section {
+        padding-block: 32px 48px;
+        text-align: center;
+        grid-template-columns: auto;
+    }
 }

@@ -73,7 +73,11 @@
     display: none;
 }
 
-@media (max-width:787px) {
+.mobile__menu {
+    display: none;
+}
+
+@media (max-width:950px) {
 
     .nav__bar a {
         padding: 0px;
