@@ -4,7 +4,7 @@ import style from './component.module.css';
 export default function RightLeftLayout({ rlLayout }) {
 
     return (
-        <>
+        <section className={style.RightLeftLayout}>
             {rlLayout.map((rlLayoutCopy, index) => (
                 <div 
                     key={index} 
@@ -16,19 +16,28 @@ export default function RightLeftLayout({ rlLayout }) {
                             alt={rlLayoutCopy.Title} 
                             width={rlLayoutCopy.width} 
                             height={rlLayoutCopy.height}
+                            data-scroll 
+                            data-scroll-speed="0.13"
                         />
                     </div>
                     <div>
-                        <h4 className='wine'>
+                        <h4 
+                            className='wine'
+                            data-scroll 
+                            data-scroll-speed="0.15"
+                        >
                             {rlLayoutCopy.Title}
                         </h4>
-                        <p>
+                        <p
+                            data-scroll 
+                            data-scroll-speed="0.12"
+                        >
                             {rlLayoutCopy.Text}
                         </p>
                     </div>
                 </div>
                 )
             )}
-        </>
+        </section>
     )
 }
