@@ -10,11 +10,12 @@ import ImgBGHeroSection from '@/components/ImgBGHeroSection';
 import Testimonial from '@/components/Testimonial';
 import FAQs from '@/components/FAQs';
 import { FAQsCopy, homeCopy } from '@/copyContents/HomePage';
-import ExpertCTA from '@/components/ExpertCTA';
 import RightLeftLayout from '@/components/RightLeftLayout';
 import HostingPriceCard from '@/components/HostingPriceCard';
 import { Hosting } from '@/copyContents/PricePlan';
-import Footer from '@/components/Footer';
+
+import CenteredCard from '@/components/CenteredCard';
+import { whyTransfer } from '@/copyContents/DomainTranfer';
 
 export default function SamplePage() {
 
@@ -71,15 +72,17 @@ export default function SamplePage() {
         />
       </div>
 
+      <CenteredCard
+        centercards={whyTransfer}
+        styled={whyTransfer}
+      />
+
       <HostingPriceCard hostingPlans={Hosting.plans}/>
 
       <RightLeftLayout 
         rlLayout={homeCopy.wcuList}/>
       <Testimonial/>
       <FAQs faqsContent={FAQsCopy}/>
-      <ExpertCTA/>
-
-      <Footer/>
     </main>
   )
 }
