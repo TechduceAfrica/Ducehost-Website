@@ -16,6 +16,7 @@ import { Hosting } from '@/copyContents/PricePlan';
 
 import CenteredCard from '@/components/CenteredCard';
 import { whyTransfer } from '@/copyContents/DomainTranfer';
+import DomainSearchOnly from '@/components/DomainSearchBar/DomainSearchOnly';
 
 export default function SamplePage() {
 
@@ -55,6 +56,7 @@ export default function SamplePage() {
           textContiue= 'and then black again'
         />
       </div>
+      <DomainSearchOnly/>
       <div>
         <SecBtn
           SecBtnText= 'Sec Button'
