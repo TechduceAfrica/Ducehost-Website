@@ -1,0 +1,19 @@
+.tld__card__sec {
+    padding-block: 80px;
+    box-sizing: border-box;
+}
+
+.tld__card__content {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+@media (max-width:787px) {
+    .tld__card__sec {
+        padding: 40px 10px;
+    }
+
+    .tld__card__content {
+        margin-bottom: 30px;
+    }
+}

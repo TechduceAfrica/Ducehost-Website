@@ -128,6 +128,14 @@ p.headlinesmall {
   color: var(--wine);
 }
 
+.green {
+  color: var(--green);
+}
+
+.white__BG {
+  background-color: var(--white);
+}
+
 nav a.active {
   padding: 10px 20px;
   border-radius: 8px;
@@ -186,7 +194,7 @@ button {
   color: var(--wine);
 }
 
-.container-width {
+.container__width {
   max-width: 1200px;
   margin: 0px auto;
   padding-inline: 10px;
@@ -267,6 +275,11 @@ h3.szh-accordion__item-heading::after {
     font-size: 32px;
     font-weight: 600;
     line-height: 40px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 32px;
   }
 
   h4 {
