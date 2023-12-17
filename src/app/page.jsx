@@ -27,7 +27,7 @@ export default function Home() {
                 text={homeCopy.heroIntro}
                 title={homeCopy.heroTitle}
             />
-            <section className='container-width'>
+            <section className='container__width'>
                 <div className={style.home__sec}>
                     <div className={style.content__copy}>
                         <h3>

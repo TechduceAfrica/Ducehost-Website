@@ -3,7 +3,7 @@ import style from './component.module.css'
 
 export default function ExpertCTA() {
   return (
-    <section className={`${style.expert__cta__section} container-width`}>
+    <section className={`${style.expert__cta__section} container__width`}>
         <div 
             className={style.expert__cta__img} 
             data-scroll 
