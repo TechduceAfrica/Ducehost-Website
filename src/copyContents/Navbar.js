@@ -1,15 +1,15 @@
 export const domainSubMenus = [
     {
         DomainMenu: `Domain Name Search`,
-        DomainLink: `/domain-name-search`,
+        DomainLink: `/domain/domain-name-search`,
     },
     {
         DomainMenu: `Domain Transfer`,
-        DomainLink: `/domain-transfer`,
+        DomainLink: `/domain/domain-transfer`,
     },
     {
         DomainMenu: `Whois Lookup`,
-        DomainLink: `/whois-lookup`,
+        DomainLink: `/domain/whois-lookup`,
     },
 ]
 
