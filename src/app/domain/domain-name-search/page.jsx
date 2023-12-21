@@ -2,11 +2,12 @@
 import ImgBGHeroSection from '@/components/ImgBGHeroSection';
 import style from './page.module.css';
 import { useEffect } from 'react';
-import { HeroSection, wcdSection } from '@/copyContents/DomainSearchPageCopy';
+import { DomainSearchFAQs, HeroSection, wcdSection } from '@/copyContents/DomainSearchPageCopy';
 import TLDPriceCards from '@/components/TLDPriceCards';
 import WcuSection from '@/components/WcdSection';
 import DiscoverDomain from '@/components/DiscoverDomain';
 import OtherDomainNeeds from '@/components/OtherDomainNeeds';
+import FAQs from '@/components/FAQs';
 
 export default function DomainNameSearch() {
 
@@ -48,9 +49,15 @@ export default function DomainNameSearch() {
             <section>
                 <DiscoverDomain/>
             </section>
-            <section>
+            <section className='container__width'>
                 <OtherDomainNeeds/>
             </section>
+            <section className='container__width'>
+                <FAQs 
+                    faqsContent={DomainSearchFAQs}
+                />
+            </section>
         </main>
+
     )
 }
