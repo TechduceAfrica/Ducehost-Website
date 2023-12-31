@@ -37,7 +37,7 @@
 :root {
   --max-width: 1200px;
   --border-radius: 12px;
-  --pri-font: 'Outfit';
+  --pri-font: 'Outfit', 'Outfit-Regular', Arial, Helvetica, sans-serif;
   --font-300: 'Outfit-Light', Outfit, Arial, Helvetica, sans-serif;
   --font-400: 'Outfit-Regular', Outfit, Arial, Helvetica, sans-serif;
   --font-500: 'Outfit-Medium', Outfit, Arial, Helvetica, sans-serif;
