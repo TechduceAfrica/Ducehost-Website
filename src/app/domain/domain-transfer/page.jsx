@@ -1,13 +1,26 @@
+'use client'
+import { useEffect } from 'react';
+import DomainTransferGuide from '@/components/DomainTransferGuide';
 import style from './page.module.css';
 import CenteredCard from '@/components/CenteredCard';
 import WithTransferSearch from '@/components/ImgBGHeroSection/WithTransferSearch';
-import SmoothScroll from '@/components/LocomotiveScroll';
-import { DomainTransferHero, whyTransfer } from '@/copyContents/DomainTranfer';
+import { DomainTransferHero, whyTransfer, DomainTransferFAQs } from '@/copyContents/DomainTranfer';
+import FAQs from '@/components/FAQs';
 
 export default function DomainTransfer() {
+
+    useEffect( () => {
+        (
+          async () => {
+            const LocomotiveScroll = (await import('locomotive-scroll')).default;
+            const locomotiveScroll = new LocomotiveScroll();
+          }
+        )()
+    }, [])
+
+
     return (
         <main>
-            <SmoothScroll>
                 <WithTransferSearch
                     HeroSecBgImgLink={DomainTransferHero.heroBG}
                     text={DomainTransferHero.heroIntro}
@@ -24,7 +37,14 @@ export default function DomainTransfer() {
                         styled={whyTransfer}
                     />
                 </section>
-            </SmoothScroll>
+                <section className='container__width'>
+                    <DomainTransferGuide/>
+                </section>
+                <section className='container__width margin__block__2'>
+                    <FAQs 
+                        faqsContent={DomainTransferFAQs}
+                    />
+                </section>
         </main>
     )
 }
