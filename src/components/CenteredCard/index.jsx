@@ -2,7 +2,6 @@ import style from './component.module.css';
 import Image from 'next/image';
 
 export default function CenteredCard({ centercards }) {
-
     return (
         <div 
             className={style.cards__wrapper}
