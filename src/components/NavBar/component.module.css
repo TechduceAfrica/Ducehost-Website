@@ -67,6 +67,7 @@
 .sub__menu__list {
     padding: 10px;
     text-wrap: nowrap;
+    min-width: 200px;
 }
 
 .mobile__nav__hamburger {
