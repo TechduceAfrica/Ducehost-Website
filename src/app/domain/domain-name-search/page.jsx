@@ -2,7 +2,7 @@
 import ImgBGHeroSection from '@/components/ImgBGHeroSection';
 import style from './page.module.css';
 import { useEffect } from 'react';
-import { DomainSearchFAQs, HeroSection, wcdSection } from '@/copyContents/DomainSearchPageCopy';
+import { DomainSearchFAQs, HeroSection } from '@/copyContents/DomainSearchPageCopy';
 import TLDPriceCards from '@/components/TLDPriceCards';
 import WcuSection from '@/components/WcdSection';
 import DiscoverDomain from '@/components/DiscoverDomain';
@@ -52,7 +52,7 @@ export default function DomainNameSearch() {
             <section className='container__width'>
                 <OtherDomainNeeds/>
             </section>
-            <section className='container__width'>
+            <section className='container__width margin__block__2'>
                 <FAQs 
                     faqsContent={DomainSearchFAQs}
                 />
