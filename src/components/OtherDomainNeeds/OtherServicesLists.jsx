@@ -3,9 +3,9 @@ import style from './component.module.css'
 
 export default function OtherServicesLists({ otherServicesCards }) {
   return (
-    <div>
+    <div className={style.other__domain__services__wrapper}>
         {otherServicesCards.map((otherServicesCard, index) => (
-            <div>
+            <div key={index}>
                 <div>
                     <Image
                         src={otherServicesCard.icon}
@@ -21,8 +21,8 @@ export default function OtherServicesLists({ otherServicesCards }) {
                 <p>
                     {otherServicesCard.serLabel}
                 </p>
-                <a href="http://">
-                    <div>
+                <a href={otherServicesCard.serLink}>
+                    <div className={style.other__domain__services__link}>
                         <span>
                             {otherServicesCard.serCTA}
                         </span>

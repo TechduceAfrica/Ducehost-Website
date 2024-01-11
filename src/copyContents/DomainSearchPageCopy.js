@@ -52,12 +52,14 @@ export const otherServices = {
             serTitle: `Domain Transfer`,
             serLabel: `Transfer your domain name from your existing domain registrar to another with little or no effort.`,
             serCTA: `Learn more`,
+            serLink: `/domain/domain-transfer`,
         },
         {
             icon: `/images/who-is-lookup-icon.webp`,
             serTitle: `Who is lookup`,
             serLabel: `Find out information on any domain name like the owner, registration date,contact details tc.`,
             serCTA: `Learn more`,
+            serLink: `/domain/whois-lookup`,
         },
     ]
 }

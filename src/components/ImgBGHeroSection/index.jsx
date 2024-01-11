@@ -1,7 +1,8 @@
+'use client'
 import DomainSearchBar from "../DomainSearchBar";
 import style from './component.module.css';
 
-export default function sectionImgBGHeroSection( { HeroSecBgImgLink, text, title }) {
+export default function sectionImgBGHeroSection({ HeroSecBgImgLink, text, title }) {
 
     const styles = {
         background: `url(${HeroSecBgImgLink})`,

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function OtherDomainNeeds() {
   return (
-    <div>
+    <div className={style.other__domain__wrapper}>
         <div>
             <Image
                 src={otherServices.img}
@@ -15,8 +15,8 @@ export default function OtherDomainNeeds() {
                 height={otherServices.imgheight}
             />
         </div>
-        <div>
-            <div>
+        <div className={style.other__domain__content}>
+            <div className={style.other__domain__content__intro}>
                 <h3>
                     {otherServices.title}
                 </h3>
