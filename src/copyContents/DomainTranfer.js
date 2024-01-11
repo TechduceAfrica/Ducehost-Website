@@ -28,10 +28,13 @@ export const whyTransfer = [
     },
 ]
 
-export const DomainTransferGuide = [
-    {
+export const DomainTransferGuide = {
+    stepOne: {
         step: `Step 1`,
         title: `Check domain name eligibility`,
+        imgLink: `/images/check-domain-name-eligibility.webp`,
+        width: `500`,
+        height: `500`,
         content: [
             {
                 list: `Verify your domain name’s eligibility for transfer by checking its status and any locks with your current registrar. ( A domain name is eligible for transfer not latter than 30days before expiration).`,
@@ -41,11 +44,8 @@ export const DomainTransferGuide = [
             },
         ],
         note: ``,
-        img: ``,
-        width: `500`,
-        height: `500`,
     },
-    {
+    stepTwo: {
         step: `Step 2`,
         title: `Obtain your Authorization Code`,
         content: [
@@ -54,11 +54,11 @@ export const DomainTransferGuide = [
             },
         ],
         note: ``,
-        img: ``,
+        imgLink: `/images/obtain-your-authorization-code.webp`,
         width: `500`,
         height: `500`,
     },
-    {
+    stepThree: {
         step: `Step 3`,
         title: `Initiate and Confirm Transfer`,
         content: [
@@ -70,11 +70,11 @@ export const DomainTransferGuide = [
             },
         ],
         note: ``,
-        img: ``,
+        imgLink: `/images/initiate-and-confirm-transfer.webp`,
         width: `500`,
         height: `500`,
     },
-    {
+    stepFour: {
         step: `Step 4`,
         title: `Finalize and Enjoy Streamlined Management`,
         content: [
@@ -89,11 +89,11 @@ export const DomainTransferGuide = [
             },
         ],
         note: `The billing associated with the previously acquired domain name is non-transferable. We kindly request a renewed payment to continue enjoying uninterrupted access to this service.`,
-        img: ``,
+        imgLink: `/images/finalize-and-enjoy-streamlined-management.webp`,
         width: `500`,
         height: `500`,
     },
-]
+}
 
 export const DomainTransferFAQs = [
     {
