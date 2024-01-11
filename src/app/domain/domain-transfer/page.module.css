@@ -1,0 +1,18 @@
+.section__one {
+    padding-block: 80px;
+}
+
+.section__title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 787px) {
+    .section__one {
+        padding-block: 40px;
+    }
+
+    .section__title {
+        margin-bottom: 0.5rem;
+    }
+}

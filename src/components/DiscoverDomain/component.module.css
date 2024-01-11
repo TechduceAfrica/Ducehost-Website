@@ -1,0 +1,27 @@
+.discover__sec {
+    background: rgba(223, 192, 208, 0.15);
+}
+
+.discover__sec > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.discover__sec form {
+    place-content: normal;
+    margin-top: 48px;
+}
+
+.discover__sec__img {
+    line-height: 0px;
+}
+
+@media (max-width:787px) {
+    .discover__sec {
+        text-align: center;
+    }
+}

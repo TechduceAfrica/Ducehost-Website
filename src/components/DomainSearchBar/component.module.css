@@ -2,10 +2,16 @@
     max-width: 670px;
     display: flex;
     margin-bottom: 1rem;
+    flex: 1 1 200px;
 }
 
 .domain__name__search__form {
     display: grid;
+    place-content: center;
+}
+
+.domain__name__single__search__form {
+    display: flex;
     place-content: center;
 }
 

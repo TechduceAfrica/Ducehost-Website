@@ -1,12 +1,14 @@
 import Image from "next/image"
 import style from './component.module.css';
 import MagneticEffect from "@/app/animations/MagneticEffect";
+import ExpertCTA from "../ExpertCTA";
 
 export default function Footer() {
     return (
         <>
+            <ExpertCTA/>
             <footer>
-                <div className={`${style.footer__info__wrapper} container-width`}>
+                <div className={`${style.footer__info__wrapper} container__width`}>
                     <div className={style.footer__info}>
                         <Image
                             src="/images/Ducehost-white-logo.webp"
@@ -143,7 +145,7 @@ Ikeja, Lagos
                         </div>
                     </div>
                 </div>
-                <div className={`${style.footer__newsletter} container-width`}>
+                <div className={`${style.footer__newsletter} container__width`}>
                     <div>
                         <label htmlFor="newsletter">
                             Subscribe to our Newsletter
@@ -164,8 +166,8 @@ Ikeja, Lagos
                         />
                     </div>
                 </div>
-                <div className={`${style.divider} container-width`}></div>
-                <div className={`${style.footer__credit} container-width`}>
+                <div className={`${style.divider} container__width`}></div>
+                <div className={`${style.footer__credit} container__width`}>
                     <div>
                         <a 
                             href="https://ducehost.com/" 

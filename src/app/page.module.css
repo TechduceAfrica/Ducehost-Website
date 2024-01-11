@@ -6,3 +6,27 @@
   min-height: 100vh;
 }
 
+.content__copy {
+  max-width: 600px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.content__copy h3 {
+  margin-bottom: 10px;
+}
+
+.content__copy p {
+  margin-bottom: 36px;
+}
+
+.home__sec {
+  margin-block: 80px;
+}
+
+@media (max-width:787px) {
+  .home__sec {
+    margin-block: 60px;
+  }
+}
+

@@ -4,11 +4,13 @@ import style from './component.module.css';
 export default function RightLeftLayout({ rlLayout }) {
 
     return (
-        <>
+        <section className={style.RightLeftLayout}>
             {rlLayout.map((rlLayoutCopy, index) => (
                 <div 
                     key={index} 
                     className={style.RightLeftLayout__wrapper}
+                    data-scroll
+                    data-scroll-speed="0.15"
                 >
                     <div>
                         <Image 
@@ -19,7 +21,10 @@ export default function RightLeftLayout({ rlLayout }) {
                         />
                     </div>
                     <div>
-                        <h4 className='wine'>
+                        <h4 
+                            className='wine'
+                            
+                        >
                             {rlLayoutCopy.Title}
                         </h4>
                         <p>
@@ -29,6 +34,6 @@ export default function RightLeftLayout({ rlLayout }) {
                 </div>
                 )
             )}
-        </>
+        </section>
     )
 }

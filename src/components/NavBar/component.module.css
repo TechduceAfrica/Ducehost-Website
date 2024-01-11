@@ -67,14 +67,18 @@
 .sub__menu__list {
     padding: 10px;
     text-wrap: nowrap;
+    min-width: 200px;
 }
 
 .mobile__nav__hamburger {
     display: none;
 }
 
-@media (max-width:787px) {
+.mobile__menu {
+    display: none;
+}
 
+@media (max-width:950px) {
     .nav__bar a {
         padding: 0px;
     }

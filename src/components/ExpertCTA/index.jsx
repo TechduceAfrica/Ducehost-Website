@@ -3,8 +3,11 @@ import style from './component.module.css'
 
 export default function ExpertCTA() {
   return (
-    <section className={`${style.expert__cta__section} container-width`}>
-        <div className={style.expert__cta__img}>
+    <section className={`${style.expert__cta__section} container__width`}>
+        <div 
+            className={style.expert__cta__img} 
+            data-scroll 
+            data-scroll-speed="0.12">
             <Image 
                 src='/images/Ducehost-Expert-Assistance.webp' 
                 alt='Domain Hosting Expert Assistance Whenever You Need It'
@@ -12,7 +15,11 @@ export default function ExpertCTA() {
                 height={390} 
             />
         </div>
-        <div className={style.expert__cta__text}>
+        <div 
+            className={style.expert__cta__text}
+            data-scroll 
+            data-scroll-speed="0.13"
+        >
             <h4>
                 <span className='wine'>Expert Assistance </span>
                 Whenever You Need It
