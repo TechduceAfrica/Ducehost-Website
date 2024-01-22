@@ -1,13 +1,13 @@
 'use client'
-import ImgBGHeroSection from '@/components/ImgBGHeroSection';
+import ImgBGHeroSection from '@/app/_components/ImgBGHeroSection';
 import style from './page.module.css'
 import { useEffect } from 'react';
 import { FAQsCopy, homeCopy } from '@/copyContents/HomePage';
-import RightLeftLayout from '@/components/RightLeftLayout';
-import HostingPriceCard from '@/components/HostingPriceCard';
+import RightLeftLayout from '@/app/_components/RightLeftLayout';
+import HostingPriceCard from '@/app/_components/HostingPriceCard';
 import { Hosting } from '@/copyContents/PricePlan';
-import FAQs from '@/components/FAQs';
-import Testimonial from '@/components/Testimonial';
+import FAQs from '@/app/_components/FAQs';
+import Testimonial from '@/app/_components/Testimonial';
 
 export default function Home() {
 

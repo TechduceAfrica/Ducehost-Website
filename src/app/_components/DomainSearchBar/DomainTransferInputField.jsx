@@ -11,7 +11,7 @@ export default function DomainTransferInputField() {
                     value={''} 
                     onChange={(e) => setDomain(e.target.value)}
                     placeholder="Enter Domain name you want to transfer" 
-                />
+                /> 
                 <button 
                     // onClick={''}
                 >

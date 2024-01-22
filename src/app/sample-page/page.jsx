@@ -1,22 +1,22 @@
 "use client"
 
 import { useEffect } from 'react';
-import SubText from '@/components/SubText';
-import HeadlineSmall from '@/components/HeadlineSmall';
-import SecBtn from '@/components/SecBtn';
-import PriBtn from '@/components/PriBtn';
-import PriBtnWine from '@/components/PriBtnWine';
-import ImgBGHeroSection from '@/components/ImgBGHeroSection';
-import Testimonial from '@/components/Testimonial';
-import FAQs from '@/components/FAQs';
+import SubText from '@/app/_components/SubText';
+import HeadlineSmall from '@/app/_components/HeadlineSmall';
+import SecBtn from '@/app/_components/SecBtn';
+import PriBtn from '@/app/_components/PriBtn';
+import PriBtnWine from '@/app/_components/PriBtnWine';
+import ImgBGHeroSection from '@/app/_components/ImgBGHeroSection';
+import Testimonial from '@/app/_components/Testimonial';
+import FAQs from '@/app/_components/FAQs';
 import { FAQsCopy, homeCopy } from '@/copyContents/HomePage';
-import RightLeftLayout from '@/components/RightLeftLayout';
-import HostingPriceCard from '@/components/HostingPriceCard';
+import RightLeftLayout from '@/app/_components/RightLeftLayout';
+import HostingPriceCard from '@/app/_components/HostingPriceCard';
 import { Hosting } from '@/copyContents/PricePlan';
 
-import CenteredCard from '@/components/CenteredCard';
+import CenteredCard from '@/app/_components/CenteredCard';
 import { whyTransfer } from '@/copyContents/DomainTranfer';
-import DomainSearchOnly from '@/components/DomainSearchBar/DomainSearchOnly';
+import DomainSearchOnly from '@/app/_components/DomainSearchBar/DomainSearchOnly';
 
 export default function SamplePage() {
 

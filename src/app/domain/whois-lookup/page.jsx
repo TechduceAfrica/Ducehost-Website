@@ -1,5 +1,5 @@
 'use client'
-import ForWhoisLookUp from '@/components/ImgBGHeroSection/ForWhoisLookUp';
+import ForWhoisLookUp from '@/app/_components/ImgBGHeroSection/ForWhoisLookUp';
 import { WLHeroCopy } from '@/copyContents/WhoisLookupPage';
 import { useEffect } from 'react';
 

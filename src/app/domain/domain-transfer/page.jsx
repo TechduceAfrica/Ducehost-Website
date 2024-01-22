@@ -1,11 +1,11 @@
 'use client'
 import { useEffect } from 'react';
-import DomainTransferGuide from '@/components/DomainTransferGuide';
+import DomainTransferGuide from '@/app/_components/DomainTransferGuide';
 import style from './page.module.css';
-import CenteredCard from '@/components/CenteredCard';
-import WithTransferSearch from '@/components/ImgBGHeroSection/WithTransferSearch';
+import CenteredCard from '@/app/_components/CenteredCard';
+import WithTransferSearch from '@/app/_components/ImgBGHeroSection/WithTransferSearch';
 import { DomainTransferHero, whyTransfer, DomainTransferFAQs } from '@/copyContents/DomainTranfer';
-import FAQs from '@/components/FAQs';
+import FAQs from '@/app/_components/FAQs';
 
 export default function DomainTransfer() {
 
