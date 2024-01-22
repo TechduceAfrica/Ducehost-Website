@@ -1,13 +1,13 @@
 'use client'
-import ImgBGHeroSection from '@/components/ImgBGHeroSection';
+import ImgBGHeroSection from '@/app/_components/ImgBGHeroSection';
 import style from './page.module.css';
 import { useEffect } from 'react';
 import { DomainSearchFAQs, HeroSection } from '@/copyContents/DomainSearchPageCopy';
-import TLDPriceCards from '@/components/TLDPriceCards';
-import WcuSection from '@/components/WcdSection';
-import DiscoverDomain from '@/components/DiscoverDomain';
-import OtherDomainNeeds from '@/components/OtherDomainNeeds';
-import FAQs from '@/components/FAQs';
+import TLDPriceCards from '@/app/_components/TLDPriceCards';
+import WcuSection from '@/app/_components/WcdSection';
+import DiscoverDomain from '@/app/_components/DiscoverDomain';
+import OtherDomainNeeds from '@/app/_components/OtherDomainNeeds';
+import FAQs from '@/app/_components/FAQs';
 
 export default function DomainNameSearch() {
 

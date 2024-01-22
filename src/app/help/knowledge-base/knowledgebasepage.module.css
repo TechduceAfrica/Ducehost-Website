@@ -1,0 +1,15 @@
+.kb__page {
+    display: grid;
+    grid-template-columns: 1fr 33%;
+    gap: 3rem;
+}
+
+.kb__page h2 {
+    margin-bottom: 40px;
+}
+
+@media (max-width:787px) {
+    .kb__page {
+        grid-template-columns: 1fr;
+    }
+}

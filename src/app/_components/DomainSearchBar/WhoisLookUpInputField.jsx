@@ -1,21 +1,21 @@
 'use client'
 import style from './component.module.css'
 
-export default function DomainTransferInputField() {
+export default function WhoisLookUpInputField() {
     return (
         <form className={style.domain__name__single__search__form}>
             <div className={style.domain__name__search__bar}>
                 <input 
                     type="text" 
-                    name="Domain Transfer" 
+                    name="Whois Lookup" 
                     value={''} 
                     onChange={(e) => setDomain(e.target.value)}
-                    placeholder="Enter Domain name you want to transfer" 
+                    placeholder="Enter Domain name you want to lookup" 
                 />
                 <button 
                     // onClick={''}
                 >
-                    Transfer
+                    Lookup
                 </button>
             </div>
             <div>

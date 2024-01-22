@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from "next/navigation";
 import style from './component.module.css';
-import SecBtn from '@/components/SecBtn';
+import SecBtn from '@/app/_components/SecBtn';
 import { domainSubMenus, 
         hostingSubMenus, 
         securitySubMenus, 

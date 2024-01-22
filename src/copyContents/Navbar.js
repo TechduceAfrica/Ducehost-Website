@@ -76,15 +76,15 @@ export const contactSubMenus = [
 export const helpSubMenus = [
     {
         DomainMenu: `Knowledge Base`,
-        DomainLink: `/knowledge-base`,
+        DomainLink: `/help/knowledge-base`,
     },
     {
         DomainMenu: `eBooks`,
-        DomainLink: `/e-books`,
+        DomainLink: `/help/e-books`,
     },
     {
         DomainMenu: `How-to-videos`,
-        DomainLink: `/how-to-videos`,
+        DomainLink: `/help/how-to-videos`,
     },
 ]
 
