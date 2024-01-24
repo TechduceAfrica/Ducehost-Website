@@ -7,7 +7,7 @@ export default function PriBtn(props) {
             >
                 <button 
                     className={`${props.className} btn__pri`} 
-                    onClick={() => props.onClick()}
+                    // onClick={() => props.onClick()}
                 >
                     {props.PriBtnText}
                 </button>
