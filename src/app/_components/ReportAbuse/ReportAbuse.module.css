@@ -1,0 +1,36 @@
+.hero__section, 
+.cta__section {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-block: 100px !important;
+}
+
+.hero__section > div {
+    flex: 0 1 calc(50% - 40px);
+}
+
+.hero__section > div:first-child {
+    display: grid;
+    gap: 40px;
+}
+
+.hero__section > div:nth-child(2) {
+    padding: 50px;
+    border-radius: 24px;
+    background-color: var(--white);
+    box-shadow: 0px 6px 30px 5px rgba(35, 164, 85, 0.15);
+}
+
+.hero__section h1 {
+    color: var(--dark-font);
+    font-family: var(--font-600);
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+}
+
+.hero__section img {
+    max-width: 530px;
+}
