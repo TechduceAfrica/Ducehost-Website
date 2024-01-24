@@ -51,6 +51,7 @@
   --mobile-font: #383838;
   --green: #23A455;
   --wine: #936;
+  --error-color: #B3261E;
   --footer-text-colour: #EDEDED;
   --swiper-navigation-size: 32px!important;
   --swiper-theme-color: var(--green)!important;
@@ -123,6 +124,34 @@ p.subtext {
 p.headlinesmall {
   font-size: 24px;
   line-height: 32px;
+}
+
+.error__404__page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.error__404__page h2 {
+  color: #343434;
+  font-family: var(--font-500);
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.error__404__page h3 {
+  color: var(--Subtext-color, #383838);
+  font-family: Outfit;
+  font-size: 45px;
+  line-height: 52px;
+}
+
+.error__404__page p {
+  color: var(--);
+  font-family: var(--font-400);
+  margin-top: 1rem;
+  margin-bottom: 50px;
+  max-width: 415px;
 }
 
 .wine {
