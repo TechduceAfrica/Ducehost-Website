@@ -46,30 +46,30 @@ export const securitySubMenus = [
 export const emailSubMenus = [
     {
         DomainMenu: `Business Email`,
-        DomainLink: `/business-email`,
+        DomainLink: `/email/business-email`,
     },
     {
         DomainMenu: `Anti-spam Protection`,
-        DomainLink: `/anti-spam-protection`,
+        DomainLink: `/email/anti-spam-protection`,
     },
     {
         DomainMenu: `Private Email`,
-        DomainLink: `/private-email`,
+        DomainLink: `/email/private-email`,
     },
 ]
 
 export const contactSubMenus = [
     {
         DomainMenu: `Submit Ticket`,
-        DomainLink: `/submit-ticket`,
+        DomainLink: `/contact/submit-ticket`,
     },
     {
         DomainMenu: `Live Chat`,
-        DomainLink: `/live-chat`,
+        DomainLink: `/contact/live-chat`,
     },
     {
         DomainMenu: `Report Abuse`,
-        DomainLink: `/report-abuse`,
+        DomainLink: `/contact/report-abuse`,
     },
 ]
 
