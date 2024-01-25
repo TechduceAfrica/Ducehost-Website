@@ -126,6 +126,10 @@ p.headlinesmall {
   line-height: 32px;
 }
 
+svg, a {
+  transition: all 300ms ease-in-out;
+}
+
 .error__404__page {
   display: flex;
   align-items: center;
