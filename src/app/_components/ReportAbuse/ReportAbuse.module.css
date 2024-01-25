@@ -34,3 +34,94 @@
 .hero__section img {
     max-width: 530px;
 }
+
+.cta__section > div {
+    display: grid;
+    gap: 40px;
+}
+
+.contact__card__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact__card {
+    flex: 1 0 200px;
+}
+
+.contact__card h4 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-block: 10px;
+}
+
+.contact__card img {
+    width: 100%;
+    height: 100%;
+    max-width: 48px;
+    max-height: 48px;
+    margin-bottom: 10px;
+}
+
+.contact__card__link {
+    margin-top: 18px;
+    color: var(--green);
+}
+
+.contact__card__link a {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-bottom: solid 1px;
+}
+
+.contact__card__link:hover a {
+    color: var(--dark-font);
+}
+
+.contact__card__link:hover svg {
+    margin-left: 5px;
+}
+
+.contact__card__link:hover svg path {
+    fill: var(--dark-font);
+}
+
+@media (max-width: 787px) {
+    .hero__section > div:nth-child(2) {
+        padding: 10px;
+    }
+
+    .hero__section, 
+    .cta__section {
+        flex-direction: column;
+        margin-block: 40px !important;
+        text-align: center;
+    }
+
+    .hero__section h1 {
+        font-family: var(--font-500);
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .cta__section h3 {
+        margin-bottom: 10px;
+    }
+
+    .contact__card__link {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact__card h4 {
+        font-family: var(--font-500);
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.014px;
+    }
+}

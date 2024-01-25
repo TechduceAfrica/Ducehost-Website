@@ -1,13 +1,22 @@
-import { CTAsectionCardCopy, CtaSectionCopy } from '@/copyContents/ReportAbuseCopy'
+import { CtaSectionCopy } from '@/copyContents/ReportAbuseCopy'
 import Image from 'next/image'
-import React from 'react'
-import WcuListCard from '../WcdSection/WcuListCard'
 import style from './ReportAbuse.module.css'
+import ContactCards from './ContactCards'
 
-export default function CtaSection() {
+export default function CtaSection({ contactCardProps }) {
     return (
         <section className={`${style.cta__section} container__width`}>
-            <WcuListCard wcuListCards={CTAsectionCardCopy}/>
+            <div>
+                <div>
+                    <h3>
+                        {CtaSectionCopy.title}
+                    </h3>
+                    <p>
+                        {CtaSectionCopy.desc}
+                    </p>
+                </div>
+                <ContactCards contactCards={contactCardProps}/>
+            </div>
             <Image 
                 src={CtaSectionCopy.img} 
                 alt={CtaSectionCopy.alt} 

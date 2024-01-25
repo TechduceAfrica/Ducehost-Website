@@ -9,6 +9,8 @@ export const heroCopy = {
 }
 
 export const CtaSectionCopy = {
+    title: `It’s not just Report Abuse our support system offers.`,
+    desc: `With DuceHost  you can schedule a live chat session with our customer support representative or report any form of abuse you encounter.`,
     img: `/images/ducehost-support-system.webp`,
     alt: `report abuse support system`,
     width: `471`,
@@ -20,10 +22,12 @@ export const CTAsectionCardCopy = [
         icon: `/images/live-chat-icon.webp`,
         title: `Live Chat`,
         description: `Get instant help and quick answers to your questions or assistance in real-time from our reliable support system.`,
+        link:  `/contact/live-chat`,
     },
     {
         icon: `/images/submit-ticket-to-ducehost-support-system-icon.webp`,
         title: `Submit Ticket`,
         description: `Step into our support ticket system, your gateway to resolving specific issues or seeking assistance.`,
+        link:  `/contact/submit-ticket`,
     },
 ]
