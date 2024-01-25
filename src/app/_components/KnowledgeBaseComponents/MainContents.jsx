@@ -11,8 +11,13 @@ export default function MainContents() {
             </h2>
             <div className={style.category__screen}>
                 {KnowledgeBaseCategories.map((Category) => (
-                    <Link href={`/help/knowledge-base/${Category.slug}`} target='_blank'>
-                        <div key={Category.id} className={style.category__card}>
+                    <Link 
+                        key={Category.id} 
+                        href="/help/knowledge-base/[category]" 
+                        as={`/help/knowledge-base/${Category.slug}`} 
+                        target='_blank'
+                    >
+                        <div className={style.category__card}>
                             {Category.title}
                         </div>
                     </Link>

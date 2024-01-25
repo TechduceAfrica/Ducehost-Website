@@ -26,7 +26,7 @@
     font-size: 28px;
     font-weight: 500;
     line-height: 36px;
-    margin-block: 40px 34px;
+    margin-block: 40px 34px ;
 }
 
 .footer__socials {
@@ -52,7 +52,7 @@
 }
 
 .divider {
-    margin-block: 58px 17px;
+    margin-block: 58px 17px !important;
     width: 100%;
     height: 1px;
     background: #383838;

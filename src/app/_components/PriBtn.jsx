@@ -1,15 +1,15 @@
-export default function PriBtn(props) {
+export default function PriBtn({ PriBtnLink, PriBtnText, PropsclassName }) {
     return (
         <>
             <a 
-                href={props.PriBtnLink} 
-                title={props.PriBtnText}
+                href={PriBtnLink} 
+                title={PriBtnText}
             >
                 <button 
-                    className={`${props.className} btn__pri`} 
-                    onClick={() => props.onClick()}
+                    className={`${PropsclassName} btn__pri`} 
+                    // onClick={() => props.onClick()}
                 >
-                    {props.PriBtnText}
+                    {PriBtnText}
                 </button>
             </a>
         </>
