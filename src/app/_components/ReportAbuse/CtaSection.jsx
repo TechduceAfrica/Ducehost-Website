@@ -3,13 +3,13 @@ import Image from 'next/image'
 import style from './ReportAbuse.module.css'
 import ContactCards from './ContactCards'
 
-export default function CtaSection({ contactCardProps }) {
+export default function CtaSection({ contactCardProps, title }) {
     return (
         <section className={`${style.cta__section} container__width`}>
             <div>
                 <div>
                     <h3>
-                        {CtaSectionCopy.title}
+                        {title}
                     </h3>
                     <p>
                         {CtaSectionCopy.desc}
