@@ -2,12 +2,13 @@
 import React, { useState } from "react";
 import "./index.css";
 import toast from "react-hot-toast";
-import PriBtn from "../_components/PriBtn";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 import SectionWrapper from "../hoc/SectionWrapper";
 import Link from "next/link";
 import DownldBtn from "../_components/DownldBtn";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 const HvcoPage = () => {
   // FORM STATES
@@ -16,17 +17,24 @@ const HvcoPage = () => {
   const [formErrors, setFormErrors] = useState({
     name: false,
     email: false,
+    number: false,
   });
 
   const [form, setForm] = useState({
     name: "",
     email: "",
+    number: "",
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
     setFormErrors({ ...formErrors, [name]: false });
+  };
+
+  const handlePhoneChange = (value, data) => {
+    setForm({ ...form, number: value });
+    setFormErrors({ ...formErrors, number: false });
   };
 
   const handleSubmit = async (e) => {
@@ -45,76 +53,79 @@ const HvcoPage = () => {
         formData: {
           name: form.name,
           email: form.email,
+          number: form.number,
         },
         timeStamp,
       };
 
-      try {
-        // const uploadToDatabase = async (data) => {
-        //   // Add a new document in collection ""
+      console.log(data);
 
-        //   await setDoc(doc(db, "users", data.formData.email), {
-        //     name: data.formData.name,
-        //     email: data.formData.email,
-        //     message: data.formData.message,
-        //     number: data.formData.number,
-        //     timeStamp: data.timeStamp,
-        //   });
-        // };
-        // await uploadToDatabase(data);
+      // try {
+      //   // const uploadToDatabase = async (data) => {
+      //   //   // Add a new document in collection ""
 
-        // Send data to  API
-        const postData = async (data) => {
-          try {
-            const response = await fetch("/api/send", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json",
-              },
-              body: JSON.stringify(data),
-            });
+      //   //   await setDoc(doc(db, "users", data.formData.email), {
+      //   //     name: data.formData.name,
+      //   //     email: data.formData.email,
+      //   //     message: data.formData.message,
+      //   //     number: data.formData.number,
+      //   //     timeStamp: data.timeStamp,
+      //   //   });
+      //   // };
+      //   // await uploadToDatabase(data);
 
-            const result = await response.json();
+      //   // Send data to  API
+      //   const postData = async (data) => {
+      //     try {
+      //       const response = await fetch("/api/send", {
+      //         method: "POST",
+      //         headers: {
+      //           "Content-Type": "application/json",
+      //           Accept: "application/json",
+      //         },
+      //         body: JSON.stringify(data),
+      //       });
 
-            if (!response.ok) {
-              throw new Error("Failed to send data");
-            }
+      //       const result = await response.json();
 
-            console.log(result.status);
-            return result;
-          } catch (error) {
-            console.error(error);
-            // You can handle the error here or throw it further if needed
-            throw error;
-          }
-        };
+      //       if (!response.ok) {
+      //         throw new Error("Failed to send data");
+      //       }
 
-        const response = await postData(data);
-        console.log(response.status);
+      //       console.log(result.status);
+      //       return result;
+      //     } catch (error) {
+      //       console.error(error);
+      //       // You can handle the error here or throw it further if needed
+      //       throw error;
+      //     }
+      //   };
 
-        setLoading(false);
+      //   const response = await postData(data);
+      //   console.log(response.status);
 
-        if (response.status === "undefined") {
-          setIsSubmitted(true);
-          toast.success(` Congrats ${form.name}!, Your E-book is Downloading!`);
-          resetForm();
-        } else {
-          // Handle the case when the API call fails
+      //   setLoading(false);
 
-          setIsSubmitted(true);
-          toast.success(` Congrats ${form.name}!, Your E-book is Downloading!`);
-          resetForm();
-        }
-      } catch (error) {
-        // Handle errors that may occur during database or API operations
-        // alert("An Error occured, please try again " + error.message);
-        // setLoading(false);
-        // resetForm();
+      //   if (response.status === "undefined") {
+      //     setIsSubmitted(true);
+      //     toast.success(` Congrats ${form.name}!, Your E-book is Downloading!`);
+      //     resetForm();
+      //   } else {
+      //     // Handle the case when the API call fails
 
-        // Log or display an error message to the user
-        console.error(error);
-      }
+      //     setIsSubmitted(true);
+      //     toast.success(` Congrats ${form.name}!, Your E-book is Downloading!`);
+      //     resetForm();
+      //   }
+      // } catch (error) {
+      //   // Handle errors that may occur during database or API operations
+      //   // alert("An Error occured, please try again " + error.message);
+      //   // setLoading(false);
+      //   // resetForm();
+
+      //   // Log or display an error message to the user
+      //   console.error(error);
+      // }
     }
   };
 
@@ -122,6 +133,7 @@ const HvcoPage = () => {
     const errors = {
       name: form.name === "",
       email: form.email === "",
+      number: form.number.length < 7 || form.number.length > 15,
     };
 
     setFormErrors(errors);
@@ -133,6 +145,7 @@ const HvcoPage = () => {
     setForm({
       name: "",
       email: "",
+      number: "",
     });
   };
 
@@ -163,7 +176,7 @@ const HvcoPage = () => {
                 Name
               </label>
               <div
-                className={`w-[100%] border-2 ${
+                className={`w-[100%] border ${
                   formErrors.name ? "border-red-600" : "border-stone-300"
                 } rounded-[5px] flex flex-row justify-between`}
               >
@@ -190,7 +203,7 @@ const HvcoPage = () => {
                 Email
               </label>
               <div
-                className={`w-[100%] border-2 ${
+                className={`w-[100%] border ${
                   formErrors.email ? "border-red-600" : "border-stone-300"
                 } rounded-[5px] flex flex-row justify-between`}
               >
@@ -212,27 +225,34 @@ const HvcoPage = () => {
             </div>
 
             {/* Phone Number */}
-            {/* <div>
+            <div>
               <label htmlFor="number" className="text-semibold text-[16px]">
                 Phone Number
               </label>
-              <div
+
+              <PhoneInput
+                country={"ng"}
+                value={form.number}
+                onChange={handlePhoneChange}
+                inputProps={{ required: true }}
+                inputStyle={{
+                  width: "100%",
+
+                  paddingTop: "20px",
+                  paddingBottom: "20px",
+                }}
+              />
+
+              {/* <div
                 className={` ${
                   formErrors.number ? "border-red-600" : "border-stone-300"
                 } rounded-[5px] flex flex-row gap-5`}
               >
-                <select
-                  name=""
-                  id=""
-                  className="w-[100px] rounded border-2 border-stone-300 p-2"
-                >
-                  {" "}
-                
-                </select>
+              
                 <input
                   id="phoneNumber"
                   name="number"
-                  className="w-full border-2 border-stone-300 p-2 rounded"
+                  className="w-full border border-stone-300 p-2 rounded"
                   type="tel"
                   placeholder="phone number"
                   maxLength={12}
@@ -245,8 +265,13 @@ const HvcoPage = () => {
                 <div className="text-red-600 text-[14px] ">
                   Phone Number is required
                 </div>
+              )} */}
+              {formErrors.number && (
+                <div className="text-red-600 text-[14px] ">
+                  Please enter a valid phone number
+                </div>
               )}
-            </div> */}
+            </div>
             <div className="font-semibold">
               <DownldBtn
                 DownldBtnText="Download Now"
