@@ -1,7 +1,7 @@
-import { heroDataCopy } from '@/copyContents/ReportAbuseCopy'
-import Image from 'next/image'
 import React from 'react'
-import style from './ReportAbuse.module.css'
+import Image from 'next/image'
+import style from '../ReportAbuse/ReportAbuse.module.css'
+import { heroDataCopy } from '@/copyContents/SubmitTicketCopy'
 
 export default function HeroSection() {
     return (
