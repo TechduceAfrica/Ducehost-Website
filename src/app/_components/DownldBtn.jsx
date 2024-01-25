@@ -10,7 +10,7 @@ export default function DownldBtn(props) {
       >
         <button
           className={`${props.className} btn__pri`}
-          onClick={() => props.onClick()}
+          onSubmit={() => props.onClick()}
         >
           {props.DownldBtnText}
         </button>

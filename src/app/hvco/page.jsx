@@ -31,6 +31,7 @@ const HvcoPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     const isFormValid = validateForm();
 
     if (isFormValid) {
@@ -121,8 +122,6 @@ const HvcoPage = () => {
     const errors = {
       name: form.name === "",
       email: form.email === "",
-      number: form.number === "",
-      message: form.message === "",
     };
 
     setFormErrors(errors);
@@ -134,7 +133,6 @@ const HvcoPage = () => {
     setForm({
       name: "",
       email: "",
-      number: "",
     });
   };
 
@@ -253,7 +251,7 @@ const HvcoPage = () => {
               <DownldBtn
                 DownldBtnText="Download Now"
                 DownldBtnLink={isSubmitted ? "/" : ""}
-                onClick={handleSubmit}
+                onSubmit={handleSubmit}
               />
             </div>
           </div>
