@@ -1,14 +1,15 @@
-import { Outfit } from 'next/font/google'
-import './globals.css'
-import NavBar from '@/app/_components/NavBar'
-import Footer from '@/app/_components/Footer';
+import { Outfit } from "next/font/google";
+import "./globals.css";
+import NavBar from "@/app/_components/NavBar";
+import Footer from "@/app/_components/Footer";
+import { Toaster } from "react-hot-toast";
 
-const outfit = Outfit({ subsets: ['latin'] })
+const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Ducehost',
-  description: 'Ducehost | Grow Your Dream Business Online',
-}
+  title: "Ducehost",
+  description: "Ducehost | Grow Your Dream Business Online",
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -28,10 +29,12 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={outfit.className}>
-        <NavBar/>
+        <Toaster position="bottom-right" toastOptions={{ duration: 3000 }} />
+
+        <NavBar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
-  )
+  );
 }

@@ -1,35 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "Outfit-Light";
-  src:
-      url("/fonts/Outfit-Light.woff2") format("woff2"),
-      url('/fonts/Outfit-Light.woff') format('woff');
+  src: url("/fonts/Outfit-Light.woff2") format("woff2"),
+    url("/fonts/Outfit-Light.woff") format("woff");
   font-weight: 300;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Outfit-Medium";
-  src:
-      url("/fonts/Outfit-Medium.woff2") format("woff2"),
-      url('/fonts/Outfit-Medium.woff') format('woff');
+  src: url("/fonts/Outfit-Medium.woff2") format("woff2"),
+    url("/fonts/Outfit-Medium.woff") format("woff");
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Outfit-Regular";
-  src:
-      url("/fonts/Outfit-Regular.woff2") format("woff2"),
-      url('/fonts/Outfit-Regular.woff') format('woff');
+  src: url("/fonts/Outfit-Regular.woff2") format("woff2"),
+    url("/fonts/Outfit-Regular.woff") format("woff");
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Outfit-SemiBold";
-  src:
-      url("/fonts/Outfit-SemiBold.woff2") format("woff2"),
-      url('/fonts/Outfit-SemiBold.woff') format('woff');
+  src: url("/fonts/Outfit-SemiBold.woff2") format("woff2"),
+    url("/fonts/Outfit-SemiBold.woff") format("woff");
   font-weight: 600;
   font-display: swap;
 }
@@ -37,24 +37,23 @@
 :root {
   --max-width: 1200px;
   --border-radius: 12px;
-  --pri-font: 'Outfit', 'Outfit-Regular', Arial, Helvetica, sans-serif;
-  --font-300: 'Outfit-Light', Outfit, Arial, Helvetica, sans-serif;
-  --font-400: 'Outfit-Regular', Outfit, Arial, Helvetica, sans-serif;
-  --font-500: 'Outfit-Medium', Outfit, Arial, Helvetica, sans-serif;
-  --font-600: 'Outfit-SemiBold', Outfit, Arial, Helvetica, sans-serif;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --pri-font: "Outfit", "Outfit-Regular", Arial, Helvetica, sans-serif;
+  --font-300: "Outfit-Light", Outfit, Arial, Helvetica, sans-serif;
+  --font-400: "Outfit-Regular", Outfit, Arial, Helvetica, sans-serif;
+  --font-500: "Outfit-Medium", Outfit, Arial, Helvetica, sans-serif;
+  --font-600: "Outfit-SemiBold", Outfit, Arial, Helvetica, sans-serif;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
   --white: #fff;
-  --dark-bg: #1D1B20;
-  --dark-font: #1D1B20;
+  --dark-bg: #1d1b20;
+  --dark-font: #1d1b20;
   --mobile-font: #383838;
-  --green: #23A455;
+  --green: #23a455;
   --wine: #936;
-  --error-color: #B3261E;
-  --footer-text-colour: #EDEDED;
-  --swiper-navigation-size: 32px!important;
-  --swiper-theme-color: var(--green)!important;
+  --footer-text-colour: #ededed;
+  --swiper-navigation-size: 32px !important;
+  --swiper-theme-color: var(--green) !important;
 }
 
 html {
@@ -76,7 +75,12 @@ body {
   font-style: normal;
 }
 
-h1, h2, h3, h4, h5, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
   margin: 0px;
 }
 
@@ -96,7 +100,8 @@ h1 {
   line-height: 64px;
 }
 
-h2, h4 {
+h2,
+h4 {
   font-size: 28px;
   font-family: var(--font-500);
   line-height: 36px;
@@ -243,17 +248,17 @@ button {
   margin-top: 80px;
 }
 
-.swiper-button-prev, 
+.swiper-button-prev,
 .swiper-button-next {
-  color: var(--dark-font)!important;
+  color: var(--dark-font) !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--green)!important;
+  background-color: var(--green) !important;
 }
 
 .swiper-slide {
-  display: grid!important;
+  display: grid !important;
   justify-content: center;
 }
 
@@ -266,14 +271,14 @@ button {
 
 h3.szh-accordion__item-heading {
   position: relative;
-  margin-block: 30px!important;
+  margin-block: 30px !important;
 }
 
 h3.szh-accordion__item-heading button {
   padding: 10px 0px;
   border: none;
   background-color: transparent;
-  font-family: 'Outfit-Regular';
+  font-family: "Outfit-Regular";
   color: var(--dark-font);
   font-size: 22px;
   font-weight: 400;
@@ -290,8 +295,7 @@ h3.szh-accordion__item-heading::after {
   transition: all 300ms ease-in-out;
 }
 
-.szh-accordion__item--expanded 
-h3.szh-accordion__item-heading::after {
+.szh-accordion__item--expanded h3.szh-accordion__item-heading::after {
   transform: scaleY(-1);
 }
 
@@ -312,7 +316,7 @@ h3.szh-accordion__item-heading::after {
   letter-spacing: 0.08px;
 }
 
-@media (max-width:787px) {
+@media (max-width: 787px) {
   h1 {
     font-size: 32px;
     font-weight: 600;
@@ -356,8 +360,7 @@ h3.szh-accordion__item-heading::after {
     top: 16px;
   }
 
-  .szh-accordion__item--expanded 
-  h3.szh-accordion__item-heading::after {
+  .szh-accordion__item--expanded h3.szh-accordion__item-heading::after {
     transform: scaleY(-1) translateY(-16px);
   }
 
