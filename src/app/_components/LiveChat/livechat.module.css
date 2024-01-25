@@ -1,0 +1,38 @@
+.hero__section {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero__section > div {
+    flex: 1 1 400px;
+}
+
+.hero__section h1 {
+    font-size: 32px;
+    line-height: 40px; /* 125% */
+    text-transform: capitalize;
+}
+
+.hero__section p {
+    margin-block: 24px;
+}
+
+.hero__section img {
+    max-width: 611px;
+}
+
+@media (max-width:916px) {
+    .hero__section > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero__section h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
