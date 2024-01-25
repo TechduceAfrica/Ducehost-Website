@@ -47,8 +47,6 @@ const HvcoPage = () => {
       const date = new Date();
       const timeStamp = date;
 
-      // const data = { form, timeStamp };
-
       const data = {
         formData: {
           name: form.name,
@@ -243,29 +241,6 @@ const HvcoPage = () => {
                 }}
               />
 
-              {/* <div
-                className={` ${
-                  formErrors.number ? "border-red-600" : "border-stone-300"
-                } rounded-[5px] flex flex-row gap-5`}
-              >
-              
-                <input
-                  id="phoneNumber"
-                  name="number"
-                  className="w-full border border-stone-300 p-2 rounded"
-                  type="tel"
-                  placeholder="phone number"
-                  maxLength={12}
-                  min={8}
-                  value={form.number}
-                  onChange={handleChange}
-                />
-              </div>
-              {formErrors.number && (
-                <div className="text-red-600 text-[14px] ">
-                  Phone Number is required
-                </div>
-              )} */}
               {formErrors.number && (
                 <div className="text-red-600 text-[14px] ">
                   Please enter a valid phone number
