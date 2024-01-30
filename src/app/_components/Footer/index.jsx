@@ -178,7 +178,7 @@ Ikeja, Lagos
                         </a> 
                         <span> | </span>
                         <a 
-                            href="https://ducehost.com/" 
+                            href="/privacy-policy" 
                             target="_blank" 
                             rel="noopener noreferrer"
                         > 
