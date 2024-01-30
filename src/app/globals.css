@@ -71,7 +71,7 @@ body {
 body {
   color: var(--dark-font);
   background: var(--white);
-  font-family: var(--pri-font);
+  font-family: var(--pri-font) !important;
   font-style: normal;
 }
 
