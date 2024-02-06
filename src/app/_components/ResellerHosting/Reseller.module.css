@@ -1,0 +1,129 @@
+.price__card__sec__wrapper {
+
+}
+
+.price__card__sec__wrapper h2 {
+    max-width: 480px;
+    margin-bottom: 60px;
+}
+
+.price__card__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px 24px;
+}
+
+.price__card, 
+.enp__price__card {
+    flex: 0 1 360px;
+    text-align: center;
+    border-radius: 24px;
+    background: var(--white);
+    box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.06);
+    padding: 40px 42px;
+    box-sizing: border-box;
+}
+
+.price__card:nth-child(3) {
+    background-color: var(--green-light);
+}
+
+.price__card p, 
+.enp__price__card p {
+    max-width: 170px;
+    margin: 10px auto;
+}
+
+.divider {
+    width: 100%;
+    max-width: 300px;
+    height: 1px;
+    background-color: var(--green);
+    margin-inline: auto;
+    margin-block: 24px 16px;
+}
+
+.price__card span {
+    color: var(--green);
+    text-align: center;
+    font-family: var(--font-500);
+    font-size: 45px;
+    line-height: 52px;
+}
+
+.price__card > div:nth-child(1) {
+    min-height: 100px;
+}
+
+.price__card > div:nth-last-child(1) {
+    display: grid;
+    gap: 40px;
+}
+
+.benefits__sec__wrapper {
+
+}
+
+.benefits__sec__wrapper h2, 
+.price__card__sec__wrapper h2 {
+    font-family: var(--font-600);
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 32px;
+    line-height: 40px;
+    margin-inline: auto;
+}
+
+.benefits__sec__wrapper h2 {
+    max-width: 800px;
+}
+
+.cards__wrapper {
+    display: flex;
+    gap: 20px 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card__wrapper {
+    display: grid;
+    gap: 8px;
+    flex: 1 1 326px;
+}
+
+.card__wrapper img {
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.card__wrapper h3 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 787px) {
+    .benefits__sec__wrapper h2 {
+        font-family: var(--font-500);
+    }
+
+    .card__wrapper {
+        place-content: center;
+        text-align: center;
+    }
+
+    .card__wrapper img {
+        max-width: 65px;
+        max-height: 65px;
+        margin: 0px auto;
+    }
+
+    .card__wrapper h3 {
+        font-family: var(--font-400);
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.024px;
+        margin-block: 8px 4px;
+    }
+}

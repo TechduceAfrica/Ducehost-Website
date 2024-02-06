@@ -51,6 +51,7 @@
   --mobile-font: #383838;
   --green: #23a455;
   --wine: #936;
+  --green-light: #DCF4E5;
   --footer-text-colour: #ededed;
   --swiper-navigation-size: 32px !important;
   --swiper-theme-color: var(--green) !important;
@@ -71,7 +72,7 @@ body {
 body {
   color: var(--dark-font);
   background: var(--white);
-  font-family: var(--pri-font);
+  font-family: var(--pri-font) !important;
   font-style: normal;
 }
 
@@ -246,6 +247,23 @@ button {
 
 .margin__top__80 {
   margin-top: 80px;
+}
+
+.margin__block__80 {
+  margin-block: 5rem;
+}
+
+.padding__block__80 {
+  padding-block: 5rem;
+}
+
+.border__1 {
+  border: solid 1px transparent;
+  transition: border 300ms ease-in-out;
+}
+
+.border__1:hover {
+  border: solid 1px var(--green);
 }
 
 .swiper-button-prev,

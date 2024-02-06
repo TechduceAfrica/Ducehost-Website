@@ -1,17 +1,19 @@
-export default function PriBtnWine(props) {
+import Link from "next/link";
+
+export default function PriBtnWine({ PriBtnWineLink, PriBtnWineText, propClassName }) {
     return (
         <>
-            <a 
-                href={props.PriBtnWineLink} 
-                title={props.PriBtnWineText}
+            <Link 
+                href={PriBtnWineLink} 
+                title={PriBtnWineText}
             >
                 <button 
-                    className={`${props.className} wine__btn__pri`} 
-                    onClick={() => props.onClick()}
+                    className={`${propClassName} wine__btn__pri`} 
+                    // onClick={() => props.onClick()}
                 >
-                    {props.PriBtnWineText}
+                    {PriBtnWineText}
                 </button>
-            </a>
+            </Link>
         </>
     )
 }

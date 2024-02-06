@@ -1,13 +1,14 @@
-export default function SecBtn(props) {
+export default function SecBtn({ SecBtnLink, SecBtnText, PropClassName }) {
     return (
         <>
             <a 
-                href={props.SecBtnLink} 
-                title={props.SecBtnText}>
+                href={SecBtnLink} 
+                title={SecBtnText}>
                     <button 
-                        className={`${props.className} btn__sec`} 
-                        onClick={() => props.onClick()} >
-                            {props.SecBtnText}
+                        className={`${PropClassName} btn__sec`} 
+                        // onClick={() => props.onClick()} 
+                    >
+                            {SecBtnText}
                     </button>
             </a>
         </>

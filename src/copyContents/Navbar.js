@@ -16,30 +16,30 @@ export const domainSubMenus = [
 export const hostingSubMenus = [
     {
         DomainMenu: `Shared Hosting`,
-        DomainLink: `/shared-hosting`,
+        DomainLink: `/hosting/shared-hosting`,
     },
     {
         DomainMenu: `WordPress Hosting`,
-        DomainLink: `/wordPress-hosting`,
+        DomainLink: `/hosting/wordPress-hosting`,
     },
     {
         DomainMenu: `Reseller Hosting`,
-        DomainLink: `/reseller-hosting`,
+        DomainLink: `/hosting/reseller-hosting`,
     },
 ]
 
 export const securitySubMenus = [
     {
         DomainMenu: `SSL Certificates`,
-        DomainLink: `/ssl-certificates`,
+        DomainLink: `/security/ssl-certificates`,
     },
     {
         DomainMenu: `Backup`,
-        DomainLink: `/backup`,
+        DomainLink: `/security/backup`,
     },
     {
         DomainMenu: `Maintenance`,
-        DomainLink: `/maintenance`,
+        DomainLink: `/security/maintenance`,
     },
 ]
 
