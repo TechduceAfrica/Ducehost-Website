@@ -1,12 +1,10 @@
 import Image from "next/image"
 import style from './component.module.css';
 import MagneticEffect from "@/app/animations/MagneticEffect";
-import ExpertCTA from "../ExpertCTA";
 
 export default function Footer() {
     return (
         <>
-            <ExpertCTA/>
             <footer>
                 <div className={`${style.footer__info__wrapper} container__width`}>
                     <div className={style.footer__info}>
