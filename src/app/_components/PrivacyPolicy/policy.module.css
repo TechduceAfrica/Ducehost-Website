@@ -6,6 +6,7 @@
 
 ol.policy__list {
     list-style: decimal;
+    list-style-position: inside;
 }
 
 .policy__list > li {
@@ -24,7 +25,7 @@ ol.policy__list {
 }
 
 .inner ol {
-    list-style: decimal-leading-zero;
+    list-style: lower-roman;
     list-style-position: inside;
 }
 

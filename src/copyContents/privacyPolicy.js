@@ -65,19 +65,19 @@ export const PrivacyPolicyCopy = {
             Title: `Use of Data`,
             Body: `<p>Ducehost uses the collected data for various purposes:</p>
             <ol>
-            <li>0.1. to provide and maintain our Service;</li>
-            <li>0.2. to notify you about changes to our Service;</li>
-            <li>0.3. to allow you to participate in interactive features of our Service when you choose to do so;</li>
-            <li>0.4. to provide customer support;</li>
-            <li>0.5. to gather analysis or valuable information so that we can improve our Service;</li>
-            <li>0.6. to monitor the usage of our Service;</li>
-            <li>0.7. to detect, prevent and address technical issues;</li>
-            <li>0.8. to fulfil any other purpose for which you provide it;</li>
-            <li>0.9. to carry out our obligations and enforce our rights arising from any contracts entered into between you and us, including for billing and collection;</li>
-            <li>0.10. to provide you with notices about your account and/or subscription, including expiration and renewal notices, email-instructions, etc.;</li>
-            <li>0.11. to provide you with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless you have opted not to receive such information;</li>
-            <li>0.12. in any other way we may describe when you provide the information;</li>
-            <li>0.13. for any other purpose with your consent.</li>
+            <li>to provide and maintain our Service;</li>
+            <li>to notify you about changes to our Service;</li>
+            <li>to allow you to participate in interactive features of our Service when you choose to do so;</li>
+            <li>to provide customer support;</li>
+            <li>to gather analysis or valuable information so that we can improve our Service;</li>
+            <li>to monitor the usage of our Service;</li>
+            <li>to detect, prevent and address technical issues;</li>
+            <li>to fulfil any other purpose for which you provide it;</li>
+            <li>to carry out our obligations and enforce our rights arising from any contracts entered into between you and us, including for billing and collection;</li>
+            <li>to provide you with notices about your account and/or subscription, including expiration and renewal notices, email-instructions, etc.;</li>
+            <li> to provide you with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless you have opted not to receive such information;</li>
+            <li>in any other way we may describe when you provide the information;</li>
+            <li>for any other purpose with your consent.</li>
             <ol>`,
         },
         {
@@ -96,19 +96,19 @@ export const PrivacyPolicyCopy = {
             Title: `Disclosure of Data`,
             Body: `<p>We may disclose personal information that we collect, or you provide:</p>
             <ol>
-            <li>0.1. Disclosure for Law Enforcement.</li>
+            <li>Disclosure for Law Enforcement.</li>
             <p>Under certain circumstances, we may be required to disclose your Personal Data if required to do so by law or in response to valid requests by public authorities.</p>
-            <li>0.2. Business Transaction.</li>
+            <li>Business Transaction.</li>
             <p>If we or our subsidiaries are involved in a merger, acquisition or asset sale, your Personal Data may be transferred.</p>
-            <li>0.3. Other cases. We may disclose your information also:</li>
+            <li>Other cases. We may disclose your information also:</li>
             <ol>
-            <li>0.3.1. to our subsidiaries and affiliates;</li>
-            <li>0.3.2. to contractors, service providers, and other third parties we use to support our business;</li>
-            <li>0.3.3. to fulfill the purpose for which you provide it;</li>
-            <li>0.3.4. for the purpose of including your company’s logo on our website;</li>
-            <li>0.3.5. for any other purpose disclosed by us when you provide the information;</li>
-            <li>0.3.6. with your consent in any other cases;</li>
-            <li>0.3.7. if we believe disclosure is necessary or appropriate to protect the rights, property, or safety of the Company, our customers, or others.</li>
+            <li>to our subsidiaries and affiliates;</li>
+            <li>to contractors, service providers, and other third parties we use to support our business;</li>
+            <li>to fulfill the purpose for which you provide it;</li>
+            <li>for the purpose of including your company’s logo on our website;</li>
+            <li>for any other purpose disclosed by us when you provide the information;</li>
+            <li>with your consent in any other cases;</li>
+            <li>if we believe disclosure is necessary or appropriate to protect the rights, property, or safety of the Company, our customers, or others.</li>
             </ol>
             </ol>`,
         },
@@ -123,12 +123,12 @@ export const PrivacyPolicyCopy = {
             <p>If you wish to be informed what Personal Data we hold about you and if you want it to be removed from our systems, please email us at ducehost@gmail.com.</p>
             <p>In certain circumstances, you have the following data protection rights:</p>
             <ol>
-            <li>0.1. the right to access, update or to delete the information we have on you;</li>
-            <li>0.2. the right of rectification. You have the right to have your information rectified if that information is inaccurate or incomplete;</li>
-            <li>0.3. the right to object. You have the right to object to our processing of your Personal Data;</li>
-            <li>0.4. the right of restriction. You have the right to request that we restrict the processing of your personal information;</li>
-            <li>0.5. the right to data portability. You have the right to be provided with a copy of your Personal Data in a structured, machine-readable and commonly used format;</li>
-            <li>0.6. the right to withdraw consent. You also have the right to withdraw your consent at any time where we rely on your consent to process your personal information;</li>
+            <li>the right to access, update or to delete the information we have on you;</li>
+            <li>the right of rectification. You have the right to have your information rectified if that information is inaccurate or incomplete;</li>
+            <li>the right to object. You have the right to object to our processing of your Personal Data;</li>
+            <li>the right of restriction. You have the right to request that we restrict the processing of your personal information;</li>
+            <li>the right to data portability. You have the right to be provided with a copy of your Personal Data in a structured, machine-readable and commonly used format;</li>
+            <li>the right to withdraw consent. You also have the right to withdraw your consent at any time where we rely on your consent to process your personal information;</li>
             </ol>
             <p>Please note that we may ask you to verify your identity before responding to such requests. Please note, we may not able to provide Service without some necessary data.</p>
             <p>You have the right to complain to a Data Protection Authority about our collection and use of your Personal Data. For more information, please contact your local data protection authority in the European Economic Area (EEA).</p>`,
