@@ -6,6 +6,7 @@ import CenteredCard from '@/app/_components/CenteredCard';
 import WithTransferSearch from '@/app/_components/ImgBGHeroSection/WithTransferSearch';
 import { DomainTransferHero, whyTransfer, DomainTransferFAQs } from '@/copyContents/DomainTranfer';
 import FAQs from '@/app/_components/FAQs';
+import ExpertCTA from '@/app/_components/ExpertCTA';
 
 export default function DomainTransfer() {
 
@@ -45,6 +46,7 @@ export default function DomainTransfer() {
                         faqsContent={DomainTransferFAQs}
                     />
                 </section>
+                <ExpertCTA/>
         </main>
     )
 }

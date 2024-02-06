@@ -8,6 +8,7 @@ import HostingPriceCard from '@/app/_components/HostingPriceCard';
 import { Hosting } from '@/copyContents/PricePlan';
 import FAQs from '@/app/_components/FAQs';
 import Testimonial from '@/app/_components/Testimonial';
+import ExpertCTA from './_components/ExpertCTA';
 
 export default function Home() {
 
@@ -73,6 +74,7 @@ export default function Home() {
                     />
                 </div>
             </section>
+            <ExpertCTA/>
         </main>
     )
 }

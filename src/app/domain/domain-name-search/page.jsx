@@ -8,6 +8,7 @@ import WcuSection from '@/app/_components/WcdSection';
 import DiscoverDomain from '@/app/_components/DiscoverDomain';
 import OtherDomainNeeds from '@/app/_components/OtherDomainNeeds';
 import FAQs from '@/app/_components/FAQs';
+import ExpertCTA from '@/app/_components/ExpertCTA';
 
 export default function DomainNameSearch() {
 
@@ -57,6 +58,7 @@ export default function DomainNameSearch() {
                     faqsContent={DomainSearchFAQs}
                 />
             </section>
+            <ExpertCTA/>
         </main>
 
     )
