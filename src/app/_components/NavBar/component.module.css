@@ -72,6 +72,11 @@
 
 .mobile__nav__hamburger {
     display: none;
+    cursor: pointer;
+}
+
+.mobile__nav__hamburger input {
+    display: none;
 }
 
 .mobile__menu {
