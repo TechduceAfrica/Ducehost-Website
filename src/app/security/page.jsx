@@ -1,5 +1,5 @@
+import { redirect } from "next/navigation";
+
 export default function Security() {
-    return (
-      <div>Security Page</div>
-    )
-  }
+    redirect ("/security/maintenance");
+}
