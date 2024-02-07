@@ -1,5 +1,5 @@
+import { redirect } from "next/navigation";
+
 export default function Hosting() {
-    return (
-      <div>Hosting Page</div>
-    )
-  }
+    redirect ("/hosting/shared-hosting");
+}
