@@ -106,7 +106,7 @@ export const mobileMenu = [
         subMenus: 
             {
                 One: `Shared Hosting`,
-                OneLink: ``,
+                OneLink: `/hosting/shared-hosting`,
                 Two: `WordPress Hosting`,
                 TwoLink: ``,
                 Three: `Reseller Hosting`,
