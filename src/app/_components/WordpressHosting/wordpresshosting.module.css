@@ -1,0 +1,103 @@
+.feature__section h2, 
+.plan__section__title h2, 
+.plan__card__wrapper h3 {
+    font-family: var(--font-600);
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.feature__section h2, 
+.plan__section__title h2 {
+    margin-block: 10px 60px;
+}
+
+.feature__cards__wrapper {
+    gap: 40px 24px;
+    justify-content: center;
+}
+
+.plan__cards__wrapper, 
+.feature__cards__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature__card__wrapper {
+    flex: 1 1 360px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    background: var(--white);
+    box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.06);
+}
+
+.feature__card__wrapper img {
+    width: 150px;
+    height: 150px;
+}
+
+.feature__card__wrapper h3 {
+    font-family: var(--font-500);
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.feature__card__wrapper p, 
+.plan__card__wrapper li {
+    font-family: var(--font-400);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+}
+
+.plan__section__title, 
+.feature__section h2, 
+.plan__card__wrapper h3 {
+    text-align: center;
+}
+
+.plan__section__title > span {
+    font-family: var(--font-400);
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.plan__cards__wrapper {
+    gap: 40px 70px;
+}
+
+.plan__card__wrapper {
+    flex: 1 1 510px;
+    display: grid;
+    justify-content: center;
+    gap: 24px 0px;
+    border-radius: 10px;
+    background: var(--white);
+    box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.06);
+    padding: 40px;
+}
+
+.plan__card__wrapper li {
+    display: flex;
+    align-items: center;
+    gap: 0px 10px;
+}
+
+.plan__card__wrapper li:nth-child(2) {
+    margin-block: 24px;
+}
+
+.plan__card__wrapper svg {
+    flex: 0 0 24px;
+}
+
+.divider {
+    background: #DCF4E5;
+    max-width: 361px;
+    width: 100%;
+    height: 1px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
