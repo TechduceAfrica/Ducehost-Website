@@ -1,4 +1,5 @@
 'use client'
+import ExpertCTA from '@/app/_components/ExpertCTA'
 import HeroSection from '@/app/_components/SecurityPage/HeroSection'
 import PriceCard from '@/app/_components/SecurityPage/PriceCard'
 import WhyChooseCard from '@/app/_components/SecurityPage/WhyChooseCard'
@@ -33,6 +34,7 @@ export default function Maintenance() {
                     PriceCardContent={PriceCardContent}
                 />
             </section>
+            <ExpertCTA/>
         </main>
     )
 }

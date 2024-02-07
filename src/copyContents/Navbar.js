@@ -20,7 +20,7 @@ export const hostingSubMenus = [
     },
     {
         DomainMenu: `WordPress Hosting`,
-        DomainLink: `/hosting/wordPress-hosting`,
+        DomainLink: `/hosting/wordpress-hosting`,
     },
     {
         DomainMenu: `Reseller Hosting`,
@@ -106,7 +106,7 @@ export const mobileMenu = [
         subMenus: 
             {
                 One: `Shared Hosting`,
-                OneLink: ``,
+                OneLink: `/hosting/shared-hosting`,
                 Two: `WordPress Hosting`,
                 TwoLink: ``,
                 Three: `Reseller Hosting`,

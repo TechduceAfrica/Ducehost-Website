@@ -3,7 +3,7 @@ export const Hosting = {
         {
             title: `Lite`,
             text: `Suitable for Personal Use & Starters`,
-            price: `9,000`,
+            price: `₦9,000`,
             features: {
                 one: `2GB Disk Space`,
                 two: `1 Add-on Domain`,
@@ -15,7 +15,7 @@ export const Hosting = {
         {
             title: `Standard`,
             text: `Suitable for SMEs`,
-            price: `24,000`,
+            price: `₦24,000`,
             features: {
                 one: `10 GB Disk Space`,
                 two: `3 Add-On Domains`,
@@ -27,7 +27,7 @@ export const Hosting = {
         {
             title: `Pro`,
             text: `Suitable for E-commerce`,
-            price: `45,000`,
+            price: `₦45,000`,
             features: {
                 one: `20 GB Disk Space`,
                 two: `5 Add-on Domains`,
@@ -39,7 +39,7 @@ export const Hosting = {
         {
             title: `Plus`,
             text: `Suitable for Large Traffic Blogs`,
-            price: `90,000`,
+            price: `₦90,000`,
             features: {
                 one: `50 GB Disk Space`,
                 two: `7 Add-on Domains`,
@@ -51,7 +51,7 @@ export const Hosting = {
         {
             title: `Premium`,
             text: `Suitable for Websites with Large Resources`,
-            price: `120,000`,
+            price: `₦120,000`,
             features: {
                 one: `70 GB Disk Space`,
                 two: `10 Add-on Domains`,

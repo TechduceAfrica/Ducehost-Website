@@ -1,12 +1,11 @@
 import Image from "next/image"
 import style from './component.module.css';
 import MagneticEffect from "@/app/animations/MagneticEffect";
-import ExpertCTA from "../ExpertCTA";
+import Link from "next/link";
 
 export default function Footer() {
     return (
         <>
-            <ExpertCTA/>
             <footer>
                 <div className={`${style.footer__info__wrapper} container__width`}>
                     <div className={style.footer__info}>
@@ -73,14 +72,16 @@ export default function Footer() {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="http://www.ducehost.com">
+                                    <Link 
+                                        href='/website-development'
+                                    >
                                         Website Projects
-                                    </a> 
+                                    </Link>     
                                 </li>
                                 <li>
-                                    <a href="http://www.ducehost.com">
+                                    <Link href="/help">
                                         Help Center
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -90,24 +91,24 @@ export default function Footer() {
                             </h4>
                             <ul>
                                 <li>
-                                    <a href="http://www.ducehost.com">
+                                    <Link href="/domain/domain-name-search">
                                         Register a Domain 
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="http://www.ducehost.com">
+                                    <Link href="/domain/domain-transfer">
                                         Transfer Your Domain
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="http://www.ducehost.com">
+                                    <Link href="/hosting">
                                         Buy Hosting Plan
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="http://www.ducehost.com">
+                                    <Link href="http://www.ducehost.com/host">
                                        Login 
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -122,7 +123,7 @@ Ikeja, Lagos
                                 </li>
                                 <li>
                                     <a
-                                    href="mailto:info@ducehost.com"
+                                        href="mailto:info@ducehost.com"
                                     >
                                         info@ducehost.com
                                     </a>
@@ -169,21 +170,21 @@ Ikeja, Lagos
                 <div className={`${style.divider} container__width`}></div>
                 <div className={`${style.footer__credit} container__width`}>
                     <div>
-                        <a 
-                            href="https://ducehost.com/" 
+                        <Link 
+                            href="/terms-and-conditions" 
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
                             Terms & Conditions
-                        </a> 
+                        </Link> 
                         <span> | </span>
-                        <a 
+                        <Link 
                             href="/privacy-policy" 
                             target="_blank" 
                             rel="noopener noreferrer"
                         > 
                             Privacy Policy
-                        </a>
+                        </Link>
                     </div>
                     <div>
                         <p>

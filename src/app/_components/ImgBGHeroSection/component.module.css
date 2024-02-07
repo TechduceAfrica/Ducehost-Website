@@ -21,6 +21,10 @@
     margin-bottom: 0.5rem;
 }
 
+.hero__center__btn {
+    justify-self: center;
+}
+
 @media (max-width:787px) {
     .hero__section {
         min-height: 370px;

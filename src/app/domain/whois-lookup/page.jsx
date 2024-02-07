@@ -1,4 +1,5 @@
 'use client'
+import ExpertCTA from '@/app/_components/ExpertCTA';
 import ForWhoisLookUp from '@/app/_components/ImgBGHeroSection/ForWhoisLookUp';
 import { WLHeroCopy } from '@/copyContents/WhoisLookupPage';
 import { useEffect } from 'react';
@@ -21,6 +22,7 @@ export default function WhoisLookup() {
                 text={WLHeroCopy.heroIntro}
                 title={WLHeroCopy.heroTitle}
             />
+            <ExpertCTA/>
         </main>
     )
 }

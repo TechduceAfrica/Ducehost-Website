@@ -1,5 +1,5 @@
+import { redirect } from "next/navigation";
+
 export default function Domain() {
-  return (
-    <div>Domain Page</div>
-  )
+  redirect ("/domain/domain-name-search");
 }

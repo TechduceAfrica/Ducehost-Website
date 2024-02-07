@@ -1,5 +1,5 @@
+import { redirect } from "next/navigation";
+
 export default function Help() {
-    return (
-      <div>Help Page</div>
-    )
-  }
+    redirect ("/help/knowledge-base");
+}

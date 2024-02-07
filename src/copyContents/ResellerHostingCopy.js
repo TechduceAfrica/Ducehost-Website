@@ -13,7 +13,7 @@ export const planSec = {
     enp: {
         title: `Enterprises`,
         desc: `Scalable we servers for your advanced needs.`,
-        label: `This offering is ...`,
+        label: `This offering is meticulously crafted for businesses and web applications that require the highest level of customization and scalability.`,
         link: `/`,
         linkText: `Contact us`,
     }
@@ -56,6 +56,10 @@ export const plansCard = [
         linkText: `Get started`,
     },
 ]
+
+export const plansTableTitle = {
+    title: `Compare our plans.`
+}
 
 export const plansTableHeads = [
     {
@@ -183,7 +187,7 @@ export const resellersBenefit = {
     ]
 }
 
-export const FAQs = [
+export const resellerFAQs = [
     {
         question: `What is reseller Hosting?`,
         answer: `Answer One... 1... 2... 3... Dummy content needs update`,

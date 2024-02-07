@@ -71,8 +71,8 @@ export default function NavBar() {
                             </li>
                             <li className={style.main__menu}>
                                 <Link 
-                                    href="/sample-page"
-                                    className={pathname == "/sample-page" ? "active" : ""}
+                                    href="/hosting"
+                                    className={pathname == "/hosting" ? "active" : ""}
                                 >
                                     Hosting
                                 </Link>

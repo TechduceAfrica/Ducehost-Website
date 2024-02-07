@@ -1,10 +1,20 @@
 'use client'
+import ExpertCTA from '@/app/_components/ExpertCTA';
+import FAQs from '@/app/_components/FAQs';
 import Benefits from '@/app/_components/ResellerHosting/Benefits';
 import Cards from '@/app/_components/ResellerHosting/Cards';
 import PlanTable from '@/app/_components/ResellerHosting/PlanTable';
 import Steps from '@/app/_components/ResellerHosting/Steps';
 import HeroSection from '@/app/_components/SecurityPage/HeroSection'
-import { heroCopy, planSec, plansCard, plansTableData, plansTableHeads, resellersBenefit, simpleSteps } from '@/copyContents/ResellerHostingCopy'
+import { heroCopy, 
+            planSec, 
+            plansCard, 
+            plansTableData, 
+            plansTableHeads, 
+            plansTableTitle, 
+            resellerFAQs, 
+            resellersBenefit, 
+            simpleSteps } from '@/copyContents/ResellerHostingCopy'
 import { useEffect } from 'react';
 
 export default function ResellerHosting() {
@@ -23,20 +33,21 @@ export default function ResellerHosting() {
             <HeroSection 
                 heroContent={heroCopy} 
             />
-            <section>
+            <section className='margin__block__80'>
                 <Cards 
                     secTitle={planSec.title} 
                     Cards={plansCard} 
                     enp={planSec.enp} 
                 />
             </section>
-            <section>
+            <section className='margin__block__80'>
                 <PlanTable 
+                    tableTitle={plansTableTitle.title}
                     plansTableHead={plansTableHeads} 
                     plansTableData={plansTableData} 
                 />
             </section>
-            <section>
+            <section className='margin__block__80'>
                 <Steps 
                     title={simpleSteps.title}
                     stepOne={simpleSteps.stepOne} 
@@ -44,12 +55,14 @@ export default function ResellerHosting() {
                     stepThree={simpleSteps.stepThree}
                 />
             </section>
-            <section>
+            <section className='margin__block__80'>
                 <Benefits 
                     title={resellersBenefit.title} 
                     Cards={resellersBenefit.cards} 
                 />
             </section>
+            <FAQs faqsContent={resellerFAQs} />
+            <ExpertCTA/>
         </main>
     )
 }
