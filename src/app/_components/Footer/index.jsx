@@ -170,21 +170,21 @@ Ikeja, Lagos
                 <div className={`${style.divider} container__width`}></div>
                 <div className={`${style.footer__credit} container__width`}>
                     <div>
-                        <a 
-                            href="https://ducehost.com/" 
+                        <Link 
+                            href="/terms-and-conditions" 
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
                             Terms & Conditions
-                        </a> 
+                        </Link> 
                         <span> | </span>
-                        <a 
+                        <Link 
                             href="/privacy-policy" 
                             target="_blank" 
                             rel="noopener noreferrer"
                         > 
                             Privacy Policy
-                        </a>
+                        </Link>
                     </div>
                     <div>
                         <p>
