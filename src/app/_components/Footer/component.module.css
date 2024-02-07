@@ -44,6 +44,7 @@
     display: grid;
     gap: 22px;
     padding-inline-start: 0px;
+    margin-block-start: 24px
 }
 
 .footer__link li {
