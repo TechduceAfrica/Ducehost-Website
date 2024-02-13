@@ -67,19 +67,23 @@ export default function Footer() {
                             </h4>
                             <ul>
                                 <li>
-                                    <a href="http://www.ducehost.com">
+                                    <Link href="http://www.ducehost.com">
                                         Schedule a Meeting
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
                                     <Link 
+                                        target="_blank"
                                         href='/website-development'
                                     >
                                         Website Projects
                                     </Link>     
                                 </li>
                                 <li>
-                                    <Link href="/help">
+                                    <Link 
+                                        target="_blank" 
+                                        href="/help"
+                                    >
                                         Help Center
                                     </Link>
                                 </li>
@@ -91,22 +95,34 @@ export default function Footer() {
                             </h4>
                             <ul>
                                 <li>
-                                    <Link href="/domain/domain-name-search">
+                                    <Link 
+                                        target="_blank" 
+                                        href="/domain/domain-name-search"
+                                    >
                                         Register a Domain 
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/domain/domain-transfer">
+                                    <Link 
+                                        target="_blank" 
+                                        href="/domain/domain-transfer"
+                                    >
                                         Transfer Your Domain
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/hosting">
+                                    <Link 
+                                        target="_blank" 
+                                        href="/hosting"
+                                    >
                                         Buy Hosting Plan
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="http://www.ducehost.com/host">
+                                    <Link 
+                                        target="_blank" 
+                                        href="http://www.ducehost.com/host"
+                                    >
                                        Login 
                                     </Link>
                                 </li>
