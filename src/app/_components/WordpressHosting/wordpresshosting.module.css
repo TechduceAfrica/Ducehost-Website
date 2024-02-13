@@ -101,3 +101,46 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width:787px) {
+    .feature__card__wrapper {
+        text-align: center;
+    }
+    .feature__card__wrapper img {
+        width: 60px;
+        height: 60px;
+        margin-inline: auto;
+    }
+    .feature__card__wrapper h3, 
+    .plan__card__wrapper h3 {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.014px;
+        margin-block: 8px;
+    }
+    .feature__card__wrapper p, 
+    .plan__card__wrapper li {
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.048px;
+        text-align: center;
+    }
+    .plan__section__title > span {
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.08px;
+    }
+    .plan__section__title > h2 {
+        text-align: center;
+        font-family: var(--font-500);
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .plan__card__wrapper h3 {
+        font-family: var(--font-500);
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.014px;
+    }
+}

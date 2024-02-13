@@ -6,10 +6,17 @@ import Link from 'next/link'
 export default function MainContents() {
     return (
         <article>
-            <h2>
+            <h2 
+                data-scroll 
+                data-scroll-speed="0.15"
+            >
                 Knowledge Base
             </h2>
-            <div className={style.category__screen}>
+            <div 
+                className={style.category__screen} 
+                data-scroll 
+                data-scroll-speed="0.12"
+            >
                 {KnowledgeBaseCategories.map((Category) => (
                     <Link 
                         key={Category.id} 

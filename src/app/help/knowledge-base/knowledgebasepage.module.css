@@ -8,8 +8,22 @@
     margin-bottom: 40px;
 }
 
+.kb__page h2 > a, 
+.kb__page article > span > a {
+    color: var(--wine);
+    transition: color 300ms ease-in-out;
+}
+
+.kb__page h2 > a:hover, 
+.kb__page article > span > a:hover {
+    color: var(--green);
+}
+
 @media (max-width:787px) {
     .kb__page {
         grid-template-columns: 1fr;
+    }
+    .kb__page h2 {
+        margin-bottom: 24px;
     }
 }

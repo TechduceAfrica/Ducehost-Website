@@ -1,7 +1,9 @@
+import Link from "next/link";
+
 export default function PriBtn({ PriBtnLink, PriBtnText, PropsclassName }) {
     return (
         <>
-            <a 
+            <Link 
                 href={PriBtnLink} 
                 title={PriBtnText}
             >
@@ -11,7 +13,7 @@ export default function PriBtn({ PriBtnLink, PriBtnText, PropsclassName }) {
                 >
                     {PriBtnText}
                 </button>
-            </a>
+            </Link>
         </>
     )
 }

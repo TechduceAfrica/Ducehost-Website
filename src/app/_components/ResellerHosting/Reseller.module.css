@@ -146,6 +146,7 @@
 
 .step__wrapper > div {
     display: flex;
+    align-items: center;
     gap: 20px;
     z-index: 2;
 }
@@ -213,6 +214,14 @@
     word-wrap: break-word;
 }
 
+.mob__step__wrapper {
+    display: none;
+}
+
+.tab__step__wrapper {
+    display: none;
+}
+
 .benefits__sec__wrapper h2, 
 .price__card__sec__wrapper h2 {
     font-family: var(--font-600);
@@ -255,7 +264,7 @@
 
 @media (max-width: 1050px) {
     .step__wrapper {
-        max-width: 840px;
+        display: none;
     }
     
     /* .step__wrapper > div {
@@ -337,26 +346,85 @@
 }
 
 @media (max-width: 787px) {
-    .benefits__sec__wrapper h2 {
-        font-family: var(--font-500);
+    .mob__step__wrapper {
+        display: grid;
     }
-
-    .card__wrapper {
-        place-content: center;
+    .mob__step__sec__title h2 {
         text-align: center;
+        font-family: var(--font-500);
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 50px;
     }
-
-    .card__wrapper img {
-        max-width: 65px;
-        max-height: 65px;
-        margin: 0px auto;
+    .mob__step__one, 
+    .mob__step__two, 
+    .mob__step__three {
+        display: flex;
+        gap: 16px;
+        align-items: center;
     }
-
-    .card__wrapper h3 {
+    .mob__step__two {
+        margin-block: 50px;
+    }
+    .mob__step__wrapper img {
+        width: 70px;
+    }
+    .mob__step__wrapper span {
+        font-family: var(--font-400);
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.048px;
+    }
+    .mob__step__wrapper h3 {
+        font-family: var(--font-500);
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.014px;
+        margin-block: 8px 4px;
+    }
+    .mob__step__wrapper p {
+        font-family: var(--font-400);
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.048px;
+    }
+    .mob__step__one p {
+        max-width: 165px;
+    }
+    .mob__step__two p {
+        max-width: 171px;
+    }
+    .mob__step__three p {
+        max-width: 178px;
+    }
+    .mob__step__one, 
+    .mob__step__three {
+        justify-self: flex-end;
+    }
+    .benefits__sec__wrapper h2 {
+        text-align: center;
+        font-family: var(--font-500);
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .benefits__sec__wrapper h3 {
+        text-align: center;
         font-family: var(--font-400);
         font-size: 16px;
         line-height: 24px;
         letter-spacing: 0.024px;
         margin-block: 8px 4px;
+    }
+    .benefits__sec__wrapper p {
+        text-align: center;
+        font-family: var(--font-400);
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.048px;
+    }
+    .card__wrapper img {
+        width: 65px;
+        height: 65px;
+        margin-inline: auto;
     }
 }

@@ -8,8 +8,8 @@ export default function MagneticEffect({ children }) {
 
     useEffect( () => {
 
-        const xTo = gsap.quickTo(ref.current, "x", {duration: 1, ease: "elastic.out(2, 0.8)"})
-        const yTo = gsap.quickTo(ref.current, "y", {duration: 1, ease: "elastic.out(2, 0.8)"})
+        const xTo = gsap.quickTo(ref.current, "x", {duration: 0.5, ease: "sine.inOut"})
+        const yTo = gsap.quickTo(ref.current, "y", {duration: 0.5, ease: "sine.inOut"})
 
         const mouseMove = (e) => {
             const { clientX, clientY } = e;

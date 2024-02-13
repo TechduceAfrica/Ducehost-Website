@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from "next/navigation";
-import style from './component.module.css';
+import style from './navbar.module.css';
 import SecBtn from '@/app/_components/SecBtn';
 import { domainSubMenus, 
         hostingSubMenus, 
@@ -64,6 +64,7 @@ export default function NavBar() {
                                                 >
                                                     {domainSubMenu.DomainMenu}
                                                 </Link>
+                                                <span>{domainSubMenu.DomainNotification}</span>
                                             </div>
                                         )
                                     )}
@@ -112,6 +113,7 @@ export default function NavBar() {
                                                 >
                                                     {securitySubMenu.DomainMenu}
                                                 </Link>
+                                                <span>{securitySubMenu.DomainNotification}</span>
                                             </div>
                                         )
                                     )}
@@ -136,6 +138,7 @@ export default function NavBar() {
                                                 >
                                                     {emailSubMenu.DomainMenu}
                                                 </Link>
+                                                <span>{emailSubMenu.DomainNotification}</span>
                                             </div>
                                         )
                                     )}
