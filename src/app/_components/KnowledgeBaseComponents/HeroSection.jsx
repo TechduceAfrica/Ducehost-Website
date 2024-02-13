@@ -7,8 +7,13 @@ import { KnowledgeBaseCopy } from '@/copyContents/KnowledgeBaseCopy'
 export default function HeroSection() {
     return (
         <section className={`${style.hero} container__width`}>
-            <div className={style.hero__text}>
-                <h1>
+            <div 
+                className={style.hero__text}                 
+            >
+                <h1 
+                    data-scroll 
+                    data-scroll-speed="0.15"
+                >
                     {KnowledgeBaseCopy.title}
                 </h1>
                 <ArticleSearch/>

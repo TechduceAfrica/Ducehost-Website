@@ -53,7 +53,10 @@ export default function ArticlePageContent({ slug, title, topic, body, likes, di
             </span>
             <div className={style.article__screen}>
                 <h2>{topic}</h2>
-                <div dangerouslySetInnerHTML={{ __html: body }} className={style.article__body}>
+                <div 
+                    dangerouslySetInnerHTML={{ __html: body }} 
+                    className={style.article__body}
+                >
                 </div>
                 <div className={style.article__foot}>
                     <div className={style.article__interaction}>
