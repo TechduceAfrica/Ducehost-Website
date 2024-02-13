@@ -162,6 +162,10 @@
         flex-direction: column;
     }
 
+    .hero__wrapper > div {
+        text-align: center;
+    }
+
     .why__choose__wrapper h2, 
     .plan__title h2 {
         font-family: var(--font-500);

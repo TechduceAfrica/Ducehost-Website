@@ -14,7 +14,11 @@
 }
 
 .hero input {
-    border: solid 1px var(--green);
+    border: solid 1px var(--green) !important;
+}
+
+.hero input:focus-visible {
+    outline: var(--green) solid 1px;
 }
 
 .category__screen, 
@@ -61,6 +65,10 @@
     margin-bottom: 24px;
 }
 
+.widgets__list a:hover {
+    color: var(--wine);
+}
+
 .widgets__list img {
     max-width: 26px;
 }
@@ -86,6 +94,7 @@
 .article__screen {
     margin-top: 40px;
     padding: 50px;
+    box-sizing: border-box;
     border-radius: 20.115px;
     background-color: var(--white);
     box-shadow: 0px 5.029px 25.144px 4.191px rgba(35, 164, 85, 0.10);
@@ -180,5 +189,20 @@
     .category__screen > a, 
     .sub__category__screen > a {
         flex: 1 1 155px;
+    }
+    .sub__category__screen > a {
+        align-items: center;
+    }
+    .article__screen {
+        padding: 50px 20px;
+    }
+    .article__screen h2 {
+        font-family: var(--font-500);
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .article__foot {
+        flex-direction: column;
+        row-gap: 20px;
     }
 }
