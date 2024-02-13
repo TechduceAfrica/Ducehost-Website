@@ -53,8 +53,14 @@
   --wine: #936;
   --green-light: #DCF4E5;
   --footer-text-colour: #ededed;
+  --mobile-menu-bg: #ECECEC;
   --swiper-navigation-size: 32px !important;
   --swiper-theme-color: var(--green) !important;
+}
+
+::selection {
+  color: #DCF4E5;
+  background-color: var(--green);
 }
 
 html {
@@ -332,6 +338,10 @@ h3.szh-accordion__item-heading::after {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.08px;
+}
+
+#plans {
+  scroll-margin-block-start: 100px;
 }
 
 @media (max-width: 787px) {
