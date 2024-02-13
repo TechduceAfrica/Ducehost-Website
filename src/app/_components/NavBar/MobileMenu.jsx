@@ -1,4 +1,5 @@
 import { Accordion, AccordionItem } from '@szhsin/react-accordion';
+import Link from 'next/link';
 
 export default function MobileMenu({ mobileMenu }) {
     return (
@@ -12,13 +13,19 @@ export default function MobileMenu({ mobileMenu }) {
                         >
                             <ul className="list">
                                 <li>
-                                    {mMenu.One}
+                                    <Link href={mMenu.OneLink}>
+                                        {mMenu.One}
+                                    </Link>
                                 </li>
                                 <li>
-                                    {mMenu.Two}
+                                    <Link href={mMenu.TwoLink}>
+                                        {mMenu.Two}
+                                    </Link>
                                 </li>
                                 <li>
-                                    {mMenu.Three}
+                                    <Link href={mMenu.ThreeLink}>
+                                        {mMenu.Three}
+                                    </Link>
                                 </li>
                             </ul>
                             
