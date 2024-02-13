@@ -1,8 +1,11 @@
+'use client'
+import { useEffect } from 'react';
 import { KnowledgeBaseCategories } from "@/copyContents/KnowledgeBaseCopy";
 import HeroSection from '@/app/_components/KnowledgeBaseComponents/HeroSection';
 import AsideContent from "@/app/_components/KnowledgeBaseComponents/AsideContent";
 import style from '@/app/help/knowledge-base/knowledgebasepage.module.css'
 import ArticlePageContent from "@/app/_components/KnowledgeBaseComponents/ArticlePageContent";
+import { redirect } from "next/navigation";
 
 export default function Article({ params }) {
 
@@ -13,7 +16,7 @@ export default function Article({ params }) {
     );
 
     if (!categoryData) {
-        return <div>Category not found</div>;
+        redirect ("/help/knowledge-base");
     }
 
     const articleData = categoryData.articles.find(
@@ -21,13 +24,22 @@ export default function Article({ params }) {
     );
 
     if (!articleData) {
-        return <div>Article not found</div>;
+        redirect ("/not-found");
     }
+
+    useEffect( () => {
+        (
+          async () => {
+            const LocomotiveScroll = (await import('locomotive-scroll')).default;
+            const locomotiveScroll = new LocomotiveScroll();
+          }
+        )()
+    }, [])
 
     return (
         <div>
             <HeroSection/>
-            <section className={`${style.kb__page} container__width`}>
+            <section className={`${style.kb__page} container__width margin__block__80`}>
                 <ArticlePageContent 
                     slug={categoryData.slug} 
                     title={categoryData.title} 
