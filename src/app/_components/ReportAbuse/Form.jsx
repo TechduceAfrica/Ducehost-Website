@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import PriBtn from "../PriBtn";
 
-const SubmitTicketForm = () => {
+const ReportAbuseForm = () => {
   const [loading, setLoading] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formErrors, setFormErrors] = useState({
@@ -17,7 +17,7 @@ const SubmitTicketForm = () => {
     email: "",
     message: "",
     subject: "",
-    id: "ticket",
+    id: "report",
   });
 
   const handleChange = (e) => {
@@ -256,4 +256,4 @@ const SubmitTicketForm = () => {
   );
 };
 
-export default SubmitTicketForm;
+export default ReportAbuseForm;
