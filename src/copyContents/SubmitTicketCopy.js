@@ -9,7 +9,7 @@ export const heroDataCopy = {
 }
 
 export const CtaSectionTitle = {
-    title:`It’s not just submit ticket our support system offers.`,
+    title: `It’s not just submit ticket our support system offers.`,
 }
 
 export const CTAsectionCardCopy = [
