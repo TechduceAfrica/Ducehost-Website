@@ -7,7 +7,8 @@ export default function ExpertCTA() {
         <div 
             className={style.expert__cta__img} 
             data-scroll 
-            data-scroll-speed="0.12">
+            data-scroll-speed="0.12"
+        >
             <Image 
                 src='/images/Ducehost-Expert-Assistance.webp' 
                 alt='Domain Hosting Expert Assistance Whenever You Need It'
