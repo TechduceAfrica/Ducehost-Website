@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import PriBtn from "../PriBtn";
 
-const SubmitTicketForm = () => {
+const ReportAbuseForm = () => {
   const [loading, setLoading] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formErrors, setFormErrors] = useState({
@@ -17,7 +17,7 @@ const SubmitTicketForm = () => {
     email: "",
     message: "",
     subject: "",
-    id: "ticket",
+    id: "report",
   });
 
   const handleChange = (e) => {
@@ -142,7 +142,7 @@ const SubmitTicketForm = () => {
   return (
     <section>
       {" "}
-      <form className="form text-left py-[20px]" onSubmit={handleSubmit}>
+      <form className="form  py-[20px]" onSubmit={handleSubmit}>
         <div className="gap-[30px] flex flex-col">
           {/* NAME */}
           <div>
@@ -248,10 +248,7 @@ const SubmitTicketForm = () => {
             )}
           </div>
           <div className="font-semibold">
-            <PriBtn
-              PriBtnText={loading ? "Submitting..." : "Submit"}
-              PriBtnLink={""}
-            />
+            <PriBtn PriBtnText={loading ? "Submitting..." : "Submit"} />
           </div>
         </div>
       </form>
@@ -259,4 +256,4 @@ const SubmitTicketForm = () => {
   );
 };
 
-export default SubmitTicketForm;
+export default ReportAbuseForm;
