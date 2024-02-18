@@ -48,7 +48,7 @@ export default function NavBar() {
                             <li className={style.main__menu}>
                                 <Link 
                                     href="/domain"
-                                    className={pathname == "/domain" ? "active" : ""}
+                                    className={pathname.includes("/domain") ? "active" : ""}
                                 >
                                     Domain
                                 </Link>
@@ -57,7 +57,7 @@ export default function NavBar() {
                                         (
                                             <div 
                                                 key={index} 
-                                                className={style.sub__menu__list}
+                                                className={`${style.sub__menu__list} ${pathname == `${domainSubMenu.DomainLink}` ? `${style.sub__active}` : ""}`}
                                             >
                                                 <Link 
                                                     href={domainSubMenu.DomainLink}
@@ -73,7 +73,7 @@ export default function NavBar() {
                             <li className={style.main__menu}>
                                 <Link 
                                     href="/hosting"
-                                    className={pathname == "/hosting" ? "active" : ""}
+                                    className={pathname.includes("/hosting") ? "active" : ""}
                                 >
                                     Hosting
                                 </Link>
@@ -82,7 +82,7 @@ export default function NavBar() {
                                         (
                                             <div 
                                                 key={index} 
-                                                className={style.sub__menu__list}
+                                                className={`${style.sub__menu__list} ${pathname == `${hostingSubMenu.DomainLink}` ? `${style.sub__active}` : ""}`}
                                             >
                                                 <Link 
                                                     href={hostingSubMenu.DomainLink}
@@ -97,7 +97,7 @@ export default function NavBar() {
                             <li className={style.main__menu}>
                                 <Link 
                                     href="/security"
-                                    className={pathname == "/security" ? "active" : ""}
+                                    className={pathname.includes("/security") ? "active" : ""}
                                 >
                                     Security
                                 </Link>
@@ -106,7 +106,7 @@ export default function NavBar() {
                                         (
                                             <div 
                                                 key={index} 
-                                                className={style.sub__menu__list}
+                                                className={`${style.sub__menu__list} ${style[securitySubMenu.DomainClass]} ${pathname == `${securitySubMenu.DomainLink}` ? `${style.sub__active}` : ""}`}
                                             >
                                                 <Link 
                                                     href={securitySubMenu.DomainLink}
@@ -122,7 +122,7 @@ export default function NavBar() {
                             <li className={style.main__menu}>
                                 <Link 
                                     href="/email"
-                                    className={pathname == "/email" ? "active" : ""}
+                                    className={pathname.includes("/email") ? "active" : ""}
                                 >
                                     Email
                                 </Link>
@@ -131,7 +131,7 @@ export default function NavBar() {
                                         (
                                             <div 
                                                 key={index} 
-                                                className={style.sub__menu__list}
+                                                className={`${style.sub__menu__list} ${style[emailSubMenu.DomainClass]} ${pathname == `${emailSubMenu.DomainLink}` ? `${style.sub__active}` : ""}`}
                                             >
                                                 <Link 
                                                     href={emailSubMenu.DomainLink}
@@ -147,7 +147,7 @@ export default function NavBar() {
                             <li className={style.main__menu}>
                                 <Link 
                                     href="/contact"
-                                    className={pathname == "/contact" ? "active" : ""}
+                                    className={pathname.includes("/contact") ? "active" : ""}
                                 >
                                     Contact
                                 </Link>
@@ -156,7 +156,7 @@ export default function NavBar() {
                                         (
                                             <div 
                                                 key={index} 
-                                                className={style.sub__menu__list}
+                                                className={`${style.sub__menu__list} ${pathname == `${contactSubMenu.DomainLink}` ? `${style.sub__active}` : ""}`}
                                             >
                                                 <Link 
                                                     href={contactSubMenu.DomainLink}
@@ -171,7 +171,7 @@ export default function NavBar() {
                             <li className={style.main__menu}>
                                 <Link 
                                     href="/help"
-                                    className={pathname == "/help" ? "active" : ""}
+                                    className={pathname.includes("/help") ? "active" : ""}
                                 >
                                     Help
                                 </Link>
@@ -180,7 +180,7 @@ export default function NavBar() {
                                         (
                                             <div 
                                                 key={index} 
-                                                className={style.sub__menu__list}
+                                                className={`${style.sub__menu__list} ${pathname.includes(`${helpSubMenu.DomainLink}`) ? `${style.sub__active}` : ""}`}
                                             >
                                                 <Link 
                                                     href={helpSubMenu.DomainLink}

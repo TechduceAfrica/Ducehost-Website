@@ -39,11 +39,13 @@ export const securitySubMenus = [
         DomainMenu: `SSL Certificates`,
         DomainLink: `/security/ssl-certificates`,
         DomainNotification: `Coming Soon`,
+        DomainClass: `link__disabled`,
     },
     {
         DomainMenu: `Backup`,
         DomainLink: `/security/backup`,
         DomainNotification: `Coming Soon`,
+        DomainClass: `link__disabled`,
     },
     {
         DomainMenu: `Maintenance`,
@@ -57,16 +59,19 @@ export const emailSubMenus = [
         DomainMenu: `Business Email`,
         DomainLink: `/email/business-email`,
         DomainNotification: `Coming Soon`,
+        DomainClass: `link__disabled`,
     },
     {
         DomainMenu: `Anti-spam Protection`,
         DomainLink: `/email/anti-spam-protection`,
         DomainNotification: `Coming Soon`,
+        DomainClass: `link__disabled`,
     },
     {
         DomainMenu: `Private Email`,
         DomainLink: `/email/private-email`,
         DomainNotification: `Coming Soon`,
+        DomainClass: `link__disabled`,
     },
 ]
 
@@ -96,7 +101,7 @@ export const helpSubMenus = [
     },
     {
         DomainMenu: `eBooks`,
-        DomainLink: `/help/e-books`,
+        DomainLink: `/help/ebooks`,
         DomainNotification: ``,
     },
     {
