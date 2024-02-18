@@ -60,24 +60,47 @@
     position: absolute;
     padding: 3px 0.5px;
     border-radius: 8px;
+    overflow: hidden;
     background: var(--white);
     box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.20);
 }
 
 .sub__menu__list {
-    padding: 10px;
+    padding: 10px 20px;
     text-wrap: nowrap;
     min-width: 200px;
     position: relative;
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 250ms ease-in-out;
+}
+
+.sub__menu__list:hover {
+    background-color: var(--green-light);
+}
+
+.sub__menu__list a {
+    padding: 0px;
+}
+
+.sub__active {
+    background-color: var(--green);
+    color: var(--green-light);
+}
+
+.sub__menu__list:nth-child(2) {
+    border-block: solid 1px var(--green-light);
 }
 
 .sub__menu__list span {
     background-color: var(--green);
     color: var(--white);
     font-size: 0.6rem;
-    position: absolute;
+    /* position: absolute;
     right: 5%;
-    top: -3px;
+    top: -3px; */
     padding: 2px 5px;
     border-radius: 10px;
     cursor: wait;
@@ -90,6 +113,14 @@
 
 .sub__menu__list:hover span {
     background-color: var(--wine);
+}
+
+.link__disabled {
+    cursor: not-allowed;
+}
+
+.link__disabled a {
+    pointer-events: none;
 }
 
 .mobile__nav__hamburger {
