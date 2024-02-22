@@ -17,11 +17,17 @@
 }
 
 .content__copy p {
-  margin-bottom: 36px;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+}
+
+.testimonial__sec {
+  text-wrap: balance;
+  max-width: 400px;
 }
 
 .home__sec {
-  margin-block: 80px;
+  margin-block: 5rem;
 }
 
 @media (max-width:787px) {
