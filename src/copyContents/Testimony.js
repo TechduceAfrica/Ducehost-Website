@@ -12,13 +12,13 @@ export const TestimoniesCopy = [
         jobTitle:`CEO and Founder, Grokbrand`
     },
     {
-        img: `/images/Data%20Adie%20CEO_Ducehost%20website%20hosting%20and%20domain%20name%20purchase.webp`,
+        img: `/images/Opeyemi-POF_Luxury.webp`,
         testimonyText: `"Ducehost's expertise and creativity transformed our online presence, helping us stand out in a crowded market. We're grateful for their invaluable contribution."`,
         name:`Opeyemi`,
         jobTitle:`CEO and Founder, Pof Luxury`
     },
     {
-        img: `/images/Data%20Adie%20CEO_Ducehost%20website%20hosting%20and%20domain%20name%20purchase.webp`,
+        img: `/images/Oluwafemi-Adekunle_Mediglow-NG.webp`,
         testimonyText: `Our experience with DuceHost has been exceptional. They not only deliver tangible results but also exemplify a top-tier agency in terms of customer care."`,
         name:`Oluwafemi Adekunle`,
         jobTitle:`CEO and Founder, Mediglow NG`
