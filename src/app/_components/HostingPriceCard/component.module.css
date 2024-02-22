@@ -89,6 +89,10 @@
     justify-content: center;
 }
 
+.xprice__card h4 {
+    color: var(--wine);
+}
+
 .xprice__card .cta {
     justify-self: baseline;
 }

@@ -3,7 +3,9 @@ import style from './component.module.css'
 
 export default function ExpertCTA() {
   return (
-    <section className={`${style.expert__cta__section} container__width`}>
+    <section 
+        className={`${style.expert__cta__section} container__width`}
+    >
         <div 
             className={style.expert__cta__img} 
             data-scroll 
@@ -29,16 +31,24 @@ export default function ExpertCTA() {
                 For any questions, issues, or challenges that may arise during the domain transfer process, our expert support team is accessible around the clock to provide you with the guidance you require.
             </p>
             <p>
-                Call or Chat  
+                Call: 
                 <a 
                     href="tel:2349027006055" 
-                    title='Call or Chat'
+                    title='Phone call'
                     target="_blank" 
                     rel="noopener noreferrer"
                     className='wine'
                 >: 
-                      +234 902 7006 055
-                </a> 
+                      +234 902 7006 055 
+                </a> or Chat: <a 
+                    href='https://wa.link/mc7o7x' 
+                    title='WhatsApp chat'
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className='wine'
+                >
+                    WhatsApp
+                </a>
             </p>
         </div>
     </section>

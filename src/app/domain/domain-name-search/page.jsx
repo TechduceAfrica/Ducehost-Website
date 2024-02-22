@@ -43,7 +43,7 @@ export default function DomainNameSearch() {
                         <TLDPriceCards/>
                     </div>
                 </section>
-                <section>
+                <section className='padding__block__80'>
                     <WcuSection/>
                 </section>
             </div>

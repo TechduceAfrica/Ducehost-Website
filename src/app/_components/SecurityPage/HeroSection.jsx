@@ -8,7 +8,7 @@ export default function HeroSection({ heroContent }) {
     const {title, body, link, cta, img, width, height} = heroContent;
 
     return (
-        <section className={style.hero__wrapper}>
+        <section className={`${style.hero__wrapper} padding__block__80`}>
             <div className={style.content}>
                 <h1>
                     {title}

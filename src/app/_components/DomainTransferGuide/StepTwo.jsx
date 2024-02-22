@@ -24,7 +24,7 @@ export default function StepTwo({ step, title, imgLink, width, height }) {
                 <ul>
                     <li>
                         Request the domain name’s authorization code (also known as the 
-                        <a href='/epp-code' target='_blank' title='EPP Code Link' className='wine'> EPP code </a> 
+                        <a href='https://ducehost.com/host/cart.php?a=add&domain=transfer' target='_blank' title='EPP Code Link' className='wine'> EPP code </a> 
                         or transfer code) from your current registrar.
                     </li>
                 </ul>

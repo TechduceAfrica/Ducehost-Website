@@ -16,9 +16,6 @@
 }
 
 .step__sec__wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-column-gap: 120px;
     align-items: center;
 }
 
@@ -36,9 +33,14 @@
     order: -1;
 }
 
+.step__sec__wrapper:nth-child(even) .step__img__wrapper {
+    justify-content: flex-end;
+}
+
 .step__copy__wrapper {
     display: grid;
     row-gap: 1rem;
+    max-width: 400px;
 }
 
 .step__copy__wrapper h4 {

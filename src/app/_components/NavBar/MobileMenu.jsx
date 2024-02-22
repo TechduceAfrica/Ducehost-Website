@@ -1,7 +1,8 @@
 import { Accordion, AccordionItem } from '@szhsin/react-accordion';
 import Link from 'next/link';
+import { handleLinkClick } from './Functions';
 
-export default function MobileMenu({ mobileMenu }) {
+export default function MobileMenu({ mobileMenu, setIsOpen }) {
     return (
         <div>
             <Accordion>
@@ -13,17 +14,26 @@ export default function MobileMenu({ mobileMenu }) {
                         >
                             <ul className="list">
                                 <li>
-                                    <Link href={mMenu.OneLink}>
+                                    <Link 
+                                        href={mMenu.OneLink} 
+                                        onClick={() => handleLinkClick(setIsOpen)}
+                                    >
                                         {mMenu.One}
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href={mMenu.TwoLink}>
+                                    <Link 
+                                        href={mMenu.TwoLink} 
+                                        onClick={() => handleLinkClick(setIsOpen)}
+                                    >
                                         {mMenu.Two}
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href={mMenu.ThreeLink}>
+                                    <Link 
+                                        href={mMenu.ThreeLink} 
+                                        onClick={() => handleLinkClick(setIsOpen)}
+                                    >
                                         {mMenu.Three}
                                     </Link>
                                 </li>
