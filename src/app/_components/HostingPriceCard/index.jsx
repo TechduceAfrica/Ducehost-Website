@@ -68,7 +68,7 @@ export default function HostingPriceCard({ hostingPlans }) {
                     <div className={style.cta}>
                         <PriBtn
                             PriBtnText= 'Get Started'
-                            PriBtnLink= '/'
+                            PriBtnLink= {hostingplan.link}
                         />
                     </div>
                 </div>
@@ -85,11 +85,11 @@ export default function HostingPriceCard({ hostingPlans }) {
                         </p>
                     </div>
                     <div className={style.divider}></div>
-                    <div className={style.description}>
-                        <p>
-                            {Hosting.xPlan.description}
-                        </p>
-                    </div>
+                </div>
+                <div className={style.description}>
+                    <p>
+                        {Hosting.xPlan.description}
+                    </p>
                 </div>
                 <div>
                     <div className={style.divider}></div>

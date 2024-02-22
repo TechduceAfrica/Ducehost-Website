@@ -11,6 +11,7 @@ export const Hosting = {
                 four: `Unlimited Emails`,
                 five: `And lots more`
             },
+            link: `https://www.ducehost.com/host/index.php?rp=/store/shared-website-hosting/lite`,
         },
         {
             title: `Standard`,
@@ -23,6 +24,7 @@ export const Hosting = {
                 four: `Unlimited Emails`,
                 five: `And lots more`
             },
+            link: `https://www.ducehost.com/host/index.php?rp=/store/shared-website-hosting/standard`,
         },
         {
             title: `Pro`,
@@ -35,6 +37,7 @@ export const Hosting = {
                 four: `Unlimited Emails`,
                 five: `And lots more`
             },
+            link: `https://www.ducehost.com/host/index.php?rp=/store/shared-website-hosting/pro`,
         },
         {
             title: `Plus`,
@@ -47,6 +50,7 @@ export const Hosting = {
                 four: `Unlimited Emails`,
                 five: `And lots more`
             },
+            link: `https://www.ducehost.com/host/index.php?rp=/store/shared-website-hosting/plus`,
         },
         {
             title: `Premium`,
@@ -59,13 +63,15 @@ export const Hosting = {
                 four: `Unlimited Emails`,
                 five: `And lots more`
             },
+            link: `/`,
         },
     ],
     xPlan: {
-        title: `Enterprises`,
+        title: `Enterprise`,
         subtitle: `Scalable Web Servers for Your Advanced Needs`,
         cardLabel: `This offering is meticulously crafted for businesses and web applications that require the highest level of customization and scalability.`,
         description: `When your online presence demands more than traditional hosting solutions, Our Enterprise Hosting Package steps up to the challenge. This offering is meticulously crafted for businesses and web applications that require the highest level of customization and scalability.`,
+        link: ``,
     }
 }
 
