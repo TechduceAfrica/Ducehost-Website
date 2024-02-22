@@ -24,6 +24,7 @@ export default function Footer() {
                                     href="https://www.facebook.com/ducehost" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
+                                    title="ducehost facebook link"
                                 >
                                     <MagneticEffect>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -37,6 +38,7 @@ export default function Footer() {
                                     href="https://www.instagram.com/ducehost" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
+                                    title="ducehost instagram link"
                                 >
                                     <MagneticEffect>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -50,6 +52,7 @@ export default function Footer() {
                                     href="https://www.x.com/" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
+                                    title="ducehost x link"
                                 >
                                     <MagneticEffect>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -67,7 +70,7 @@ export default function Footer() {
                             </h4>
                             <ul>
                                 <li>
-                                    <Link href="http://www.ducehost.com">
+                                    <Link href="/contact">
                                         Schedule a Meeting
                                     </Link>
                                 </li>
