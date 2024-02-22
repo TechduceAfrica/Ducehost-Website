@@ -1,7 +1,7 @@
 export const LiveChatCopy = {
     title: `We are here to give <span class='green'>you </span> optimum assistance with our live chat feature.`,
     desc: `For immediate assistance, our live chat support is here to help you in real-time. Connect with our support agents and get instant answers to your questions.`,
-    link: `/`,
+    link: `https://tawk.to/chat/6426e6d94247f20fefe91215/1gsrvbh9l`,
     btn: `Start Live Chat`,
     img: `/images/Ducehost-live-chat-support-system.webp`,
     width: 611,
