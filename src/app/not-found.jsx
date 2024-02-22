@@ -12,7 +12,7 @@ export default function NotFoundPage() {
     }
 
     return (
-        <section className="container__width error__404__page">
+        <section className="container__width error__404__page padding__block__80">
             <div>
                 <h2>Ooops...</h2>
                 <h3>Page not found</h3>

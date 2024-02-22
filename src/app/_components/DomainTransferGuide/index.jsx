@@ -16,16 +16,16 @@ export default function DomainTransferGuide() {
                 </p>
             </div>
             <div className={style.steps__sec}>
-                <div className={style.step__sec__wrapper}>
+                <div className={`${style.step__sec__wrapper} responsive__flex m__text__align__center`}>
                     <StepOne {...Copy.stepOne}/>
                 </div>
-                <div className={style.step__sec__wrapper}>
+                <div className={`${style.step__sec__wrapper} responsive__flex m__text__align__center`}>
                     <StepTwo {...Copy.stepTwo}/>
                 </div>
-                <div className={style.step__sec__wrapper}>
+                <div className={`${style.step__sec__wrapper} responsive__flex m__text__align__center`}>
                     <StepOne {...Copy.stepThree}/>
                 </div>
-                <div className={style.step__sec__wrapper}>
+                <div className={`${style.step__sec__wrapper} responsive__flex m__text__align__center`}>
                     <StepOne {...Copy.stepFour}/>
                 </div>
             </div>

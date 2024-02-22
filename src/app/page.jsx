@@ -56,7 +56,7 @@ export default function Home() {
                     />
                 </div>
                 <div className={style.home__sec}>
-                    <div className={style.content__copy}>
+                    <div className={`${style.content__copy} ${style.testimonial__sec}`}>
                         <h3>
                             {homeCopy.testimonySectionTitle}
                         </h3>
