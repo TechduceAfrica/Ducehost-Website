@@ -98,7 +98,7 @@ export const DomainTransferGuide = {
 export const DomainTransferFAQs = [
     {
         question: `How Long does the transfer take?`,
-        answer: `Answer One... 1... 2... 3... Dummy content needs update`,
+        answer: `Normally, the transfer process requires about 5-7 days. The exact timeframe may vary depending  on your domain’s current registrar and other factors.`,
     },
     {   question: `Is there a specific time to transfer a domain?`,
         answer: `Answer two... 1... 2... 3... Dummy content needs update`,

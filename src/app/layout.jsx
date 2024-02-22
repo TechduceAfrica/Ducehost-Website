@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "@/app/_components/NavBar";
 import Footer from "@/app/_components/Footer";
 import { Toaster } from "react-hot-toast";
+import TawkToScript from "./_components/TawkToScript";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
         <NavBar />
         {children}
         <Footer />
+        <TawkToScript/>
       </body>
     </html>
   );
