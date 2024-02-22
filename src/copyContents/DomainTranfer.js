@@ -101,9 +101,9 @@ export const DomainTransferFAQs = [
         answer: `Normally, the transfer process requires about 5-7 days. The exact timeframe may vary depending  on your domain’s current registrar and other factors.`,
     },
     {   question: `Is there a specific time to transfer a domain?`,
-        answer: `Answer two... 1... 2... 3... Dummy content needs update`,
+        answer: `Most often, domain transfers can be executed at any time, but be mindful of your domain registration and renewal period with your current registrar`,
     },
     {   question: `Will there be a downtime during the transfer?`,
-        answer: `Answer three... 1... 2... 3... Dummy content needs update`,
+        answer: `In most cases, your website and email services should remain unaffected during the transfer. However, it is advisable to confirm this with your current registrar`,
     },    
 ]

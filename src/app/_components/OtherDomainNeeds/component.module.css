@@ -57,3 +57,9 @@
 .other__domain__services__link:hover svg path {
     fill: var(--wine);
 }
+
+@media (max-width:680px) {
+    .other__domain__wrapper img {
+        display: none;
+    }
+}

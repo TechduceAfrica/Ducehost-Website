@@ -52,19 +52,28 @@ export const homeCopy = {
 export const FAQsCopy= [
     {
         question: `What is Web hosting and why do i need it?`,
-        answer: `Answer One... 1... 2... 3... Dummy content needs update`,
+        answer: `Web hosting is a service that allows individuals and organizations to make their websites accessible on the internet. It provides the necessary server space, infrastructure, and technologies to store website files and make them viewable to online visitors. You need web hosting to have an online presence, store website files, and ensure your websites is available to anyone, anytime, anywhere in the world.`,
     },
     {   question: `How can i register a domain name with Ducehost?`,
-        answer: `Answer two... 1... 2... 3... Dummy content needs update`,
+        answer: `Registering a domain name with Ducehost is easy:
+        ### Search: Use our domain search tool to check the availability of your desired domain name.
+        ### Select: Once you find an available domain, select it, and add it to your cart.
+        ### Checkout: Review your order, provide the necessary registration details, and complete the purchase.
+        ### Manage: Your domain will be registered , and you can manage it through your account.`,
     },
     {   question: `What kind of customer support do you offer?`,
-        answer: `Answer three... 1... 2... 3... Dummy content needs update`,
+        answer: `We offer a range of customer support from live chat to phone to email. All you have to do is to choose the channel that suits you best. Our support team comprises knowledgeable and trained professionals who can assist you with technical issues, general inquiries , and even provide guidance on website management. `,
     },
     {   question: `How do i migrate to Ducehost?`,
-        answer: `Answer four... 1... 2... 3... Dummy content needs update`,
+        answer: `Migrating to Ducehost is a simple process:
+        ###Request Migration: Contact our support team and request a website migration. Provide details about your current hosting.
+        ###Share Access: Depending on your current hosting, you may need to share access details like FTP,  cPanel, or other relevant information with our team.
+        ###Sit Back: Our experts will handle the migration process, ensuring a smooth transition to Ducehost.
+        ###Verify: Once the migration is complete, review your website to ensure everything is working correctly. 
+        ####We are here to make the process seamless, so do not hesitate to reach out for assistance.`,
     },
     {   question: `Which hosting plan is marked as recommended for WordPress?`,
-        answer: `Answer five... 1... 2... 3... Dummy content needs update`,
+        answer: `The recommended hosting plan for WordPress is typically the "WordPress Hosting". This hosting plan is specifically optimized for WordPress websites, offering features like automatic updates, enhanced security, and specialized support for the WordPress platform. It's advisable to choose a hosting plan that explicitly mentions its compatibility with WordPress for the best performance and user experience.`,
     },
     
 ]
