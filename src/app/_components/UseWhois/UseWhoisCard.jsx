@@ -1,24 +1,23 @@
 import Image from "next/image";
-import { style } from "./UseWhois.module.css"
+import style from './UseWhois.module.css'
 
-export default function UseWhoisCard({ img, label, desc }) {
+export default function UseWhoisCard({ img, label, desc, width, height }) {
     return (
-        <div className={style.usewhoiscard__wrapper}>
+        <div className={style.card__wrapper}>
             <Image 
                 src={img} 
                 alt={label} 
                 title={label} 
-                width={134} 
-                height={80}
+                width={width} 
+                height={height}
             />
             <div>
-                <h4>
+                <h3>
                     {label} 
-                </h4>
+                </h3>
             </div>
             <div>
-                <p>
-                    {desc} 
+                <p dangerouslySetInnerHTML={{ __html: desc }} >
                 </p>
             </div>
         </div>

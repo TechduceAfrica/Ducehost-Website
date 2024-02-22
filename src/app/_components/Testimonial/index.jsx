@@ -38,9 +38,9 @@ export default function Testimonial() {
                             </p>
                         </div>
                         <div className={style.testimonial__client__name}>
-                            <h5>
+                            <h4>
                                 {testimoyCopy.name}
-                            </h5>
+                            </h4>
                         </div>
                         <div className={style.testimonial__position}>
                             <span>
