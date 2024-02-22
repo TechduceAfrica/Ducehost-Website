@@ -10,6 +10,8 @@
 .expert__cta__text {
     display: grid;
     gap: 1rem;
+    max-width: 400px;
+    justify-self: flex-end;
 }
 
 .expert__cta__img img {
