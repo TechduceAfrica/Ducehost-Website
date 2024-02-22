@@ -19,7 +19,6 @@ export default function DomainTransfer() {
         )()
     }, [])
 
-
     return (
         <main>
                 <WithTransferSearch
