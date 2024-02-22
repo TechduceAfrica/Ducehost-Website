@@ -30,7 +30,8 @@ export const hostingSubMenus = [
     {
         DomainMenu: `Reseller Hosting`,
         DomainLink: `/hosting/reseller-hosting`,
-        DomainNotification: ``,
+        DomainNotification: `Coming Soon`,
+        DomainClass: `link__disabled`,
     },
 ]
 
