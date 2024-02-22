@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import PriBtn from "../PriBtn";
+import FormBtn from "../FormBtn";
 
 const ReportAbuseForm = () => {
   const [loading, setLoading] = useState(false);
@@ -248,10 +249,7 @@ const ReportAbuseForm = () => {
             )}
           </div>
           <div className="font-semibold">
-            <PriBtn
-              PriBtnText={loading ? "Submitting..." : "Submit"}
-              PriBtnLink={""}
-            />
+            <FormBtn FormBtnText={loading ? "Submitting..." : "Submit"} />
           </div>
         </div>
       </form>
