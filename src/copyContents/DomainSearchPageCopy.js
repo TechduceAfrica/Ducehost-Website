@@ -4,6 +4,13 @@ export const HeroSection = {
     heroBG: `/images/Domain-Hero-Section_Ducehost-website-hosting-and-domain-name-purchase.webp`,
 }
 
+export const banner = {
+    alt: `Purchase any hosting plan from the plus tier or above and claim your free online tld for the first year`,
+    src: `/images/Purchase-any-hosting-plan-from-the-plus-tier-or-above-and-claim-your-free-online-tld-for-the-first-year.png`,
+    width: `1440`,
+    height: `510`,
+}
+
 export const wcdSection = {
     wcdtitle: `Why choose Ducehost`,tldLabel: ``,
     wcdImg: `/images/Why%20Choose%20Ducehost%201_Ducehost-website-hosting-and-domain-name-purchase.webp`,
