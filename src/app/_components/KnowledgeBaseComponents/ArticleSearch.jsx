@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import style from '../DomainSearchBar/component.module.css'
 import { KnowledgeBaseCategories } from '@/copyContents/KnowledgeBaseCopy'
-import Link from 'next/link';
+import Link from 'next/link'
 
 export default function ArticleSearch() {
 
@@ -42,7 +42,7 @@ export default function ArticleSearch() {
 
     return (
         <form 
-            className={style.domain__name__single__search__form} 
+            className={style.article__search__form} 
             data-scroll 
             data-scroll-speed="0.1"
             onSubmit={(e) => { e.preventDefault(); handleSearch(); }}
