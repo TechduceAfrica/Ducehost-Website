@@ -51,6 +51,12 @@
     }
 }
 
+@media (max-width:759px) {
+    .wcu__img {
+        display: none;
+    }
+}
+
 @media (max-width:379px) {
     .wcu__card__wrapper {
         grid-template-columns: auto;

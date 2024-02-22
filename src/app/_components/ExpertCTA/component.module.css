@@ -27,5 +27,6 @@
         padding-block: 32px 48px;
         text-align: center;
         grid-template-columns: auto;
+        justify-content: center;
     }
 }
