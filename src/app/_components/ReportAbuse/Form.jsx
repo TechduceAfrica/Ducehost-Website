@@ -142,7 +142,7 @@ const ReportAbuseForm = () => {
   return (
     <section>
       {" "}
-      <form className="form  py-[20px]" onSubmit={handleSubmit}>
+      <form className="form text-left py-[20px]" onSubmit={handleSubmit}>
         <div className="gap-[30px] flex flex-col">
           {/* NAME */}
           <div>
@@ -248,7 +248,10 @@ const ReportAbuseForm = () => {
             )}
           </div>
           <div className="font-semibold">
-            <PriBtn PriBtnText={loading ? "Submitting..." : "Submit"} />
+            <PriBtn
+              PriBtnText={loading ? "Submitting..." : "Submit"}
+              PriBtnLink={""}
+            />
           </div>
         </div>
       </form>

@@ -3,8 +3,11 @@ import Image from "next/image";
 import React from "react";
 import style from "./ReportAbuse.module.css";
 import ReportAbuseForm from "./Form";
+import { motion } from "framer-motion";
+import SectionWrapper from "@/app/hoc/SectionWrapper";
+import { fadeIn } from "@/app/utils/motion";
 
-export default function HeroSection() {
+const HeroSection = () => {
   return (
     <section className={`${style.hero__section} container__width`}>
       <div>
@@ -22,10 +25,12 @@ export default function HeroSection() {
           />
         </div>
       </div>
-      <div>
+      <motion.div variants={fadeIn("left", "spring", 0.2, 0.75)}>
         <p>{heroDataCopy.formDesc}</p>
         <ReportAbuseForm />
-      </div>
+      </motion.div>
     </section>
   );
-}
+};
+
+export default SectionWrapper(HeroSection, "");
