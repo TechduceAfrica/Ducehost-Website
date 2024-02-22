@@ -57,7 +57,7 @@ export const otherServices = {
         {
             icon: `/images/who-is-lookup-icon.webp`,
             serTitle: `Who is lookup`,
-            serLabel: `Find out information on any domain name like the owner, registration date,contact details tc.`,
+            serLabel: `Find out information on any domain name like the owner, registration date, contact details etc.`,
             serCTA: `Learn more`,
             serLink: `/domain/whois-lookup`,
         },
