@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import PriBtn from "../PriBtn";
+
+import FormBtn from "../FormBtn";
 
 const ReportAbuseForm = () => {
   const [loading, setLoading] = useState(false);
@@ -142,7 +143,7 @@ const ReportAbuseForm = () => {
   return (
     <section>
       {" "}
-      <form className="form  py-[20px]" onSubmit={handleSubmit}>
+      <form className="form text-left py-[20px]" onSubmit={handleSubmit}>
         <div className="gap-[30px] flex flex-col">
           {/* NAME */}
           <div>
@@ -248,7 +249,7 @@ const ReportAbuseForm = () => {
             )}
           </div>
           <div className="font-semibold">
-            <PriBtn PriBtnText={loading ? "Submitting..." : "Submit"} />
+            <FormBtn FormBtnText={loading ? "Submitting..." : "Submit"} />
           </div>
         </div>
       </form>
