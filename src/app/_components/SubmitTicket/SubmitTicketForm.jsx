@@ -209,7 +209,7 @@ const SubmitTicketForm = () => {
                 id="subject"
                 name="subject"
                 className="w-full py-3 px-2"
-                type="tel"
+                type="text"
                 placeholder="Subject"
                 value={form.subject}
                 onChange={handleChange}
