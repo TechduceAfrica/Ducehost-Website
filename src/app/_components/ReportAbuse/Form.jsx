@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import PriBtn from "../PriBtn";
+
 import FormBtn from "../FormBtn";
 
 const ReportAbuseForm = () => {
