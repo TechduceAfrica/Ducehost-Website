@@ -86,12 +86,12 @@ export const WhyChoose = {
 export const faqs = [
     {
         question: `What is Shared Hosting and how does it work?`,
-        answer: `Answer One... 1... 2... 3... Dummy content needs update`,
+        answer: `Shared hosting is when multiple websites share the resources of a single server to keep hosting costs low. It's cost-effective, user-friendly, and ideal for smaller websites with moderate traffic.`,
     },
     {   question: `Can i host multiple websites on a shared hosting plan?`,
-        answer: `Answer two... 1... 2... 3... Dummy content needs update`,
+        answer: `Yes, many shared hosting plans allow you to host multiple websites on a single account. These plans often provide support for multiple domains and subdomains, making it possible to manage several websites from one hosting plan. Users typically don't need to upgrade for this feature, but it's essential to check the specific details of the shared hosting plan with your hosting provider to confirm the number of domains and websites allowed.`,
     },
     {   question: `Can i upgrade my shared hosting plan as my website grows?`,
-        answer: `Answer three... 1... 2... 3... Dummy content needs update`,
+        answer: `Yes, you can upgrade your shared hosting plan as your website grows. At Ducehost, we  usually offer scalability options to accommodate increasing website needs.`,
     },    
 ]
