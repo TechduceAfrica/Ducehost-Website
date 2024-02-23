@@ -13,29 +13,38 @@ export default function MobileMenu({ mobileMenu, setIsOpen }) {
                             key={index}
                         >
                             <ul className="list">
-                                <li>
+                                <li className={mMenu.OneClass}>
                                     <Link 
                                         href={mMenu.OneLink} 
                                         onClick={() => handleLinkClick(setIsOpen)}
                                     >
                                         {mMenu.One}
                                     </Link>
+                                    <span>
+                                        {mMenu.TwoNotification}
+                                    </span>
                                 </li>
-                                <li>
+                                <li className={mMenu.OneClass}>
                                     <Link 
                                         href={mMenu.TwoLink} 
                                         onClick={() => handleLinkClick(setIsOpen)}
                                     >
                                         {mMenu.Two}
                                     </Link>
+                                    <span>
+                                        {mMenu.TwoNotification}
+                                    </span>
                                 </li>
-                                <li>
+                                <li className={mMenu.ThreeClass}>
                                     <Link 
                                         href={mMenu.ThreeLink} 
                                         onClick={() => handleLinkClick(setIsOpen)}
                                     >
                                         {mMenu.Three}
                                     </Link>
+                                    <span>
+                                        {mMenu.ThreeNotification}
+                                    </span>
                                 </li>
                             </ul>
                             

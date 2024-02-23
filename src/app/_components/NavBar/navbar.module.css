@@ -94,20 +94,19 @@
     border-block: solid 1px var(--green-light);
 }
 
-.sub__menu__list span {
+.sub__menu__list span, 
+.mobile__menu ul span {
     background-color: var(--green);
     color: var(--white);
     font-size: 0.6rem;
-    /* position: absolute;
-    right: 5%;
-    top: -3px; */
     padding: 2px 5px;
     border-radius: 10px;
     cursor: wait;
     transition: all 300ms ease-in-out;
 }
 
-.sub__menu__list span:empty {
+.sub__menu__list span:empty, 
+.mobile__menu ul span:empty {
     display: none;
 }
 
@@ -164,9 +163,18 @@
 
     .mobile__menu ul li {
         padding: 10px 16px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .mobile__menu ul li:nth-child(2) {
         border-block: solid 1px #737171;
     }
 }
+
+
+/* ############################################## */
+/* MOBILE MENU STYLING IS IN THE GLOBAL CSS FILE */
+/* ############################################ */

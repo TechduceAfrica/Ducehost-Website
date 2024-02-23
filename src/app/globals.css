@@ -447,13 +447,15 @@ h3.szh-accordion__item-heading::after {
     left: 0;
     width: 100%;
     height: -webkit-fill-available;
+    /* height: 100vh; */
+    min-height: 100svh;
     background-color: var(--white);
     z-index: 9;
     padding: 30px 10px;
     box-sizing: border-box;
     transform: translateX(110vw);
     transition: transform 300ms ease-in-out;
-}
+  }
   .mobile__nav.open {
     transform: translateX(0vw);
   }
@@ -464,5 +466,11 @@ h3.szh-accordion__item-heading::after {
   .mobile__nav__close, 
   .open .mobile__nav__open {
     display: block;
+  }
+  .link__disabled {
+    cursor: not-allowed;
+  }
+  .link__disabled a {
+    pointer-events: none;
   }
 }

@@ -39,6 +39,7 @@
     font-family: var(--font-500);
     font-size: 28px;
     line-height: 36px;
+    margin-block: 32px 16px;
 }
 
 .feature__card__wrapper p, 

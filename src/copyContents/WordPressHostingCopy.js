@@ -17,7 +17,7 @@ export const featuresCopy = {
             desc: `Our optimized servers and caching solutions ensure lightning-fast page load times for your WordPress site.`,
         },
         {
-            img: `/images/website-security.webp`,
+            img: `/icons/Enhanced-Security.svg`,
             width: `150`,
             height: `150`,
             title: `Enhanced Security`,
