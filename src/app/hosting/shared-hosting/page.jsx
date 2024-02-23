@@ -33,7 +33,10 @@ export default function SharedHosting() {
                     Features={keyFeatureCopy.feature}
                 />
             </section>
-            <section className='margin__block__80'>
+            <section 
+                className='margin__block__80' 
+                id='plans'
+            >
                 <SectionTitle 
                     title={planLabel.title} 
                     text={planLabel.text}
