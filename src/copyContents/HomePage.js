@@ -55,11 +55,11 @@ export const FAQsCopy= [
         answer: `Web hosting is a service that allows individuals and organizations to make their websites accessible on the internet. It provides the necessary server space, infrastructure, and technologies to store website files and make them viewable to online visitors. You need web hosting to have an online presence, store website files, and ensure your websites is available to anyone, anytime, anywhere in the world.`,
     },
     {   question: `How can i register a domain name with Ducehost?`,
-        answer: `Registering a domain name with Ducehost is easy:
-        ### Search: Use our domain search tool to check the availability of your desired domain name.
-        ### Select: Once you find an available domain, select it, and add it to your cart.
-        ### Checkout: Review your order, provide the necessary registration details, and complete the purchase.
-        ### Manage: Your domain will be registered , and you can manage it through your account.`,
+        answer: `<p>Registering a domain name with Ducehost is easy:</p>
+        <ol><li> Search: Use our <span class='wine'><a href='/domain/domain-name-search'>domain search tool</a></span> to check the availability of your desired domain name.</li>
+        <li> Select: Once you find an available domain, select it, and add it to your cart.</li>
+        <li> Checkout: Review your order, provide the necessary registration details, and complete the purchase.</li>
+        <li> Manage: Your domain will be registered , and you can manage it through your account.</li></ol>`,
     },
     {   question: `What kind of customer support do you offer?`,
         answer: `We offer a range of customer support from live chat to phone to email. All you have to do is to choose the channel that suits you best. Our support team comprises knowledgeable and trained professionals who can assist you with technical issues, general inquiries , and even provide guidance on website management. `,
