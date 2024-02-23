@@ -9,6 +9,7 @@ export const banner = {
     src: `/images/Purchase-any-hosting-plan-from-the-plus-tier-or-above-and-claim-your-free-online-tld-for-the-first-year.png`,
     width: `1440`,
     height: `510`,
+    url: `https://ducehost.com/host/index.php?rp=/store/shared-website-hosting`,
 }
 
 export const wcdSection = {

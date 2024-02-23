@@ -1,8 +1,8 @@
 export const heroCopy = {
     title: `Unlocking the Power of Affordable Hosting.`,
-    body: `At Ducehost, we understand that not all websites have the same hosting needs. That's why we offer a range of shared hosting...`,
+    body: `With DuCeHost, you have the capability to purchase a hosting plan and then distribute it to others while efficiently managing multiple websites with distinct accounts, all consolidated under a single main hosting plan.`,
     cta: `Explore Plans`,
-    link: `/`,
+    link: `#plans`,
     img: `/images/Shared-hosting-Unlock-the-power-of-affordable-hosting.webp`,
     width: `500`,
     height: `500`,

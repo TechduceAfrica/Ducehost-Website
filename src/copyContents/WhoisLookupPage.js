@@ -26,7 +26,7 @@ export const WLHowToSteps = {
             width: `134`,
             height: `80`,
             label: `Instant Results`,
-            desc: `Within seconds, our <span class="wine"><a href="/" title="Whois Lookup"> Whois Lookup</a></span> tool will retrieve and display the relevant domain details.`,
+            desc: `Within seconds, our <span class="wine"><a href="/domain/whois-lookup" title="Whois Lookup"> Whois Lookup</a></span> tool will retrieve and display the relevant domain details.`,
         },
     ]
 }

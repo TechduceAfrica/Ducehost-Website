@@ -62,25 +62,25 @@ export const WordPressHostingPlans = {
             label: `Starter`,
             website: `1`,
             space: `2`,
-            url: `/`,
+            url: `https://ducehost.com/host/index.php?rp=/store/wordpress-hosting/easywp-starter`,
         },
         {
             label: `Regular`,
             website: `2`,
             space: `10`,
-            url: `/`,
+            url: `https://ducehost.com/host/index.php?rp=/store/wordpress-hosting/easywp-regular`,
         },
         {
             label: `Advance`,
             website: `5`,
             space: `20`,
-            url: `/`,
+            url: `https://ducehost.com/host/index.php?rp=/store/wordpress-hosting/easywp-advance`,
         },
         {
             label: `Expert`,
             website: `10`,
             space: `50`,
-            url: `/`,
+            url: `https://ducehost.com/host/index.php?rp=/store/wordpress-hosting/easywp-expert`,
         },
     ]
 }

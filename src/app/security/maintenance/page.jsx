@@ -28,7 +28,7 @@ export default function Maintenance() {
                     Cards={whyChoose.card}
                 />
             </section>
-            <section className='padding__block__80'>
+            <section className='padding__block__80' id='plans'>
                 <PriceCard 
                     PlanLabel={planSection} 
                     PriceCardContent={PriceCardContent}

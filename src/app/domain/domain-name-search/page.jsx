@@ -10,6 +10,7 @@ import OtherDomainNeeds from '@/app/_components/OtherDomainNeeds';
 import FAQs from '@/app/_components/FAQs';
 import ExpertCTA from '@/app/_components/ExpertCTA';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function DomainNameSearch() {
 
@@ -32,7 +33,9 @@ export default function DomainNameSearch() {
             />
             <div className='container__width'>
                 <section className={style.tld__card__sec}>
-                    <Image {...banner}/>
+                    <Link href={banner.url} title={banner.alt}>
+                        <Image {...banner}/>
+                    </Link>
                 </section>
                 <section className='padding__block__80'>
                     <WcuSection/>
