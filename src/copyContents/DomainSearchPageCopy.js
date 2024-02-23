@@ -75,7 +75,7 @@ export const otherServices = {
 export const DomainSearchFAQs = [
     {
         question: ` What is a domain search?`,
-        answer: `Answer One... 1... 2... 3... Dummy content needs update`,
+        answer: `A domain search is a process of checking the availability of a specific domain name on the internet. It allows individuals or businesses to determine if a desired domain name is already registered or if it's available for registration`,
     },
     {   question: ` How do I perform a domain search?`,
         answer: `Answer two... 1... 2... 3... Dummy content needs update`,

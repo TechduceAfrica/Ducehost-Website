@@ -107,15 +107,15 @@ export const WLWhyUse = {
 export const WLFAQs = [
     {
         question: `How do you find out who owns a domain?`,
-        answer: `Answer One... 1... 2... 3... Dummy content needs update`,
+        answer: `Finding out where a domain is registered and who owns a domain, you can use a <a href='/domain/whois-lookup'>Whois lookup tool</a> like ours. It combs the Whois database to return the informtion you need.`,
     },
     {   question: `How do you find out who owns a private domain?`,
-        answer: `Answer two... 1... 2... 3... Dummy content needs update`,
+        answer: `To find out who owns a private domain, a generic address may still be available, then you can try contacting the owner this way. Alternatively, look for an About or Contact Us page on the website, which can point you to the owner.`,
     },
     {   question: `Is it possible to change my Whois data?`,
-        answer: `Answer three... 1... 2... 3... Dummy content needs update`,
+        answer: `Yes, you can change the data associated with your domain name with your registrar. They will have the tools and processes to implement the changes you wish to implement.`,
     },
     {   question: `How accurate is Whois data?`,
-        answer: `Answer four... 1... 2... 3... Dummy content needs update`,
+        answer: `Extremely accurate! ICANN is committed to providing unrestricted, public access to complete and accurate Whois information, subject to applicable laws. To do that, registrars and registries are required to allow access to data collected for all their registeres domain names. It is essential to understand that there is no way to hide the existence of a registered domain. Since ICANN-required contact informatoon is publicly available in whois directories, anyone can quickly search the Whois database to confirm the status of a domain. `,
     },    
 ]
