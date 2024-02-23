@@ -340,6 +340,14 @@ h3.szh-accordion__item-heading::after {
   margin-block: 30px 20px;
 }
 
+.faq__answer p {
+
+}
+
+.faq__answer ol {
+  list-style: decimal;
+}
+
 .mobile__nav {
     display: none;
 }
@@ -354,7 +362,7 @@ h3.szh-accordion__item-heading::after {
 }
 
 #plans {
-  scroll-margin-block-start: 100px;
+  scroll-margin-block-start: 120px;
 }
 
 @media (max-width: 787px) {
@@ -447,8 +455,7 @@ h3.szh-accordion__item-heading::after {
     left: 0;
     width: 100%;
     height: -webkit-fill-available;
-    /* height: 100vh; */
-    min-height: 100svh;
+    min-height: 100lvh;
     background-color: var(--white);
     z-index: 9;
     padding: 30px 10px;
