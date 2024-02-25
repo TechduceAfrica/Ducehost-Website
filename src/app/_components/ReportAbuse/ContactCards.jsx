@@ -6,7 +6,7 @@ export default function ContactCards({ contactCards }) {
     return (
         <div className={style.contact__card__wrapper}>
             {contactCards.map((contactCard, index) => (
-                <div key={index} className={style.contact__card}>
+                <div key={index} className={`${style.contact__card} fade__in`}>
                     <div>
                         <Image
                             src={contactCard.icon}

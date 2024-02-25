@@ -5,7 +5,7 @@ export default function Discover({ title, img, width, height, copyContent }) {
     return (
         <div>
             <div className={style.title__wrapper}>
-                <h2 dangerouslySetInnerHTML={{ __html: title }} >
+                <h2 dangerouslySetInnerHTML={{ __html: title }} className="fade__in">
                 </h2>
             </div>
             <div>

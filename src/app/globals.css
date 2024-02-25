@@ -371,6 +371,11 @@ h3.szh-accordion__item-heading::after {
   letter-spacing: 0.08px;
 }
 
+.fade__in {
+  opacity: 0;
+  transform: translateY(50%);
+}
+
 #plans {
   scroll-margin-block-start: 120px;
 }

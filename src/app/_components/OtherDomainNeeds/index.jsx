@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function OtherDomainNeeds() {
   return (
     <div className={style.other__domain__wrapper}>
-        <div>
+        <div className="fade__in">
             <Image
                 src={otherServices.img}
                 alt='Ducehost is not just to search a name'
@@ -17,10 +17,10 @@ export default function OtherDomainNeeds() {
         </div>
         <div className={style.other__domain__content}>
             <div className={style.other__domain__content__intro}>
-                <h3>
+                <h3 className="fade__in">
                     {otherServices.title}
                 </h3>
-                <p>
+                <p className="fade__in">
                     {otherServices.description}
                 </p>
             </div>

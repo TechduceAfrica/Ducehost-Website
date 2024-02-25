@@ -8,7 +8,7 @@ export default function FeatureCards({Features}) {
             {Features.map(( feature, index ) => (
                 <div 
                     key={index} 
-                    className={`${style.feature__card__wrapper} border__1`}
+                    className={`${style.feature__card__wrapper} border__1 fade__in`}
                 >
                     <Image 
                         src={feature.img} 

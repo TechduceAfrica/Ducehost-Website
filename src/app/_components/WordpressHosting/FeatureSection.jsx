@@ -7,7 +7,7 @@ export default function FeatureSection() {
     
     return (
         <div className={style.feature__section}>
-            <h2 dangerouslySetInnerHTML={{ __html: featuresCopy.title }}></h2>
+            <h2 dangerouslySetInnerHTML={{ __html: featuresCopy.title }} className="fade__in"></h2>
             <FeatureCards 
                 Features={featuresCopy.cards}
             />

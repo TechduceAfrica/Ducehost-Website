@@ -6,7 +6,7 @@ export default function OtherServicesLists({ otherServicesCards }) {
     <div className={style.other__domain__services__wrapper}>
         {otherServicesCards.map((otherServicesCard, index) => (
             <div key={index}>
-                <div>
+                <div className="fade__in">
                     <Image
                         src={otherServicesCard.icon}
                         alt={otherServicesCard.serTitle}
@@ -15,13 +15,13 @@ export default function OtherServicesLists({ otherServicesCards }) {
                         height={56}
                     />
                 </div>
-                <h4>
+                <h4 className="fade__in">
                     {otherServicesCard.serTitle}
                 </h4>
-                <p>
+                <p className="fade__in">
                     {otherServicesCard.serLabel}
                 </p>
-                <a href={otherServicesCard.serLink}>
+                <a href={otherServicesCard.serLink} className="fade__in">
                     <div className={style.other__domain__services__link}>
                         <span>
                             {otherServicesCard.serCTA}

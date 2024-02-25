@@ -5,7 +5,7 @@ export default function PlansCards({ Plans }) {
     return (
         <div className={style.plan__cards__wrapper}>
             {Plans.map((plan, index) => (
-                <div key={index} className={style.plan__card__wrapper}>
+                <div key={index} className={`${style.plan__card__wrapper} fade__in`}>
                     <div>
                         <h3>
                             {plan.label}

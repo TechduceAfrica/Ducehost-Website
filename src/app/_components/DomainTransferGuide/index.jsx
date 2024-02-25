@@ -8,10 +8,10 @@ export default function DomainTransferGuide() {
     return (
         <>
             <div className={`${style.step__topic__wrapper} margin__top__80`}>
-                <h3>
+                <h3 className="fade__in">
                     Step-by-Step <span className='wine'> Transfer </span>Guide
                 </h3>
-                <p>
+                <p className="fade__in">
                     Transferring your domain is <span className='wine'> simple</span>, and we are here to guide you through the process. 
                 </p>
             </div>

@@ -14,14 +14,14 @@ export default function WithTransferSearch({ HeroSecBgImgLink, text, title }) {
             className={style.hero__section}
         >
             <p 
-                className={style.hero__section__intro__text} 
+                className={`${style.hero__section__intro__text} fade__in`} 
                 data-scroll 
                 data-scroll-speed="0.15"
             >
                 {text}
             </p>
             <h1 
-                className={style.hero__section__title} 
+                className={`${style.hero__section__title} fade__in`} 
                 data-scroll 
                 data-scroll-speed="0.1"
             >

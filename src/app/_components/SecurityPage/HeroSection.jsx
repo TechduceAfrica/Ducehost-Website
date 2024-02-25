@@ -10,10 +10,10 @@ export default function HeroSection({ heroContent }) {
     return (
         <section className={`${style.hero__wrapper} padding__block__80`}>
             <div className={style.content}>
-                <h1>
+                <h1 className="fade__in">
                     {title}
                 </h1>
-                <p>
+                <p className="fade__in">
                     {body}
                 </p>
                 <PriBtn 
@@ -28,6 +28,7 @@ export default function HeroSection({ heroContent }) {
                     title={title} 
                     width={width} 
                     height={height}
+                    className="fade__in"
                 />
             </div>
         </section>

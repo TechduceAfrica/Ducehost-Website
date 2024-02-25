@@ -9,7 +9,7 @@ export default function DiscoverDomain() {
         <div className='container__width'>
             <div>
                 <div>
-                    <h3>
+                    <h3 className="fade__in">
                         Discover a domain name that  best describes 
                         <span className='green'> YOU </span>
                         or <span className='green'> Your Business</span>
@@ -19,7 +19,7 @@ export default function DiscoverDomain() {
                     <DomainSearchOnly/>
                 </div>
             </div>
-            <div className={style.discover__sec__img}>
+            <div className={`${style.discover__sec__img} fade__in`}>
                 <Image
                     src={discoverSection.img}
                     alt='Discover a domain name'

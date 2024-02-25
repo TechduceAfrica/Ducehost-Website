@@ -7,7 +7,7 @@ export default function WcuSection() {
     return (
         <div className={style.wcu__sec__wrapper}>
             <div 
-                className={style.wcu__img}
+                className={`${style.wcu__img} fade__in`}
                 data-scroll 
                 data-scroll-speed="0.1"
             >
@@ -25,7 +25,7 @@ export default function WcuSection() {
                 data-scroll-speed="0.11"
             >
                 <div>
-                    <h3>
+                    <h3 className="fade__in">
                         {wcdSection.wcdtitle}
                     </h3>
                 </div>

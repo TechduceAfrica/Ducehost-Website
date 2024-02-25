@@ -1,4 +1,5 @@
 'use client'
+import { useEffect } from 'react';
 import ExpertCTA from '@/app/_components/ExpertCTA';
 import FAQs from '@/app/_components/FAQs';
 import HostingPriceCard from '@/app/_components/HostingPriceCard';
@@ -8,7 +9,7 @@ import KeyFeature from '@/app/_components/SharedHosting/KeyFeature';
 import SectionTitle from '@/app/_components/SharedHosting/SectionTitle';
 import { Hosting } from '@/copyContents/PricePlan';
 import { WhyChoose, faqs, heroCopy, keyFeatureCopy, planLabel } from '@/copyContents/SharedHostingCopy';
-import { useEffect } from 'react';
+import { FadeIn, FadeInContainer } from '@/app/_components/EntranceAnimation';
 
 export default function SharedHosting() {
 
@@ -23,43 +24,47 @@ export default function SharedHosting() {
 
     return (
         <main className='container__width'>
-            <HeroSection 
-                heroContent={heroCopy}
-            />
-            <section className='padding__block__80'>
-                <KeyFeature 
-                    title={keyFeatureCopy.title} 
-                    text={keyFeatureCopy.desc}
-                    Features={keyFeatureCopy.feature}
-                />
-            </section>
-            <section 
-                className='margin__block__80' 
-                id='plans'
-            >
-                <SectionTitle 
-                    title={planLabel.title} 
-                    text={planLabel.text}
-                />
-                <HostingPriceCard 
-                    hostingPlans={Hosting.plans}
-                />
-            </section>
-            <section className='padding__block__80'>
-                <SectionTitle 
-                    title={WhyChoose.title} 
-                    text={WhyChoose.text}
-                />
-                <Benefits 
-                    Cards={WhyChoose.cards}
-                />
-            </section>
-            <section className='margin__block__80'>
-                <FAQs 
-                    faqsContent={faqs}
-                />
-            </section>
-            <ExpertCTA/>
+            <FadeInContainer>
+                <FadeIn>
+                    <HeroSection 
+                        heroContent={heroCopy}
+                    />
+                    <section className='padding__block__80'>
+                        <KeyFeature 
+                            title={keyFeatureCopy.title} 
+                            text={keyFeatureCopy.desc}
+                            Features={keyFeatureCopy.feature}
+                        />
+                    </section>
+                    <section 
+                        className='margin__block__80' 
+                        id='plans'
+                    >
+                        <SectionTitle 
+                            title={planLabel.title} 
+                            text={planLabel.text}
+                        />
+                        <HostingPriceCard 
+                            hostingPlans={Hosting.plans}
+                        />
+                    </section>
+                    <section className='padding__block__80'>
+                        <SectionTitle 
+                            title={WhyChoose.title} 
+                            text={WhyChoose.text}
+                        />
+                        <Benefits 
+                            Cards={WhyChoose.cards}
+                        />
+                    </section>
+                    <section className='margin__block__80'>
+                        <FAQs 
+                            faqsContent={faqs}
+                        />
+                    </section>
+                    <ExpertCTA/>                   
+                </FadeIn>
+            </FadeInContainer>
         </main>
     )
 }

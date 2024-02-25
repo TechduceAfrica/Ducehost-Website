@@ -7,7 +7,7 @@ export default function ExpertCTA() {
         className={`${style.expert__cta__section} container__width`}
     >
         <div 
-            className={style.expert__cta__img} 
+            className={`${style.expert__cta__img} fade__in`} 
             data-scroll 
             data-scroll-speed="0.12"
         >
@@ -23,11 +23,11 @@ export default function ExpertCTA() {
             data-scroll 
             data-scroll-speed="0.13"
         >
-            <h4>
+            <h4 className="fade__in">
                 <span className='wine'>Expert Assistance </span>
                 Whenever You Need It
             </h4>
-            <p>
+            <p className="fade__in">
                 For any questions, issues, or challenges that may arise during the domain transfer process, our expert support team is accessible around the clock to provide you with the guidance you require.
             </p>
             <p>

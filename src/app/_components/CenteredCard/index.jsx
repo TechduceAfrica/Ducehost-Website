@@ -12,7 +12,7 @@ export default function CenteredCard({ centercards }) {
                     key={index}
                     className={style.card__wrap}
                 >
-                    <div className={style.card__img}>
+                    <div className={`${style.card__img} fade__in`}>
                         <Image
                             src={centercard.imgLink}
                             alt={centercard.title}
@@ -23,12 +23,12 @@ export default function CenteredCard({ centercards }) {
                         />
                     </div>
                     <div className={style.card__title}>
-                        <h4>
+                        <h4 className="fade__in">
                             {centercard.title}
                         </h4>
                     </div>
                     <div className={style.card__text}>
-                        <p>
+                        <p className="fade__in">
                             {centercard.description}
                         </p>
                     </div>

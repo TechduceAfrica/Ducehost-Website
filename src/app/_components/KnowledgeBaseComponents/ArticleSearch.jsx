@@ -42,7 +42,7 @@ export default function ArticleSearch() {
 
     return (
         <form 
-            className={style.article__search__form} 
+            className={`${style.article__search__form} fade__in`} 
             data-scroll 
             data-scroll-speed="0.1"
             onSubmit={(e) => { e.preventDefault(); handleSearch(); }}

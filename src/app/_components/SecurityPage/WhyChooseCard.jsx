@@ -6,13 +6,13 @@ export default function WhyChooseCard({ Cards, label }) {
     return (
         <div className={style.why__choose__wrapper}>
             <div>
-                <h2>
+                <h2 className="fade__in">
                     {label}
                 </h2>
             </div>
             <div className={style.cards__wrapper}>
                 {Cards.map((card, index) => (
-                    <div key={index} className={style.card__wrapper}>
+                    <div key={index} className={`${style.card__wrapper} fade__in`}>
                         <div>
                             <Image 
                                 src={card.img} 

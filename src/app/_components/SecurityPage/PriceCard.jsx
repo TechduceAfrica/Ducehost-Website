@@ -7,16 +7,16 @@ export default function PriceCard({ PlanLabel, PriceCardContent }) {
     return (
         <>
             <div className={style.plan__title}>
-                <h2>
+                <h2 className="fade__in">
                     {PlanLabel.title}
                 </h2>
-                <p>
+                <p className="fade__in">
                     {PlanLabel.desc}
                 </p>
             </div>
             <div className={style.price__cards__wrapper}>
                 {PriceCardContent.map((priceCard, index) => (
-                    <div key={index} className={`${style.price__card__wrapper} border__1`}>
+                    <div key={index} className={`${style.price__card__wrapper} border__1 fade__in`}>
                         <div className={style.price__card__label}>
                             <span>
                                 {priceCard.label}

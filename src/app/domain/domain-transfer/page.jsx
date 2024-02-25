@@ -7,6 +7,7 @@ import WithTransferSearch from '@/app/_components/ImgBGHeroSection/WithTransferS
 import { DomainTransferHero, whyTransfer, DomainTransferFAQs } from '@/copyContents/DomainTranfer';
 import FAQs from '@/app/_components/FAQs';
 import ExpertCTA from '@/app/_components/ExpertCTA';
+import { FadeIn, FadeInContainer } from '@/app/_components/EntranceAnimation';
 
 export default function DomainTransfer() {
 
@@ -21,31 +22,35 @@ export default function DomainTransfer() {
 
     return (
         <main>
-                <WithTransferSearch
-                    HeroSecBgImgLink={DomainTransferHero.heroBG}
-                    text={DomainTransferHero.heroIntro}
-                    title={DomainTransferHero.heroTitle}
-                />
-                <section className={`${style.section__one} container__width`}>
-                    <div className={style.section__title}>
-                        <h3>
-                            Why Transfer to <span className='wine'> Ducehost</span>?
-                        </h3>
-                    </div>
-                    <CenteredCard
-                        centercards={whyTransfer}
-                        styled={whyTransfer}
+            <FadeInContainer>
+                <FadeIn>
+                    <WithTransferSearch
+                        HeroSecBgImgLink={DomainTransferHero.heroBG}
+                        text={DomainTransferHero.heroIntro}
+                        title={DomainTransferHero.heroTitle}
                     />
-                </section>
-                <section className='container__width'>
-                    <DomainTransferGuide/>
-                </section>
-                <section className='container__width margin__block__2'>
-                    <FAQs 
-                        faqsContent={DomainTransferFAQs}
-                    />
-                </section>
-                <ExpertCTA/>
+                    <section className={`${style.section__one} container__width`}>
+                        <div className={style.section__title}>
+                            <h3 className="fade__in">
+                                Why Transfer to <span className='wine'> Ducehost</span>?
+                            </h3>
+                        </div>
+                        <CenteredCard
+                            centercards={whyTransfer}
+                            styled={whyTransfer}
+                        />
+                    </section>
+                    <section className='container__width'>
+                        <DomainTransferGuide/>
+                    </section>
+                    <section className='container__width margin__block__2'>
+                        <FAQs 
+                            faqsContent={DomainTransferFAQs}
+                        />
+                    </section>
+                    <ExpertCTA/>
+                </FadeIn>
+            </FadeInContainer>
         </main>
     )
 }

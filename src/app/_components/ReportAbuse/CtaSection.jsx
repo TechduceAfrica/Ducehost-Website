@@ -8,10 +8,10 @@ export default function CtaSection({ contactCardProps, title }) {
         <section className={`${style.cta__section} container__width`}>
             <div>
                 <div>
-                    <h3>
+                    <h3 className="fade__in">
                         {title}
                     </h3>
-                    <p>
+                    <p className="fade__in">
                         {CtaSectionCopy.desc}
                     </p>
                 </div>
@@ -23,6 +23,7 @@ export default function CtaSection({ contactCardProps, title }) {
                 title={CtaSectionCopy.alt} 
                 width={CtaSectionCopy.width} 
                 height={CtaSectionCopy.height}
+                className="fade__in"
             />
         </section>
     )
