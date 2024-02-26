@@ -13,6 +13,7 @@ export default function HeroSection() {
                 <h1 
                     data-scroll 
                     data-scroll-speed="0.15"
+                    className="fade__in"
                 >
                     {KnowledgeBaseCopy.title}
                 </h1>
@@ -25,6 +26,7 @@ export default function HeroSection() {
                     title={KnowledgeBaseCopy.title} 
                     width={KnowledgeBaseCopy.width} 
                     height={KnowledgeBaseCopy.height}
+                    className="fade__in"
                 />
             </div>
         </section>

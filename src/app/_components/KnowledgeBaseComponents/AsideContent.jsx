@@ -16,14 +16,14 @@ export default function AsideContent() {
 
     return (
         <aside>
-            <h2>
+            <h2 className="fade__in">
                 Most Read Articles
             </h2>
             <div>
                 {KnowledgeBaseMostRead.map((MostRead, index) => (
                     <div key={index} className={style.widgets__list}>
-                        <Image {...ariticleIcon}/>
-                        <p>
+                        <Image {...ariticleIcon} className="fade__in"/>
+                        <p className="fade__in">
                             <Link href={MostRead.link} target='__blank' title={MostRead.title}>
                                 {MostRead.title}    
                             </Link>

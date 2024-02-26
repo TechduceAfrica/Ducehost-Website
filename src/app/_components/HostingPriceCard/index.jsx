@@ -7,7 +7,10 @@ export default function HostingPriceCard({ hostingPlans }) {
     return (
         <div className={style.price__card__wrapper}>
             {hostingPlans.map((hostingplan, index) => (
-                <div key={index} className={style.price__card}>
+                <div 
+                    key={index} 
+                    className={`${style.price__card} fade__in`}
+                >
                     <div className={style.top}>
                         <h4>
                             {hostingplan.title}
@@ -74,7 +77,7 @@ export default function HostingPriceCard({ hostingPlans }) {
                 </div>
             )
             )}
-            <div className={style.xprice__card}>
+            <div className={`${style.xprice__card} fade__in`}>
                 <div>
                     <div className={style.top}>
                         <h4>

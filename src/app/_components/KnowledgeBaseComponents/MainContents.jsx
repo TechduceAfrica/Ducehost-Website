@@ -9,6 +9,7 @@ export default function MainContents() {
             <h2 
                 data-scroll 
                 data-scroll-speed="0.15"
+                className="fade__in"
             >
                 Knowledge Base
             </h2>
@@ -23,6 +24,7 @@ export default function MainContents() {
                         href="/help/knowledge-base/[category]" 
                         as={`/help/knowledge-base/${Category.slug}`} 
                         target='_blank'
+                        className="fade__in"
                     >
                         <div className={style.category__card}>
                             {Category.title}

@@ -1,4 +1,5 @@
 'use client'
+import { FadeIn, FadeInContainer } from '@/app/_components/EntranceAnimation';
 import ExpertCTA from '@/app/_components/ExpertCTA';
 import FAQs from '@/app/_components/FAQs';
 import ForWhoisLookUp from '@/app/_components/ImgBGHeroSection/ForWhoisLookUp';
@@ -21,38 +22,42 @@ export default function WhoisLookup() {
 
     return (
         <main>
-            <ForWhoisLookUp 
-                HeroSecBgImgLink={WLHeroCopy.heroBG}
-                text={WLHeroCopy.heroIntro}
-                title={WLHeroCopy.heroTitle}
-            />
-            <section className='container__width padding__block__80'>
-                <MapUseWhoisCard 
-                    title={WLHowToSteps.title} 
-                    WLHowToSteps={WLHowToSteps.steps}
-                />
-            </section>
-            <section className='container__width padding__block__80'>
-                <Discover 
-                    title={WLDiscover.title} 
-                    img={WLDiscover.img}
-                    width={WLDiscover.width}
-                    height={WLDiscover.height} 
-                    copyContent={WLDiscover.list}
-                />
-            </section>
-            <section className='container__width padding__block__80'>
-                <WhyUse 
-                    title={WLWhyUse.title} 
-                    Cards={WLWhyUse.cards}
-                />
-            </section>
-            <section className='container__width padding__block__80'>
-                <FAQs 
-                    faqsContent={WLFAQs}
-                />
-            </section>
-            <ExpertCTA/>
+            <FadeInContainer>
+                <FadeIn>
+                    <ForWhoisLookUp 
+                        HeroSecBgImgLink={WLHeroCopy.heroBG}
+                        text={WLHeroCopy.heroIntro}
+                        title={WLHeroCopy.heroTitle}
+                    />
+                    <section className='container__width padding__block__80'>
+                        <MapUseWhoisCard 
+                            title={WLHowToSteps.title} 
+                            WLHowToSteps={WLHowToSteps.steps}
+                        />
+                    </section>
+                    <section className='container__width padding__block__80'>
+                        <Discover 
+                            title={WLDiscover.title} 
+                            img={WLDiscover.img}
+                            width={WLDiscover.width}
+                            height={WLDiscover.height} 
+                            copyContent={WLDiscover.list}
+                        />
+                    </section>
+                    <section className='container__width padding__block__80'>
+                        <WhyUse 
+                            title={WLWhyUse.title} 
+                            Cards={WLWhyUse.cards}
+                        />
+                    </section>
+                    <section className='container__width padding__block__80'>
+                        <FAQs 
+                            faqsContent={WLFAQs}
+                        />
+                    </section>
+                    <ExpertCTA/>
+                </FadeIn>
+            </FadeInContainer>
         </main>
     )
 }

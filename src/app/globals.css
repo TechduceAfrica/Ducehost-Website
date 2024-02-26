@@ -341,11 +341,21 @@ h3.szh-accordion__item-heading::after {
 }
 
 .faq__answer p {
-
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.08px;
 }
 
 .faq__answer ol {
   list-style: decimal;
+}
+
+.faq__answer li {
+  list-style-position: inside;
+}
+
+.faq__answer a {
+  color: var(--wine);
 }
 
 .mobile__nav {
@@ -359,6 +369,11 @@ h3.szh-accordion__item-heading::after {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.08px;
+}
+
+.fade__in {
+  opacity: 0;
+  transform: translateY(50%);
 }
 
 #plans {

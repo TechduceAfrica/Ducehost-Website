@@ -6,13 +6,13 @@ export default function Cards({ secTitle, Cards, enp }) {
     return (
         <div className={`${style.price__card__sec__wrapper} padding__block__80`}>
             <div>
-                <h2>
+                <h2 className="fade__in">
                     {secTitle}
                 </h2>
             </div>
             <div className={style.price__card__wrapper}>
                 {Cards.map((card, index) => (
-                    <div key={index} className={`${style.price__card} border__1`}>
+                    <div key={index} className={`${style.price__card} border__1 fade__in`}>
                         <div>
                             <h3>
                                 {card.title}
@@ -33,7 +33,7 @@ export default function Cards({ secTitle, Cards, enp }) {
                         </div>
                     </div>
                 ))}
-                <div className={style.enp__price__card}>
+                <div className={`${style.enp__price__card} fade__in`}>
                     <div>
                         <h3 className='wine'>
                             {enp.title}

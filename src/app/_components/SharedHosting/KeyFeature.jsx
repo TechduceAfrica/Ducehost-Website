@@ -6,10 +6,10 @@ export default function KeyFeature({ title, text, Features }) {
     return (
         <div className={style.feature__sec__wrapper}>
             <div>
-                <h2>
+                <h2 className="fade__in">
                     {title}
                 </h2>
-                <p>
+                <p className="fade__in">
                     {text}
                 </p>
             </div>
@@ -17,7 +17,7 @@ export default function KeyFeature({ title, text, Features }) {
                 {Features.map(( feature, index ) => (
                     <div 
                         key={index} 
-                        className={style.card__wrapper}
+                        className={`${style.card__wrapper} fade__in`}
                     >
                         <Image 
                             src={feature.img} 

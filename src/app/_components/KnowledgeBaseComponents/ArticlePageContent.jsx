@@ -40,7 +40,7 @@ export default function ArticlePageContent({ slug, title, topic, body, likes, di
 
     return (
         <article>
-            <span>
+            <span className='fade__in'>
                 <Link 
                     href={"/help/knowledge-base/"}
                 >
@@ -52,15 +52,15 @@ export default function ArticlePageContent({ slug, title, topic, body, likes, di
                 </Link> / {topic}
             </span>
             <div className={style.article__screen}>
-                <h2>{topic}</h2>
+                <h2 className='fade__in'>{topic}</h2>
                 <div 
                     dangerouslySetInnerHTML={{ __html: body }} 
-                    className={style.article__body}
+                    className={`${style.article__body} fade__in`}
                 >
                 </div>
                 <div className={style.article__foot}>
                     <div className={style.article__interaction}>
-                        <p>
+                        <p className='fade__in'>
                             Helpful?
                         </p>
                         <div>
@@ -97,7 +97,7 @@ export default function ArticlePageContent({ slug, title, topic, body, likes, di
                             </button>
                         </div>
                     </div>
-                    <div className={style.article__update__date}>
+                    <div className={`${style.article__update__date} fade__in`}>
                         Updated {formattedLastUpdated}
                     </div>
                 </div>

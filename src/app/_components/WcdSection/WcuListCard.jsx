@@ -6,7 +6,7 @@ export default function WcuListCard({ wcuListCards }) {
         <div className={style.wcu__card__wrapper}>
             {wcuListCards.map((wcuCard, index) => (
                 <div key={index} className={style.wcu__card}>
-                    <div>
+                    <div className="fade__in">
                         <Image
                             src={wcuCard.icon}
                             alt={wcuCard.title}
@@ -16,12 +16,12 @@ export default function WcuListCard({ wcuListCards }) {
                         />   
                     </div>
                     <div>
-                        <h4>
+                        <h4 className="fade__in">
                             {wcuCard.title} 
                         </h4>
                     </div>
                     <div>
-                        <p>
+                        <p className="fade__in">
                             {wcuCard.description}
                         </p>
                     </div>

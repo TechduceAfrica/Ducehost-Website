@@ -1,4 +1,5 @@
 'use client'
+import { FadeIn, FadeInContainer } from '@/app/_components/EntranceAnimation'
 import ExpertCTA from '@/app/_components/ExpertCTA'
 import HeroSection from '@/app/_components/SecurityPage/HeroSection'
 import PriceCard from '@/app/_components/SecurityPage/PriceCard'
@@ -19,22 +20,26 @@ export default function Maintenance() {
 
     return (
         <main className='container__width'>
-            <HeroSection 
-                heroContent={MaintenanceCopyHero}
-            />
-            <section className='margin__block__80'>
-                <WhyChooseCard 
-                    label={whyChoose.title}
-                    Cards={whyChoose.card}
-                />
-            </section>
-            <section className='padding__block__80' id='plans'>
-                <PriceCard 
-                    PlanLabel={planSection} 
-                    PriceCardContent={PriceCardContent}
-                />
-            </section>
-            <ExpertCTA/>
+            <FadeInContainer>
+                <FadeIn>
+                    <HeroSection 
+                        heroContent={MaintenanceCopyHero}
+                    />
+                    <section className='margin__block__80'>
+                        <WhyChooseCard 
+                            label={whyChoose.title}
+                            Cards={whyChoose.card}
+                        />
+                    </section>
+                    <section className='padding__block__80' id='plans'>
+                        <PriceCard 
+                            PlanLabel={planSection} 
+                            PriceCardContent={PriceCardContent}
+                        />
+                    </section>
+                    <ExpertCTA/>
+                </FadeIn>
+            </FadeInContainer>
         </main>
     )
 }

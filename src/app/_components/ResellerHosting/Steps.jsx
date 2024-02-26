@@ -7,7 +7,7 @@ export default function Steps({ title, stepOne, stepTwo, stepThree }) {
         <>
             <div className={style.step__wrapper}>
                 <div className={style.step__sec__title}>
-                    <h2>
+                    <h2 className="fade__in">
                         {title}
                     </h2>
                 </div>
@@ -19,16 +19,17 @@ export default function Steps({ title, stepOne, stepTwo, stepThree }) {
                             title={stepOne.label} 
                             width={stepOne.width} 
                             height={stepOne.height}
+                            className="fade__in"
                         />
                     </div>
                     <div>
-                        <span className='wine'>
+                        <span className='wine fade__in'>
                             {stepOne.step}
                         </span>
-                        <h3>
+                        <h3 className="fade__in">
                             {stepOne.label}
                         </h3>
-                        <p>
+                        <p className="fade__in">
                             {stepOne.desc}
                         </p>
                     </div>
@@ -50,16 +51,17 @@ export default function Steps({ title, stepOne, stepTwo, stepThree }) {
                             title={stepTwo.label} 
                             width={stepTwo.width} 
                             height={stepTwo.height}
+                            className="fade__in"
                         />
                     </div>
                     <div>
-                        <span  className='wine'>
+                        <span className='wine fade__in'>
                             {stepTwo.step}
                         </span>
-                        <h3>
+                        <h3 className="fade__in">
                             {stepTwo.label}
                         </h3>
-                        <p>
+                        <p className="fade__in">
                             {stepTwo.desc}
                         </p>
                     </div>
@@ -81,16 +83,17 @@ export default function Steps({ title, stepOne, stepTwo, stepThree }) {
                             title={stepThree.label} 
                             width={stepThree.width} 
                             height={stepThree.height}
+                            className="fade__in"
                         />
                     </div>
                     <div>
-                        <span className='wine'>
+                        <span className='wine fade__in'>
                             {stepThree.step}
                         </span>
-                        <h3>
+                        <h3 className="fade__in">
                             {stepThree.label}
                         </h3>
-                        <p>
+                        <p className="fade__in">
                             {stepThree.desc}
                         </p>
                     </div>
@@ -98,7 +101,7 @@ export default function Steps({ title, stepOne, stepTwo, stepThree }) {
             </div>
             <div className={style.tab__step__wrapper}>
                 <div className={style.tab__step__sec__title}>
-                    <h2>
+                    <h2 className="fade__in">
                         {title}
                     </h2>
                 </div>
@@ -110,16 +113,17 @@ export default function Steps({ title, stepOne, stepTwo, stepThree }) {
                             title={stepOne.label} 
                             width={stepOne.width} 
                             height={stepOne.height}
+                            className="fade__in"
                         />
                     </div>
                     <div>
-                        <span className='wine'>
+                        <span className='wine fade__in'>
                             {stepOne.step}
                         </span>
-                        <h3>
+                        <h3 className="fade__in">
                             {stepOne.label}
                         </h3>
-                        <p>
+                        <p className="fade__in">
                             {stepOne.desc}
                         </p>
                     </div>
@@ -141,16 +145,17 @@ export default function Steps({ title, stepOne, stepTwo, stepThree }) {
                             title={stepTwo.label} 
                             width={stepTwo.width} 
                             height={stepTwo.height}
+                            className="fade__in"
                         />
                     </div>
                     <div>
-                        <span  className='wine'>
+                        <span  className='wine fade__in'>
                             {stepTwo.step}
                         </span>
-                        <h3>
+                        <h3 className="fade__in">
                             {stepTwo.label}
                         </h3>
-                        <p>
+                        <p className="fade__in">
                             {stepTwo.desc}
                         </p>
                     </div>
@@ -172,16 +177,17 @@ export default function Steps({ title, stepOne, stepTwo, stepThree }) {
                             title={stepThree.label} 
                             width={stepThree.width} 
                             height={stepThree.height}
+                            className="fade__in"
                         />
                     </div>
                     <div>
-                        <span className='wine'>
+                        <span className='wine fade__in'>
                             {stepThree.step}
                         </span>
-                        <h3>
+                        <h3 className="fade__in">
                             {stepThree.label}
                         </h3>
-                        <p>
+                        <p className="fade__in">
                             {stepThree.desc}
                         </p>
                     </div>
@@ -189,7 +195,7 @@ export default function Steps({ title, stepOne, stepTwo, stepThree }) {
             </div>
             <div className={style.mob__step__wrapper}>
                 <div className={style.mob__step__sec__title}>
-                    <h2>
+                    <h2 className="fade__in">
                         {title}
                     </h2>
                 </div>
@@ -201,16 +207,17 @@ export default function Steps({ title, stepOne, stepTwo, stepThree }) {
                             title={stepOne.label} 
                             width={stepOne.width} 
                             height={stepOne.height}
+                            className="fade__in"
                         />
                     </div>
                     <div>
-                        <span className='wine'>
+                        <span className='wine fade__in'>
                             {stepOne.step}
                         </span>
-                        <h3>
+                        <h3 className="fade__in">
                             {stepOne.label}
                         </h3>
-                        <p>
+                        <p className="fade__in">
                             {stepOne.desc}
                         </p>
                     </div>
@@ -223,16 +230,17 @@ export default function Steps({ title, stepOne, stepTwo, stepThree }) {
                             title={stepTwo.label} 
                             width={stepTwo.width} 
                             height={stepTwo.height}
+                            className="fade__in"
                         />
                     </div>
                     <div>
-                        <span  className='wine'>
+                        <span className='wine fade__in'>
                             {stepTwo.step}
                         </span>
-                        <h3>
+                        <h3 className="fade__in">
                             {stepTwo.label}
                         </h3>
-                        <p>
+                        <p className="fade__in">
                             {stepTwo.desc}
                         </p>
                     </div>
@@ -245,16 +253,17 @@ export default function Steps({ title, stepOne, stepTwo, stepThree }) {
                             title={stepThree.label} 
                             width={stepThree.width} 
                             height={stepThree.height}
+                            className="fade__in"
                         />
                     </div>
                     <div>
-                        <span className='wine'>
+                        <span className='wine fade__in'>
                             {stepThree.step}
                         </span>
-                        <h3>
+                        <h3 className="fade__in">
                             {stepThree.label}
                         </h3>
-                        <p>
+                        <p className="fade__in">
                             {stepThree.desc}
                         </p>
                     </div>

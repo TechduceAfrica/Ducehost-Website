@@ -10,14 +10,15 @@ export default function UseWhoisCard({ img, label, desc, width, height }) {
                 title={label} 
                 width={width} 
                 height={height}
+                className="fade__in"
             />
             <div>
-                <h3>
+                <h3 className="fade__in">
                     {label} 
                 </h3>
             </div>
             <div>
-                <p dangerouslySetInnerHTML={{ __html: desc }} >
+                <p dangerouslySetInnerHTML={{ __html: desc }} className="fade__in">
                 </p>
             </div>
         </div>

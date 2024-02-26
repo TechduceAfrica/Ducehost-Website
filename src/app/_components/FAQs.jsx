@@ -3,7 +3,7 @@ import FaqAnswer from './FaqAnswer';
 
 export default function FAQs({ faqsContent }) {
   return (
-    <div>
+    <div className="fade__in">
         <Accordion>
             {faqsContent.map((faqCopy, index) =>
                 (

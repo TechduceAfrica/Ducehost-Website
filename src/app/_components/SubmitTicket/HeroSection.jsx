@@ -1,5 +1,4 @@
 "use client";
-
 import { React, useState } from "react";
 import Image from "next/image";
 import style from "../ReportAbuse/ReportAbuse.module.css";
@@ -15,8 +14,8 @@ const HeroSection = () => {
     <section className={`${style.hero__section} container__width`}>
       <div>
         <div>
-          <h1 dangerouslySetInnerHTML={{ __html: heroDataCopy.title }}></h1>
-          <p>{heroDataCopy.body}</p>
+          <h1 dangerouslySetInnerHTML={{ __html: heroDataCopy.title }} className="fade__in"></h1>
+          <p className="fade__in">{heroDataCopy.body}</p>
         </div>
         <div>
           <Image
@@ -25,6 +24,7 @@ const HeroSection = () => {
             title={heroDataCopy.alt}
             width={heroDataCopy.width}
             height={heroDataCopy.height}
+            className="fade__in"
           />
         </div>
       </div>
@@ -37,3 +37,4 @@ const HeroSection = () => {
 };
 
 export default SectionWrapper(HeroSection, "");
+

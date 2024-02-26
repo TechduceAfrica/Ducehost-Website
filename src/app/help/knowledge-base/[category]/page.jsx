@@ -7,6 +7,7 @@ import AsideContent from "@/app/_components/KnowledgeBaseComponents/AsideContent
 import style from '../knowledgebasepage.module.css'
 import CategoryPageContent from '@/app/_components/KnowledgeBaseComponents/CategoryPageContent';
 import { redirect } from "next/navigation";
+import { FadeIn, FadeInContainer } from '@/app/_components/EntranceAnimation';
 
 export default function Category({ params }) {
 
@@ -29,15 +30,19 @@ export default function Category({ params }) {
 
     return (
         <div>
-            <HeroSection/>
-            <section className={`${style.kb__page} container__width margin__block__80`}>
-                <CategoryPageContent 
-                    title={category.title} 
-                    articles={category.articles} 
-                    category={category}
-                />
-                <AsideContent/>
-            </section>
+            <FadeInContainer>
+                <FadeIn>
+                    <HeroSection/>
+                    <section className={`${style.kb__page} container__width margin__block__80`}>
+                        <CategoryPageContent 
+                            title={category.title} 
+                            articles={category.articles} 
+                            category={category}
+                        />
+                        <AsideContent/>
+                    </section>
+                </FadeIn>
+            </FadeInContainer>
         </div>
     )
 }

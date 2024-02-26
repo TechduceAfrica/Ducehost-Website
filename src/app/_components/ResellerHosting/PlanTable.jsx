@@ -4,13 +4,13 @@ export default function PlanTable({ tableTitle, plansTableData, plansTableHead }
     return (
         <>
             <div className={style.table__title}>
-                <h3>
+                <h3 className="fade__in">
                     {tableTitle}
                 </h3>
             </div>
             <div className={style.table__wrapper}>
                 <table className={style.plan__table}>
-                    <thead>
+                    <thead className="fade__in">
                         <tr>
                             {plansTableHead.map((head, index) => (
                                 <th key={index}>
@@ -19,7 +19,7 @@ export default function PlanTable({ tableTitle, plansTableData, plansTableHead }
                             ))}
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className="fade__in">
                         {plansTableData.map((data, index) => (
                             <tr key={index}>
                                 <td>
