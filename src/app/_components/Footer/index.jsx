@@ -9,12 +9,14 @@ export default function Footer() {
             <footer>
                 <div className={`${style.footer__info__wrapper} container__width`}>
                     <div className={style.footer__info}>
-                        <Image
-                            src="/images/Ducehost-white-logo.webp"
-                            alt="Ducehost Logo"
-                            width={288}
-                            height={49}
-                        />
+                        <Link href='/'>
+                            <Image
+                                src="/images/Ducehost-white-logo.webp"
+                                alt="Ducehost Logo"
+                                width={288}
+                                height={49}
+                            />
+                        </Link>
                         <p>
                             Enjoy a better hosting experience on our  hosting platform.
                         </p>
