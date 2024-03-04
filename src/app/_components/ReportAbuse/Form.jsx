@@ -18,7 +18,6 @@ const ReportAbuseForm = () => {
     email: "",
     message: "",
     subject: "",
-    id: "report",
   });
 
   const handleChange = (e) => {
@@ -49,6 +48,7 @@ const ReportAbuseForm = () => {
         subject: form.subject,
         message: form.message,
         ticket: ticket,
+        type: "report",
       };
 
       try {

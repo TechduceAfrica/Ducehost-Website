@@ -7,6 +7,7 @@ const reportAbuseSchema = new Schema(
     subject: String,
     message: String,
     ticket: String,
+    type: String,
   },
   {
     timestamps: true,

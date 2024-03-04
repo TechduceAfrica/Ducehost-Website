@@ -48,6 +48,7 @@ const SubmitTicketForm = () => {
         subject: form.subject,
         message: form.message,
         ticket: ticket,
+        type: "submit-ticket",
       };
 
       try {
