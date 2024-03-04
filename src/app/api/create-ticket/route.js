@@ -3,8 +3,8 @@ import SubmitTicket from "@/app/models/submitTicket";
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
-  const { fullname, email, subject, message, type, id } = await request.json();
+  const { fullname, email, subject, message, ticket } = await request.json();
   await connectMongoDB();
-  await SubmitTicket.create({ fullname, email, subject, message, type, id });
+  await SubmitTicket.create({ fullname, email, subject, message, ticket });
   return NextResponse.json({ message: "Ticket Created" }, { status: 201 });
 }

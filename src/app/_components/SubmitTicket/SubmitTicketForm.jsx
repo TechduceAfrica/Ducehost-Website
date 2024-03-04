@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-
+import { useRouter } from "next/navigation";
 import FormBtn from "../FormBtn";
 
 const SubmitTicketForm = () => {
@@ -18,9 +18,8 @@ const SubmitTicketForm = () => {
     email: "",
     message: "",
     subject: "",
-    id: "ticket",
   });
-
+  const router = useRouter();
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
@@ -34,88 +33,80 @@ const SubmitTicketForm = () => {
 
     if (isFormValid) {
       setLoading(true);
-      const date = new Date();
-      const timeStamp = date;
+      const generateTicketId = () => {
+        const timestamp = Date.now().toString(36); // Convert timestamp to base 36 string
+        const randomNumber = Math.floor(Math.random() * 100000000); // Generate random number
+        const randomString = randomNumber.toString(36); // Convert random number to base 36 string
+        const ticketId = "#" + timestamp + "-" + randomString; // Concatenate with "#" prefix
+        return ticketId.slice(0, 9); // Limit to 9 characters
+      };
+      const ticket = generateTicketId();
 
       const data = {
-        formData: {
-          name: form.name,
-          email: form.email,
-          subject: form.subject,
-          message: form.message,
-          id: form.id,
-        },
-        timeStamp,
+        fullname: form.name,
+        email: form.email,
+        subject: form.subject,
+        message: form.message,
+        ticket: ticket,
       };
 
-      console.log(data);
+      try {
+        // Send data to  DATABASE
+        const uploadData = async (data) => {
+          try {
+            const response = await fetch("/api/create-ticket", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+              },
+              body: JSON.stringify(data),
+            });
 
-      // try {
-      //   // const uploadToDatabase = async (data) => {
-      //   //   // Add a new document in collection ""
+            if (response.ok) {
+              console.log("Ticket Created");
+              // try {
 
-      //   //   await setDoc(doc(db, "users", data.formData.email), {
-      //   //     name: data.formData.name,
-      //   //     email: data.formData.email,
-      //   //     message: data.formData.message,
-      //   //     subject: data.formData.subject,
-      //   //     timeStamp: data.timeStamp,
-      //   //   });
-      //   // };
-      //   // await uploadToDatabase(data);
+              //   const response = await fetch("/api/send-ticket", {
+              //     method: "POST",
+              //     headers: {
+              //       "Content-Type": "application/json",
+              //       Accept: "application/json",
+              //     },
+              //     body: JSON.stringify(data),
+              //   });
+              //   if (response.ok) {
+              //     console.log("Ticket Sent Successfully");
+              //   } else {
+              //     throw new Error("Ticket Not Sent");
+              //   }
+              // } catch (error) {
+              //   console.log(error);
+              // }
+            } else {
+              throw new Error("Failed to send data");
+            }
+          } catch (error) {
+            console.error(error);
+            // You can handle the error here or throw it further if needed
+            throw error;
+          }
+        };
 
-      //   // Send data to  API
-      //   const postData = async (data) => {
-      //     try {
-      //       const response = await fetch("/api/send", {
-      //         method: "POST",
-      //         headers: {
-      //           "Content-Type": "application/json",
-      //           Accept: "application/json",
-      //         },
-      //         body: JSON.stringify(data),
-      //       });
+        uploadData(data);
 
-      //       const result = await response.json();
+        setLoading(false);
 
-      //       if (!response.ok) {
-      //         throw new Error("Failed to send data");
-      //       }
+        setIsSubmitted(true);
+        // toast.success(` Congrats ${form.name}!, Your E-book is Downloading!`);
+        resetForm();
+      } catch (error) {
+        // Handle errors that may occur during database or API operations
+        alert("An Error occured, please try again " + error.message);
 
-      //       console.log(result.status);
-      //       return result;
-      //     } catch (error) {
-      //       console.error(error);
-      //       // You can handle the error here or throw it further if needed
-      //       throw error;
-      //     }
-      //   };
-
-      //   const response = await postData(data);
-      //   console.log(response.status);
-
-      //   setLoading(false);
-
-      //   if (response.status === "undefined") {
-      //     setIsSubmitted(true);
-      //     toast.success(` Congrats ${form.name}!, Your E-book is Downloading!`);
-      //     resetForm();
-      //   } else {
-      //     // Handle the case when the API call fails
-
-      //     setIsSubmitted(true);
-      //     toast.success(` Congrats ${form.name}!, Your E-book is Downloading!`);
-      //     resetForm();
-      //   }
-      // } catch (error) {
-      //   // Handle errors that may occur during database or API operations
-      //   // alert("An Error occured, please try again " + error.message);
-      //   // setLoading(false);
-      //   // resetForm();
-
-      //   // Log or display an error message to the user
-      //   console.error(error);
-      // }
+        // Log or display an error message to the user
+        console.error(error);
+      }
     }
   };
 

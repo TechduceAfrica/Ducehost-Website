@@ -6,8 +6,7 @@ const submitTicketSchema = new Schema(
     email: String,
     subject: String,
     message: String,
-    type: String,
-    id: String,
+    ticket: String,
   },
   {
     timestamps: true,
