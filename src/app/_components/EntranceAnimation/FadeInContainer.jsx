@@ -41,9 +41,9 @@ export default function FadeInContainer({ children }) {
             elements.forEach((element) => {
                 ScrollTrigger.create({
                     trigger: element,
-                    toggleActions: "restart pause reverse play",
+                    // toggleActions: "restart pause reverse play",
                     start: "top 90%",
-                    end: "bottom 30%",
+                    end: "bottom 20%",
                     scrub: 1,
                     onEnter: () => {
                         fadeInAnimateEntrance(element);
