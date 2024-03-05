@@ -8,11 +8,12 @@ export default function RightLeftLayout({ rlLayout }) {
             {rlLayout.map((rlLayoutCopy, index) => (
                 <div 
                     key={index} 
-                    className={style.RightLeftLayout__wrapper}
-                    data-scroll
-                    data-scroll-speed="0.15"
+                    className={`${style.RightLeftLayout__wrapper} fade__in`}
                 >
-                    <div className="fade__in">
+                    <div 
+                        data-scroll
+                        data-scroll-speed="0.15"
+                    >
                         <Image 
                             src={rlLayoutCopy.Img} 
                             alt={rlLayoutCopy.Title} 
@@ -20,7 +21,10 @@ export default function RightLeftLayout({ rlLayout }) {
                             height={rlLayoutCopy.height}
                         />
                     </div>
-                    <div className="fade__in">
+                    <div
+                        data-scroll
+                        data-scroll-speed="0.10"
+                    >
                         <h4 
                             className='wine'
                             
