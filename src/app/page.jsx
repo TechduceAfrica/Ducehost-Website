@@ -45,6 +45,8 @@ export default function Home() {
                                 rlLayout={homeCopy.wcuList}
                             />
                         </div>
+                    </FadeIn>
+                    <FadeIn>
                         <div className={style.home__sec}>
                             <div className={style.content__copy}>
                                 <h3 className="fade__in">
@@ -58,6 +60,8 @@ export default function Home() {
                                 hostingPlans={Hosting.plans}
                             />
                         </div>
+                    </FadeIn>
+                    <FadeIn>
                         <div className={style.home__sec}>
                             <div className={`${style.content__copy} ${style.testimonial__sec}`}>
                                 <h3 className="fade__in">
@@ -71,6 +75,8 @@ export default function Home() {
                                 <Testimonial/>
                             </div>
                         </div>
+                    </FadeIn>
+                    <FadeIn>
                         <div className={style.home__sec}>
                             <FAQs
                                 faqsContent={FAQsCopy}
