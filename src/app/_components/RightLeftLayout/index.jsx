@@ -10,10 +10,7 @@ export default function RightLeftLayout({ rlLayout }) {
                     key={index} 
                     className={`${style.RightLeftLayout__wrapper} fade__in`}
                 >
-                    <div 
-                        data-scroll
-                        data-scroll-speed="0.15"
-                    >
+                    <div>
                         <Image 
                             src={rlLayoutCopy.Img} 
                             alt={rlLayoutCopy.Title} 
@@ -21,10 +18,7 @@ export default function RightLeftLayout({ rlLayout }) {
                             height={rlLayoutCopy.height}
                         />
                     </div>
-                    <div
-                        data-scroll
-                        data-scroll-speed="0.10"
-                    >
+                    <div>
                         <h4 
                             className='wine'
                             
