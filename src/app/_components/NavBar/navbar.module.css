@@ -68,7 +68,7 @@
 .sub__menu__list {
     padding: 10px 20px;
     text-wrap: nowrap;
-    min-width: 200px;
+    min-width: 250px;
     position: relative;
     display: flex;
     column-gap: 20px;
@@ -100,6 +100,7 @@
     color: var(--white);
     font-size: 0.6rem;
     padding: 2px 5px;
+    min-width: 67px;
     border-radius: 10px;
     cursor: wait;
     transition: all 300ms ease-in-out;
