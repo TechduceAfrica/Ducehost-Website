@@ -66,24 +66,23 @@ const SubmitTicketForm = () => {
 
             if (response.ok) {
               console.log("Ticket Created");
-              // try {
-
-              //   const response = await fetch("/api/send-ticket", {
-              //     method: "POST",
-              //     headers: {
-              //       "Content-Type": "application/json",
-              //       Accept: "application/json",
-              //     },
-              //     body: JSON.stringify(data),
-              //   });
-              //   if (response.ok) {
-              //     console.log("Ticket Sent Successfully");
-              //   } else {
-              //     throw new Error("Ticket Not Sent");
-              //   }
-              // } catch (error) {
-              //   console.log(error);
-              // }
+              try {
+                const response = await fetch("/api/send-ticket", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                  },
+                  body: JSON.stringify(data),
+                });
+                if (response.ok) {
+                  console.log("Ticket Sent Successfully");
+                } else {
+                  throw new Error("Ticket Not Sent");
+                }
+              } catch (error) {
+                console.log(error);
+              }
             } else {
               throw new Error("Failed to send data");
             }
