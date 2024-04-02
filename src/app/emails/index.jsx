@@ -35,10 +35,10 @@ const buttonStyle = {
   margin: "20px 0",
 };
 
-export const EmailTemplate = ({ fullname, email, message, ticket }) => (
+export const SupportEmailTemplate = ({ fullname, email, message, ticket }) => (
   <div style={containerStyle}>
     <img
-      src="https://assets-social-brand-managers.netlify.app/og%20image/og-image.webp"
+      src="https://assets-social-brand-managers.netlify.app/D2.webp"
       alt="SBM Banner"
       style={bannerStyle}
     />
@@ -46,11 +46,31 @@ export const EmailTemplate = ({ fullname, email, message, ticket }) => (
       Hi <strong>{fullname}</strong>, left a message
     </h1>
     <p style={textStyle}>
-      these are the details: <strong>Email:</strong> {email} <br />
-      <strong>Subject:</strong> {subject} <br />
+      these are the details:
+      <strong>Full Name:</strong> {fullname} <br />
       <strong>Message:</strong> {message} <br />
+      <strong>Email Address:</strong> {email} <br />
       <strong>Ticket:</strong> {ticket} <br />
-      <strong>Type:</strong> {type} <br />
+    </p>
+  </div>
+);
+
+export const ReportEmailTemplate = ({ fullname, email, message, ticket }) => (
+  <div style={containerStyle}>
+    <img
+      src="https://assets-social-brand-managers.netlify.app/D1.webp"
+      alt="SBM Banner"
+      style={bannerStyle}
+    />
+    <h1 style={textStyle}>
+      Hi <strong>{fullname}</strong>, left a message
+    </h1>
+    <p style={textStyle}>
+      these are the details:
+      <strong>Full Name:</strong> {fullname} <br />
+      <strong>Message:</strong> {message} <br />
+      <strong>Email Address:</strong> {email} <br />
+      <strong>Ticket:</strong> {ticket} <br />
     </p>
   </div>
 );

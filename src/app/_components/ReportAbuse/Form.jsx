@@ -26,6 +26,60 @@ const ReportAbuseForm = () => {
     setFormErrors({ ...formErrors, [name]: false });
   };
 
+  const uploadData = async (data) => {
+    try {
+      const response = await fetch("/api/create-report", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to create report");
+      }
+
+      console.log("Report Created");
+
+      // Sending ticket should ideally be done after successfully creating the report
+      try {
+        const ticketResponse = await fetch("/api/send-report", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+
+        if (!ticketResponse.ok) {
+          throw new Error("Failed to send report");
+        }
+
+        console.log("Report Sent Successfully");
+      } catch (ticketError) {
+        console.error("Error sending report:", ticketError);
+        // Handle ticket sending error here
+        // For simplicity, I'm re-throwing the error here
+        throw ticketError;
+      }
+    } catch (error) {
+      console.error("Error uploading data:", error);
+      // You can handle the error here or throw it further if needed
+      throw error;
+    }
+  };
+
+  const generateTicketId = () => {
+    const timestamp = Date.now().toString(36); // Convert timestamp to base 36 string
+    const randomNumber = Math.floor(Math.random() * 100000000); // Generate random number
+    const randomString = randomNumber.toString(36); // Convert random number to base 36 string
+    const ticketId = "#" + timestamp + "-" + randomString; // Concatenate with "#" prefix
+    return ticketId.slice(0, 9); // Limit to 9 characters
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -33,13 +87,7 @@ const ReportAbuseForm = () => {
 
     if (isFormValid) {
       setLoading(true);
-      const generateTicketId = () => {
-        const timestamp = Date.now().toString(36); // Convert timestamp to base 36 string
-        const randomNumber = Math.floor(Math.random() * 100000000); // Generate random number
-        const randomString = randomNumber.toString(36); // Convert random number to base 36 string
-        const ticketId = "#" + timestamp + "-" + randomString; // Concatenate with "#" prefix
-        return ticketId.slice(0, 9); // Limit to 9 characters
-      };
+
       const ticket = generateTicketId();
 
       const data = {
@@ -53,46 +101,6 @@ const ReportAbuseForm = () => {
 
       try {
         // Send data to  DATABASE
-        const uploadData = async (data) => {
-          try {
-            const response = await fetch("/api/create-report", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json",
-              },
-              body: JSON.stringify(data),
-            });
-
-            if (response.ok) {
-              console.log("Report Created");
-              // try {
-
-              //   const response = await fetch("/api/send-ticket", {
-              //     method: "POST",
-              //     headers: {
-              //       "Content-Type": "application/json",
-              //       Accept: "application/json",
-              //     },
-              //     body: JSON.stringify(data),
-              //   });
-              //   if (response.ok) {
-              //     console.log("Ticket Sent Successfully");
-              //   } else {
-              //     throw new Error("Ticket Not Sent");
-              //   }
-              // } catch (error) {
-              //   console.log(error);
-              // }
-            } else {
-              throw new Error("Failed to send data");
-            }
-          } catch (error) {
-            console.error(error);
-            // You can handle the error here or throw it further if needed
-            throw error;
-          }
-        };
 
         uploadData(data);
 
