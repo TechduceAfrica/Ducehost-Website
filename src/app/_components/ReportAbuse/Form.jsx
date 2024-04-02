@@ -45,7 +45,7 @@ const ReportAbuseForm = () => {
 
       // Sending ticket should ideally be done after successfully creating the report
       try {
-        const ticketResponse = await fetch("/api/send-ticket", {
+        const ticketResponse = await fetch("/api/send-report", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -55,12 +55,12 @@ const ReportAbuseForm = () => {
         });
 
         if (!ticketResponse.ok) {
-          throw new Error("Failed to send ticket");
+          throw new Error("Failed to send report");
         }
 
-        console.log("Ticket Sent Successfully");
+        console.log("Report Sent Successfully");
       } catch (ticketError) {
-        console.error("Error sending ticket:", ticketError);
+        console.error("Error sending report:", ticketError);
         // Handle ticket sending error here
         // For simplicity, I'm re-throwing the error here
         throw ticketError;

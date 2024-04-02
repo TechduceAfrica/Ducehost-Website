@@ -19,11 +19,65 @@ const SubmitTicketForm = () => {
     message: "",
     subject: "",
   });
-  const router = useRouter();
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
     setFormErrors({ ...formErrors, [name]: false });
+  };
+
+  const uploadData = async (data) => {
+    try {
+      const response = await fetch("/api/create-ticket", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to create ticket");
+      }
+
+      console.log("Ticket Created");
+
+      // Sending ticket should ideally be done after successfully creating the report
+      try {
+        const ticketResponse = await fetch("/api/send-ticket", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+
+        if (!ticketResponse.ok) {
+          throw new Error("Failed to send ticket");
+        }
+
+        console.log("Ticket Sent Successfully");
+      } catch (ticketError) {
+        console.error("Error sending ticket:", ticketError);
+        // Handle ticket sending error here
+        // For simplicity, I'm re-throwing the error here
+        throw ticketError;
+      }
+    } catch (error) {
+      console.error("Error uploading data:", error);
+      // You can handle the error here or throw it further if needed
+      throw error;
+    }
+  };
+
+  const generateTicketId = () => {
+    const timestamp = Date.now().toString(36); // Convert timestamp to base 36 string
+    const randomNumber = Math.floor(Math.random() * 100000000); // Generate random number
+    const randomString = randomNumber.toString(36); // Convert random number to base 36 string
+    const ticketId = "#" + timestamp + "-" + randomString; // Concatenate with "#" prefix
+    return ticketId.slice(0, 9); // Limit to 9 characters
   };
 
   const handleSubmit = async (e) => {
@@ -33,13 +87,7 @@ const SubmitTicketForm = () => {
 
     if (isFormValid) {
       setLoading(true);
-      const generateTicketId = () => {
-        const timestamp = Date.now().toString(36); // Convert timestamp to base 36 string
-        const randomNumber = Math.floor(Math.random() * 100000000); // Generate random number
-        const randomString = randomNumber.toString(36); // Convert random number to base 36 string
-        const ticketId = "#" + timestamp + "-" + randomString; // Concatenate with "#" prefix
-        return ticketId.slice(0, 9); // Limit to 9 characters
-      };
+
       const ticket = generateTicketId();
 
       const data = {
@@ -48,50 +96,11 @@ const SubmitTicketForm = () => {
         subject: form.subject,
         message: form.message,
         ticket: ticket,
-        type: "submit-ticket",
+        type: "ticket",
       };
 
       try {
         // Send data to  DATABASE
-        const uploadData = async (data) => {
-          try {
-            const response = await fetch("/api/create-ticket", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json",
-              },
-              body: JSON.stringify(data),
-            });
-
-            if (response.ok) {
-              console.log("Ticket Created");
-              try {
-                const response = await fetch("/api/send-ticket", {
-                  method: "POST",
-                  headers: {
-                    "Content-Type": "application/json",
-                    Accept: "application/json",
-                  },
-                  body: JSON.stringify(data),
-                });
-                if (response.ok) {
-                  console.log("Ticket Sent Successfully");
-                } else {
-                  throw new Error("Ticket Not Sent");
-                }
-              } catch (error) {
-                console.log(error);
-              }
-            } else {
-              throw new Error("Failed to send data");
-            }
-          } catch (error) {
-            console.error(error);
-            // You can handle the error here or throw it further if needed
-            throw error;
-          }
-        };
 
         uploadData(data);
 

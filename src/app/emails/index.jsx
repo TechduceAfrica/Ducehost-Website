@@ -46,7 +46,7 @@ export const SupportEmailTemplate = ({ fullname, email, message, ticket }) => (
       Hi <strong>{fullname}</strong>, left a message
     </h1>
     <p style={textStyle}>
-      these are the details: <strong>Email:</strong> {email} <br />
+      these are the details:
       <strong>Full Name:</strong> {fullname} <br />
       <strong>Message:</strong> {message} <br />
       <strong>Email Address:</strong> {email} <br />
@@ -66,7 +66,7 @@ export const ReportEmailTemplate = ({ fullname, email, message, ticket }) => (
       Hi <strong>{fullname}</strong>, left a message
     </h1>
     <p style={textStyle}>
-      these are the details: <strong>Email:</strong> {email} <br />
+      these are the details:
       <strong>Full Name:</strong> {fullname} <br />
       <strong>Message:</strong> {message} <br />
       <strong>Email Address:</strong> {email} <br />
