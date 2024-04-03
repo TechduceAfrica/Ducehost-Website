@@ -5,7 +5,6 @@ import FormBtn from "../FormBtn";
 
 const SubmitTicketForm = () => {
   const [loading, setLoading] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const [formErrors, setFormErrors] = useState({
     name: false,
     email: false,
@@ -56,14 +55,37 @@ const SubmitTicketForm = () => {
 
         if (!ticketResponse.ok) {
           throw new Error("Failed to send ticket");
+        } else {
+          console.log("Ticket Sent Successfully");
         }
-
-        console.log("Ticket Sent Successfully");
       } catch (ticketError) {
         console.error("Error sending ticket:", ticketError);
         // Handle ticket sending error here
         // For simplicity, I'm re-throwing the error here
         throw ticketError;
+      }
+
+      try {
+        const response = await fetch("/api/send-client-ticket", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+
+        if (!response.ok) {
+          throw new Error("Failed send ticket");
+        } else {
+          console.log("Ticket Sent");
+          setLoading(false);
+          resetForm();
+        }
+      } catch (error) {
+        console.error("Error uploading data:", error);
+        // You can handle the error here or throw it further if needed
+        throw error;
       }
     } catch (error) {
       console.error("Error uploading data:", error);
@@ -104,11 +126,7 @@ const SubmitTicketForm = () => {
 
         uploadData(data);
 
-        setLoading(false);
-
-        setIsSubmitted(true);
         // toast.success(` Congrats ${form.name}!, Your E-book is Downloading!`);
-        resetForm();
       } catch (error) {
         // Handle errors that may occur during database or API operations
         alert("An Error occured, please try again " + error.message);
