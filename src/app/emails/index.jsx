@@ -24,18 +24,24 @@ const textStyle = {
   maxWidth: "600px",
 };
 
-const buttonStyle = {
-  backgroundColor: "#3498db",
-  color: "#ffffff",
-  padding: "10px 20px",
-  borderRadius: "5px",
-  textDecoration: "none",
-  display: "inline-block",
-  fontSize: "16px",
-  margin: "20px 0",
-};
+// const buttonStyle = {
+//   backgroundColor: "#3498db",
+//   color: "#ffffff",
+//   padding: "10px 20px",
+//   borderRadius: "5px",
+//   textDecoration: "none",
+//   display: "inline-block",
+//   fontSize: "16px",
+//   margin: "20px 0",
+// };
 
-export const SupportEmailTemplate = ({ fullname, email, message, ticket }) => (
+export const SupportEmailTemplate = ({
+  fullname,
+  email,
+  subject,
+  message,
+  ticket,
+}) => (
   <div style={containerStyle}>
     <img
       src="https://assets-social-brand-managers.netlify.app/D2.webp"
@@ -43,10 +49,13 @@ export const SupportEmailTemplate = ({ fullname, email, message, ticket }) => (
       style={bannerStyle}
     />
     <h1 style={textStyle}>
-      Hi <strong>{fullname}</strong>, left a message
+      <strong>{fullname}</strong> left a message
+    </h1>
+    <h1 style={textStyle}>
+      <strong>{subject}</strong>
     </h1>
     <p style={textStyle}>
-      these are the details:
+      these are the details: <br />
       <strong>Full Name:</strong> {fullname} <br />
       <strong>Message:</strong> {message} <br />
       <strong>Email Address:</strong> {email} <br />
@@ -55,7 +64,13 @@ export const SupportEmailTemplate = ({ fullname, email, message, ticket }) => (
   </div>
 );
 
-export const ReportEmailTemplate = ({ fullname, email, message, ticket }) => (
+export const ReportEmailTemplate = ({
+  fullname,
+  email,
+  message,
+  subject,
+  ticket,
+}) => (
   <div style={containerStyle}>
     <img
       src="https://assets-social-brand-managers.netlify.app/D1.webp"
@@ -63,10 +78,47 @@ export const ReportEmailTemplate = ({ fullname, email, message, ticket }) => (
       style={bannerStyle}
     />
     <h1 style={textStyle}>
-      Hi <strong>{fullname}</strong>, left a message
+      <strong>{fullname}</strong> left a message
+    </h1>
+
+    <h1 style={textStyle}>
+      <strong>{subject}</strong>
     </h1>
     <p style={textStyle}>
-      these are the details:
+      These are the details: <br />
+      <strong>Full Name:</strong> {fullname} <br />
+      <strong>Message:</strong> {message} <br />
+      <strong>Email Address:</strong> {email} <br />
+      <strong>Ticket:</strong> {ticket} <br />
+    </p>
+  </div>
+);
+
+export const ClientEmailTemplate = ({
+  fullname,
+  email,
+  subject,
+  message,
+  type,
+  ticket,
+}) => (
+  <div style={containerStyle}>
+    <img
+      src="https://assets-social-brand-managers.netlify.app/D2.webp"
+      alt="SBM Banner"
+      style={bannerStyle}
+    />
+    <h1 style={textStyle}>
+      Hi <strong>{fullname}</strong>, your message was sent successfully, please
+      wait for response from our CRM Team.
+    </h1>
+    <br />
+    <h1 style={textStyle}>
+      <strong>{subject}</strong>
+    </h1>
+    <p style={textStyle}>
+      For reference purposes, take note of your ticket ID which will be used
+      when you want to find this {type}. Here are your details: <br />
       <strong>Full Name:</strong> {fullname} <br />
       <strong>Message:</strong> {message} <br />
       <strong>Email Address:</strong> {email} <br />

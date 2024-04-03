@@ -65,6 +65,29 @@ const ReportAbuseForm = () => {
         // For simplicity, I'm re-throwing the error here
         throw ticketError;
       }
+
+      try {
+        const response = await fetch("/api/send-client-ticket", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+
+        if (!response.ok) {
+          throw new Error("Failed send ticket");
+        } else {
+          console.log("Ticket Sent");
+          setLoading(false);
+          resetForm();
+        }
+      } catch (error) {
+        console.error("Error uploading data:", error);
+        // You can handle the error here or throw it further if needed
+        throw error;
+      }
     } catch (error) {
       console.error("Error uploading data:", error);
       // You can handle the error here or throw it further if needed
@@ -104,11 +127,7 @@ const ReportAbuseForm = () => {
 
         uploadData(data);
 
-        setLoading(false);
-
-        setIsSubmitted(true);
         // toast.success(` Congrats ${form.name}!, Your E-book is Downloading!`);
-        resetForm();
       } catch (error) {
         // Handle errors that may occur during database or API operations
         alert("An Error occured, please try again " + error.message);
