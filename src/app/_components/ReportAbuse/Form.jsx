@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-
+import toast from "react-hot-toast";
 import FormBtn from "../FormBtn";
 
 const ReportAbuseForm = () => {
@@ -82,6 +82,7 @@ const ReportAbuseForm = () => {
           console.log("Ticket Sent");
           setLoading(false);
           resetForm();
+          toast.success(`  ${form.name}, Your Report was sent successfully!`);
         }
       } catch (error) {
         console.error("Error uploading data:", error);
@@ -126,8 +127,6 @@ const ReportAbuseForm = () => {
         // Send data to  DATABASE
 
         uploadData(data);
-
-        // toast.success(` Congrats ${form.name}!, Your E-book is Downloading!`);
       } catch (error) {
         // Handle errors that may occur during database or API operations
         alert("An Error occured, please try again " + error.message);

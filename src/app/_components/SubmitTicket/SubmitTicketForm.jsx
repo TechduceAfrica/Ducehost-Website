@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 import FormBtn from "../FormBtn";
 
 const SubmitTicketForm = () => {
@@ -81,6 +81,7 @@ const SubmitTicketForm = () => {
           console.log("Ticket Sent");
           setLoading(false);
           resetForm();
+          toast.success(`  ${form.name}, Your Ticket was sent successfully!`);
         }
       } catch (error) {
         console.error("Error uploading data:", error);
