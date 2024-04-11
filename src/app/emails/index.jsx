@@ -24,16 +24,16 @@ const textStyle = {
   maxWidth: "600px",
 };
 
-// const buttonStyle = {
-//   backgroundColor: "#3498db",
-//   color: "#ffffff",
-//   padding: "10px 20px",
-//   borderRadius: "5px",
-//   textDecoration: "none",
-//   display: "inline-block",
-//   fontSize: "16px",
-//   margin: "20px 0",
-// };
+const buttonStyle = {
+  backgroundColor: "#3498db",
+  color: "#ffffff",
+  padding: "10px 20px",
+  borderRadius: "5px",
+  textDecoration: "none",
+  display: "inline-block",
+  fontSize: "16px",
+  margin: "20px 0",
+};
 
 export const SupportEmailTemplate = ({
   fullname,
@@ -124,5 +124,27 @@ export const ClientEmailTemplate = ({
       <strong>Email Address:</strong> {email} <br />
       <strong>Ticket:</strong> {ticket} <br />
     </p>
+  </div>
+);
+
+export const HvcoClientEmailTemplate = ({ name }) => (
+  <div style={containerStyle}>
+    <img
+      src="https://assets-social-brand-managers.netlify.app/D2.webp"
+      alt="SBM Banner"
+      style={bannerStyle}
+    />
+    <h1 style={textStyle}>
+      Hi <strong>{name}</strong>,Thank you for your interest in our high value
+      content. <br /> Click this button to download your e-book.
+    </h1>
+    <br />
+
+    <a
+      href="https://drive.google.com/file/d/1VMWu4nidFuRCUKdVW_7odIMmma4pVAGO/view?usp=drive_link"
+      style={buttonStyle}
+    >
+      Download E-book
+    </a>
   </div>
 );
