@@ -1,20 +1,14 @@
-export default function DownldBtn(props) {
+export default function DownldBtn({ DownldBtnTitle, PropsclassName }) {
   return (
     <>
-      <a
-        href={props.DownldBtnLink}
-        title={props.DownldBtnText}
-        download={props.DownldBtnDownload}
-        target={props.DownldBtnTarget}
-        rel={props.DownldBtnReferrer}
+      <button
+        title={DownldBtnTitle}
+        type="submit"
+        className={`${PropsclassName} btn__pri`}
+        // onClick={() => props.onClick()}
       >
-        <button
-          className={`${props.className} btn__pri`}
-          onSubmit={() => props.onClick()}
-        >
-          {props.DownldBtnText}
-        </button>
-      </a>
+        {DownldBtnTitle}
+      </button>
     </>
   );
 }

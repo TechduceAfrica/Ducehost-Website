@@ -37,6 +37,55 @@ const HvcoPage = () => {
     setFormErrors({ ...formErrors, number: false });
   };
 
+  const uploadData = async (data) => {
+    try {
+      const response = await fetch("/api/create-hvco-client", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to create hvco client");
+      }
+
+      console.log("Client Created");
+
+      // Sending ticket should ideally be done after successfully creating the report
+      try {
+        const hvcoResponse = await fetch("/api/send-hvco", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+
+        if (!hvcoResponse.ok) {
+          throw new Error("Failed to send hvco");
+        } else {
+          console.log("HVCO Sent Successfully");
+          setLoading(false);
+          resetForm();
+          toast.success(`  ${form.name}, Your E-book was sent successfully!`);
+        }
+      } catch (hvcoError) {
+        console.error("Error sending report:", hvcoError);
+        // Handle ticket sending error here
+        // For simplicity, I'm re-throwing the error here
+        throw hvcoError;
+      }
+    } catch (error) {
+      console.error("Error uploading hvco:", error);
+      // You can handle the error here or throw it further if needed
+      throw error;
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -44,86 +93,18 @@ const HvcoPage = () => {
 
     if (isFormValid) {
       setLoading(true);
-      const date = new Date();
-      const timeStamp = date;
 
       const data = {
-        formData: {
-          name: form.name,
-          email: form.email,
-          number: form.number,
-        },
-        timeStamp,
+        name: form.name,
+        email: form.email,
+        number: form.number,
       };
 
-      console.log(data);
-
-      // try {
-      //   // const uploadToDatabase = async (data) => {
-      //   //   // Add a new document in collection ""
-
-      //   //   await setDoc(doc(db, "users", data.formData.email), {
-      //   //     name: data.formData.name,
-      //   //     email: data.formData.email,
-      //   //     message: data.formData.message,
-      //   //     number: data.formData.number,
-      //   //     timeStamp: data.timeStamp,
-      //   //   });
-      //   // };
-      //   // await uploadToDatabase(data);
-
-      //   // Send data to  API
-      //   const postData = async (data) => {
-      //     try {
-      //       const response = await fetch("/api/send", {
-      //         method: "POST",
-      //         headers: {
-      //           "Content-Type": "application/json",
-      //           Accept: "application/json",
-      //         },
-      //         body: JSON.stringify(data),
-      //       });
-
-      //       const result = await response.json();
-
-      //       if (!response.ok) {
-      //         throw new Error("Failed to send data");
-      //       }
-
-      //       console.log(result.status);
-      //       return result;
-      //     } catch (error) {
-      //       console.error(error);
-      //       // You can handle the error here or throw it further if needed
-      //       throw error;
-      //     }
-      //   };
-
-      //   const response = await postData(data);
-      //   console.log(response.status);
-
-      //   setLoading(false);
-
-      //   if (response.status === "undefined") {
-      //     setIsSubmitted(true);
-      //     toast.success(` Congrats ${form.name}!, Your E-book is Downloading!`);
-      //     resetForm();
-      //   } else {
-      //     // Handle the case when the API call fails
-
-      //     setIsSubmitted(true);
-      //     toast.success(` Congrats ${form.name}!, Your E-book is Downloading!`);
-      //     resetForm();
-      //   }
-      // } catch (error) {
-      //   // Handle errors that may occur during database or API operations
-      //   // alert("An Error occured, please try again " + error.message);
-      //   // setLoading(false);
-      //   // resetForm();
-
-      //   // Log or display an error message to the user
-      //   console.error(error);
-      // }
+      try {
+        uploadData(data);
+      } catch (error) {
+        console.log(error);
+      }
     }
   };
 
@@ -249,8 +230,7 @@ const HvcoPage = () => {
             </div>
             <div className="font-semibold">
               <DownldBtn
-                DownldBtnText="Download Now"
-                DownldBtnLink={isSubmitted ? "/" : ""}
+                DownldBtnTitle={loading ? "Downloading..." : "Download E-book"}
                 onSubmit={handleSubmit}
               />
             </div>
