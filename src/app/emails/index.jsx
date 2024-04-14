@@ -143,6 +143,7 @@ export const HvcoClientEmailTemplate = ({ name }) => (
     <a
       href="https://drive.google.com/file/d/1VMWu4nidFuRCUKdVW_7odIMmma4pVAGO/view?usp=drive_link"
       style={buttonStyle}
+      download
     >
       Download E-book
     </a>
