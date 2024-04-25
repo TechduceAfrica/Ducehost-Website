@@ -126,7 +126,7 @@ export default function Footer() {
                                 <li>
                                     <Link 
                                         target="_blank" 
-                                        href="http://www.ducehost.com/host"
+                                        href="https://ducehost.com/host/login"
                                     >
                                        Login 
                                     </Link>

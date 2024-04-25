@@ -189,7 +189,7 @@ export default function NavBar() {
                     <div className={style.nav__btn}>
                         <SecBtn
                             SecBtnText= 'Login'
-                            SecBtnLink= 'https://ducehost.com/host/'
+                            SecBtnLink= 'https://ducehost.com/host/login'
                         />
                     </div>
                     <div 
