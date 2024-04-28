@@ -79,9 +79,9 @@ export default function Footer() {
                                 <li>
                                     <Link 
                                         target="_blank"
-                                        href='/website-development'
+                                        href='https://career.techduce.africa/'
                                     >
-                                        Website Projects
+                                        Career
                                     </Link>     
                                 </li>
                                 <li>
